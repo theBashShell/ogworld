@@ -1,0 +1,179 @@
+@font-face {
+  font-family: 'majari bold';
+  src: url('../fonts/majari_bold.ttf');
+}
+
+@font-face {
+  font-family: 'majari regular';
+  src: url('../fonts//manjari_regular.ttf');
+}
+
+@font-face {
+  font-family: 'josefinsans regular';
+  src: url('../fonts/josefinsans_regular.ttf');
+}
+
+@font-face {
+  font-family: 'josefinsans bold';
+  src: url('../fonts/josefinsans_bold.ttf');
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.page_head {
+  height: 96vh;
+  background-color: #1a3850a3;
+}
+
+.og_logo {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  padding-top: 2px;
+  z-index: 4;
+}
+
+.page_background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 96vh;
+  object-fit: cover;
+  object-position: center center;
+  z-index: -4;
+}
+
+.navbar,
+.nav_items {
+  height: 8%;
+}
+
+.nav_items {
+  position: fixed;
+  width: 100%;
+  background-color: #1a3850ed;
+}
+
+.ham_btn {
+  transform: scale(1.5);
+}
+
+.menu {
+  display: flex;
+  height: 100%;
+  float: right;
+  padding-right: 16px;
+}
+
+.menu_overlay {
+  position: fixed;
+  width: 100%;
+  background-color: #1a3850fc;
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+  z-index: inherit;
+}
+
+.head_content {
+  margin: 30vh auto 0 auto;
+  width: 80%;
+  color: #ffffff;
+  font-family: 'josefinsans bold';
+}
+
+.arrow {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+}
+
+.arrow_down {
+  width: 150%;
+}
+
+#to_content {
+  display: flex;
+  justify-content: center;
+}
+
+.slogan {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  text-align: center;
+  border-radius: 1px;
+  border-left: 4px solid #ffffff68;
+  border-right: 4px solid #ffffff68;
+  padding: 2px;
+}
+
+.page_content {
+  font-family: 'majari regular';
+  /* padding: 0.7rem;
+  padding-top: 0; */
+}
+
+.tagline {
+  display: flex;
+  font-family: 'majari bold';
+  font-size: 1.6rem;
+  text-align: center;
+  justify-content: center;
+  background: #0e1a4ed0;
+  color: #ffffff73;
+}
+
+.incorrect {
+  color: #ff0000d5;
+}
+
+.page_footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.line {
+  display: flex;
+  width: 96%;
+  margin: 10px auto;
+  border-radius: 4px;
+  padding: 0.7px;
+  background-color: #14334da8;
+}
+
+.top {
+  display: inline-flex;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  bottom: 8px;
+  left: 86%;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e4481;
+  z-index: 4;
+  box-shadow: 2px 1px 4px #0c0c0c;
+}
+
+.top_link:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.top img {
+  transform: rotate(180deg);
+}

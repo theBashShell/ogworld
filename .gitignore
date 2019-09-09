@@ -1,0 +1,5 @@
+00_*
+node_modules
+.cache
+public
+temp/*
