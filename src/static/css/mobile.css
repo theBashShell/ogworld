@@ -76,8 +76,7 @@ body,
 .head_content {
   color: #ffffff;
   display: flex;
-  flex-direction: column;
-  background: transparent;
+  flex-direction: column; 
   align-items: center;
   justify-content: center;
 }
