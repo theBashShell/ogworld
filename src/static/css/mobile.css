@@ -28,90 +28,71 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+body,
+#ogworld_app {
   margin: 0;
   padding: 0;
   height: 100vh;
 }
 
-.page_head {
-  height: 96vh;
-  background-color: #1a3850a3;
+.heading {
+  position: relative;
+  height: 90%;
 }
 
-.og_logo {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  padding-top: 2px;
-  z-index: 4;
+.head_all {
+  height: 100%;
 }
 
-.page_background {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 96vh;
-  object-fit: cover;
-  object-position: center center;
-  z-index: -4;
-}
-
-.navbar,
-.nav_items {
-  height: 8%;
-}
-
-.nav_items {
+.navbar {
   position: fixed;
   width: 100%;
-  background-color: #1a3850ed;
+  height: 8%;
+  background: #f5d000;
+  z-index: 20;
 }
 
-.ham_btn {
-  transform: scale(1.5);
-}
-
-.menu {
+.navbar_content {
   display: flex;
   height: 100%;
-  float: right;
-  padding-right: 16px;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.menu_overlay {
-  position: fixed;
+.head_bg_container {
+  position: relative;
+  top: 8%;
+  height: 92%;
+}
+
+.bg_filter,
+.head_content {
+  position: absolute;
+  height: 100%;
   width: 100%;
-  background-color: #1a3850fc;
-  opacity: 0;
-  transition: all 0.6s ease-in-out;
-  z-index: inherit;
+  background: #2222227c;
 }
 
 .head_content {
-  margin: 30vh auto 0 auto;
-  width: 80%;
   color: #ffffff;
-  font-family: 'josefinsans bold';
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  align-items: center;
+  justify-content: center;
 }
 
-.arrow {
-  display: inline-block;
+.continue,
+.continue:active,
+.continue:visited {
   text-decoration: none;
   outline: none;
 }
 
-.arrow_down {
-  width: 150%;
-}
-
-#to_content {
-  display: flex;
-  justify-content: center;
-}
-
 .slogan {
-  font-size: 2.5rem;
+  width: 80%;
+  font-family: 'josefinsans bold';
+  font-size: 2rem;
   line-height: 1.2;
   text-align: center;
   border-radius: 1px;
@@ -120,38 +101,50 @@ body {
   padding: 2px;
 }
 
+.head_background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.og_logo {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  padding-top: 2px;
+}
+
+.nav_item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.hamburger {
+  transform: scale(2);
+}
+
+.menu_overlay {
+  background: #f5d000;
+  transition: all 0.7s ease;
+}
+
 .page_content {
   font-family: 'majari regular';
-  /* padding: 0.7rem;
-  padding-top: 0; */
 }
 
-.tagline {
+.tagline,
+.services,
+.projects {
   display: flex;
-  font-family: 'majari bold';
-  font-size: 1.6rem;
-  text-align: center;
   justify-content: center;
-  background: #0e1a4ed0;
-  color: #ffffff73;
-}
-
-.incorrect {
-  color: #ff0000d5;
+  align-items: center;
+  text-align: center;
 }
 
 .page_footer {
-  display: flex;
-  flex-direction: column;
-}
-
-.line {
-  display: flex;
-  width: 96%;
-  margin: 10px auto;
-  border-radius: 4px;
-  padding: 0.7px;
-  background-color: #14334da8;
+  font-family: 'josefinsans regular';
 }
 
 .top {
@@ -177,3 +170,105 @@ body {
 .top img {
   transform: rotate(180deg);
 }
+
+.line {
+  display: flex;
+  width: 96%;
+  margin: 10px auto;
+  border-radius: 4px;
+  padding: 0.7px;
+  background-color: #14334da8;
+}
+
+/* .page_head {
+  position: relative;
+  height: 96vh;
+  background-color: #1a3850a3;
+} */
+
+/* .nav_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: 'majari regular';
+  z-index: 3;
+} */
+
+/* .nav_items {
+  position: fixed;
+
+  width: 100%;
+  background-color: #1a3850ed;
+} */
+
+/* .ham_btn {
+  transform: scale(1.5);
+} */
+
+/* .menu {
+  display: flex;
+  height: 100%;
+  float: right;
+  padding-right: 16px;
+} */
+
+/* .menu_overlay {
+  position: fixed; 
+  width: 100%;
+  background-color: #a5e610;
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+  z-index: 2;
+} */
+
+/* .head_content {
+  margin: 30vh auto 0 auto;
+  width: 80%;
+  color: #ffffff;
+  font-family: 'josefinsans bold';
+} */
+
+/* .arrow {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+} */
+
+/* .arrow_down {
+  width: 150%;
+} */
+
+/* #to_content {
+  display: flex;
+  justify-content: center;
+} */
+
+/* .page_content {
+  font-family: 'majari regular'; 
+} */
+
+/* .tagline {
+  display: flex;
+  font-family: 'majari bold';
+  font-size: 1.6rem;
+  text-align: center;
+  justify-content: center;
+  background: #1a2a3c;
+  color: #ffffff73;
+} */
+
+/* .incorrect {
+  color: #ff0000d5;
+} */
+
+/* .services,
+.projects {
+  text-align: center;
+} */
+
+/* .page_footer {
+  display: flex;
+  flex-direction: column;
+} */

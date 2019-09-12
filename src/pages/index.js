@@ -8,7 +8,7 @@ import IndexFooter from '../components/IndexFooter';
 const HomePage = ({data}) => (
   <>
     <HeadMeta title={data.site.siteMetadata.title} />
-    <div className="page">
+    <div id="ogworld_app">
       <IndexHead />
       <IndexContent />
       <IndexFooter />
@@ -26,3 +26,11 @@ export const query = graphql`
   }
 `;
 export default HomePage;
+
+{
+  /* <div className="page">
+      <IndexHead />
+      <IndexContent />
+      <IndexFooter />
+    </div>*/
+}
