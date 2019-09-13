@@ -12,7 +12,7 @@ function Navbar({logo, disp, ham, alt}) {
   return (
     <nav className="navbar">
       <div className="navbar_content">
-        <div className="nav_item"></div>
+        <div className="nav_item">OG World</div>
         <div className="nav_item">
           <img className="og_logo" src={logo} alt={alt} />
         </div>
@@ -34,34 +34,3 @@ function Navbar({logo, disp, ham, alt}) {
 }
 
 export default Navbar;
-
-// <nav className="navbar">
-//   <div>
-//     <img className="og_logo" src={logo} alt={alt} />
-//   </div>
-//   <div className="nav_center">OG</div>
-//   <div>
-//     <img
-//       className="ham_btn"
-//       src={ham}
-//       alt="menu"
-//       onClick={overlayHandler}
-//     />
-//   </div>
-//   <div className="menu_overlay" style={disp}></div>
-// </nav>
-
-{
-  /**  <div className="nav_items">
-        <img className="og_logo" src={logo} alt={alt} />
-        <div className="menu_overlay" style={disp}></div>
-        <div className="menu">
-          <img
-            className="ham_btn"
-            src={ham}
-            alt="menu"
-            onClick={overlayHandler}
-          />
-        </div>
-    */
-}

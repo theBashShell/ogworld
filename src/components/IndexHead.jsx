@@ -16,7 +16,11 @@ function IndexHead() {
           <div className="head_content">
             <h1 className="slogan">Opening Ghana to the World</h1>
             <a className="continue" href="#main_content">
-              <img className="arrow_down"src={arrow_down} alt="continue reading" />
+              <img
+                className="arrow_down"
+                src={arrow_down}
+                alt="continue reading"
+              />
             </a>
           </div>
           <picture>
@@ -34,52 +38,3 @@ function IndexHead() {
 }
 
 export default IndexHead;
-
-// function IndexHead() {
-//   const [overlayHeight, setOverlayHeight] = useState('0%');
-
-//   function handleOverlay() {
-//     setOverlayHeight(overlayHeight === '0%' ? '70%' : '0%');
-//   }
-
-//   const ham_img = overlayHeight === '0%' ? hamburger : close;
-
-//   const styles = {
-//     disp: {
-//       height: `${overlayHeight}`,
-//       opacity: 1,
-//     },
-//   };
-
-//   return (
-//     <header className="page_head">
-//       <Navbar
-//         logo={og_logo}
-//         disp={styles.disp}
-//         alt="ogworld logo"
-//         ham={ham_img}
-//         overlayHandler={handleOverlay}
-//       />
-//       <picture>
-//         <source srcSet={large_bg} media="(min-width: 740px)" />
-//         <img className="page_background" src={main_bg} alt="page background" />
-//       </picture>
-//       <div className="head_content">
-//         <div className="head_info">
-//           <h1 className="slogan">
-//             Opening Ghana <span>to the</span> World
-//           </h1>
-//           <div id="to_content">
-//             <a className="arrow" href="#main_content">
-//               <img
-//                 src={arrow_down}
-//                 alt="continue reading"
-//                 className="arrow_down"
-//               />
-//             </a>
-//           </div>
-//         </div>
-//       </div>
-//     </header>
-//   );
-// }
