@@ -5,8 +5,9 @@ function IndexFooter() {
   return (
     <footer className="page_footer">
       <div className="line"></div>
+      <div className="map footer_item">map here</div>
       <div className="copyright footer_item">
-        <span>Copyright &copy; 2019 OG World.All rights reserved</span>
+        <span>Copyright &copy; 2019 OG World. All rights reserved.</span>
       </div>
       <div className="dev_info footer_item">
         <span>

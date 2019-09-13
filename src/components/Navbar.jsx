@@ -3,10 +3,11 @@ import hamburger from '../static/images/menu.svg';
 import close from '../static/images/close.svg';
 
 function Navbar({logo, disp, ham, alt}) {
+  let overlayHeight = 20;
   const [overlay, setOverlay] = useState(0);
 
   function handleDropMenu() {
-    setOverlay(overlay === 0 ? 100 : 0);
+    setOverlay(overlay === 0 ? overlayHeight : 0);
   }
 
   return (
@@ -27,8 +28,12 @@ function Navbar({logo, disp, ham, alt}) {
       </div>
       <div
         className="menu_overlay"
-        style={{height: `${overlay}vh`, opacity: overlay / 100}}
-      ></div>
+        style={{height: `${overlay}vh`, opacity: overlay / overlayHeight}}
+        onClick={handleDropMenu}
+      >
+        <a href="#services">services</a>
+        <a href="#projects">projects</a>
+      </div>
     </nav>
   );
 }

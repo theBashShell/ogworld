@@ -11,11 +11,11 @@ function IndexContent() {
           Experience <br /> & <br /> Explore Ghana
         </h2>
       </div>
-      <section className="services">
+      <section id="services" className="services">
         <h1>Services</h1>
         <div></div>
       </section>
-      <section className="projects">
+      <section id="projects" className="projects">
         <h1>Projects</h1>
       </section>
       Ich höre schon des Dorfs Getümmel, Hier ist des Volkes wahrer Himmel,

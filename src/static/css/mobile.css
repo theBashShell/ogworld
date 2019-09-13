@@ -128,8 +128,22 @@ body,
 }
 
 .menu_overlay {
+  display: flex;
+  color: #ffffff;
+  font-size: 1.8rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: #02131d;
   transition: all 0.8s ease;
+}
+
+.menu_overlay a {
+  text-decoration: none;
+}
+
+.menu_overlay a:hover {
+  color: hotpink;
 }
 
 .page_content {
