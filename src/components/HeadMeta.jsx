@@ -10,7 +10,6 @@ const HeadMeta = ({title, children}) => (
     <meta name="app_name" content="OG World" />
     <meta name="author" content="Bruno Edoh" />
     <link rel="icon" type="image/png" href={`${favicon}`} />
-
     <title>{title}</title>
     {children ? children : null}
   </Helmet>

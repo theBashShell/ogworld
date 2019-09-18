@@ -1,9 +1,32 @@
 @charset "utf-8";
 
 @media (min-width: 740px) {
-
   .navbar {
     height: 6%;
+  }
+
+  .services,
+  .projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .service_heading{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service {
+    background: #f5f5f5b0;
+    padding: 1%;
+    margin-bottom: 1rem;
+    width: 47%;   
+  }
+
+  .menu_overlay {
+    display: none;
   }
 
   .head_bg_container {
@@ -15,8 +38,8 @@
   }
 
   .slogan {
-    font-size: 3rem;  
-    border-radius: 10px;  
+    font-size: 3rem;
+    border-radius: 10px;
     padding: 8px;
   }
 
@@ -33,7 +56,12 @@
     display: none;
   }
 
-  .menu_overlay {
+  .menu_overlay {.og_logo {
+  position: relative;
+  width: 20%;
+  height: 20%;
+  padding-top: 2px;
+}
     display: none;
   }
 
@@ -52,6 +80,4 @@
   .arrow_down {
     width: 200%;
   } */
-
-
 }

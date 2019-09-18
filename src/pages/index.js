@@ -25,12 +25,4 @@ export const query = graphql`
     }
   }
 `;
-export default HomePage;
-
-{
-  /* <div className="page">
-      <IndexHead />
-      <IndexContent />
-      <IndexFooter />
-    </div>*/
-}
+export default HomePage; 
