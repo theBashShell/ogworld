@@ -6,6 +6,7 @@ function Navbar({logo, alt}) {
   let overlayHeight = 100;
   const hamburgerRef = useRef(null);
   const hamContentRef = useRef(null);
+  const ogRef = useRef(null);
   const [showOverlay, setShowOverlay] = useState(false);
 
   const activeStyle = {
@@ -39,6 +40,10 @@ function Navbar({logo, alt}) {
     }
   }
 
+  function handleLogoClick(event) {
+    ogRef.current.click();
+  }
+
   useEffect(() => {
     document.addEventListener('click', handleHamburgerClick);
 
@@ -51,12 +56,17 @@ function Navbar({logo, alt}) {
     <nav className="navbar">
       <div className="navbar_content">
         <div className="nav_item">
-          <a className="nav_link link" href="#">
+          <a className="nav_link link" href="#" ref={ogRef}>
             OG World
           </a>
         </div>
         <div className="nav_item">
-          <img className="og_logo" src={logo} alt={alt} />
+          <img
+            className="og_logo"
+            src={logo}
+            alt={alt}
+            onClick={handleLogoClick}
+          />
         </div>
         <div className="hamburger nav_item">
           <img
@@ -91,6 +101,13 @@ function Navbar({logo, alt}) {
             style={{display: `${showOverlay ? 'block' : 'none'}`}}
           >
             projects
+          </a>
+          <a
+            className="nav_link"
+            href="#feedback"
+            style={{display: `${showOverlay ? 'block' : 'none'}`}}
+          >
+            comments
           </a>
         </div>
       </div>

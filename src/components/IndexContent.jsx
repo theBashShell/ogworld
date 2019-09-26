@@ -1,9 +1,11 @@
 import React from 'react';
 import Service from '../components/Service';
-import accommodation from '../static/images/accommodation.svg';
-import study_abroad from '../static/images/study_abroad.svg';
+import Feedback from '../components/Feedback';
+import logistics from '../static/images/logistics.svg';
+import exchange_program from '../static/images/exchange_program.svg';
 import visa from '../static/images/passport.svg';
 import more from '../static/images/more.svg';
+
 
 function IndexContent() {
   return (
@@ -22,27 +24,25 @@ function IndexContent() {
           <Service
             img={visa}
             heading="Visa & Ticket"
-            description="visa on arival sharp and sharpine djkdafsk  d;adsfk d ;dsjd and the main reason nothing is appearing is that"
+            description=" OG World facilitates Visa and Ticketing services, the aim is to reduce the burden and sometimes cumbersome procedures that they need to go through"
           >
             <a href="http://www.freepik.com">
               Designed by macrovector / Freepik
             </a>
           </Service>
           <Service
-            img={study_abroad}
-            heading="Study Abroad / Exchange Program"
-            description="come do your exchange programs with us"
+            img={exchange_program}
+            heading="Exchange Program"
+            description="OG World connects institutions willing to give opportunity to young Ghanaians to develop their talent and return to their communities to help make a difference. OG world depends on its partners to achieve the objectives of this program."
           >
             <a href="http://www.freepik.com">Designed by Freepik</a>
           </Service>
           <Service
-            img={accommodation}
+            img={logistics}
             heading="Logisitics & Accomodation"
-            description="visa on arival sharp and sharpine djkdafsk  d;adsfk d ;dsjd and the main reason nothing is appearing is that"
+            description="OG WORLD provides In – Country Logistics primarily for its guests, partners and like minded organizations which may require the service, these include, internal travel arrangements, setting up of meetings, visits to places of interest in Ghana as well as community needs assessment for Project development."
           >
-            <a href="http://www.freepik.com">
-              Designed by macrovector / Freepik
-            </a>
+            <a href="http://www.freepik.com">Designed by Freepik</a>
           </Service>
           <Service
             img={more}
@@ -66,6 +66,13 @@ function IndexContent() {
             heading="Community Empowerment Projects"
             description="the community"
           />
+        </div>
+      </section>
+
+      <section id="feedback" className="services">
+        <h2>What People Have to Say</h2>
+        <div className="feedback_container">
+          <Feedback words="Thank you so much [OG World]. I absolutely cannot express my gratitude enough." client="MIT Student" />
         </div>
       </section>
     </main>

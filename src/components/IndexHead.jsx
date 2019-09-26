@@ -24,7 +24,7 @@ function IndexHead() {
             </a>
           </div>
           <picture>
-            <source srcSet={large_bg} media="(min-width: 740px)" />
+            <source srcSet={large_bg} media="(min-width: 640px)" />
             <img
               className="head_background"
               src={main_bg}

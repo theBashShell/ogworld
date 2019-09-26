@@ -2,3 +2,7 @@
  
 @import url('./mobile.css'); 
 @import url('./desktop.css');
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
