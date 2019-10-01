@@ -2,13 +2,23 @@ import React from 'react';
 import arrow_down from '../static/images/arrow_down.svg';
 import a_link from '../static/images/link.svg';
 import arrow_up from '../static/images/arrow_up.svg';
+import Map from '../components/Map';
 
 function IndexFooter() {
   return (
     <footer className="page_footer">
-      <div className="map footer_item"></div>
+      <div className="map footer_item">
+        <Map />
+      </div>
+      <address className="contact_info">
+        <div className="post_box">P. O. BOX MP 2344, Mamprobi — Accra</div>
+        <div class="phone">
+          <a href="tel:+233 (0) 302 261486">+233(0)302 261486</a><br />
+          <a href="tel:+233 (0) 548 585888">+233(0)548 585888</a>
+        </div>
+      </address>
       <div className="copyright footer_item">
-        <span>&copy; 2019 OG World Foundation.</span>
+        <span>&copy; {new Date().getFullYear()} OG World Foundation.</span>
       </div>
       <div className="dev_info footer_item">
         <span>

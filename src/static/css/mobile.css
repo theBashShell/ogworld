@@ -42,19 +42,13 @@ body,
 
 .head_all {
   height: 100%;
-}
-
-.link {
-  text-decoration: none;
-  color: #ffffff;
-}
+} 
 
 .navbar {
   position: fixed;
   width: 100%;
-  height: 8%;
-  background: #02131d;
-  /* #02131d */
+  height: 52px;
+  background: #02131d; 
   z-index: 20;
 }
 
@@ -84,9 +78,10 @@ body,
   text-decoration: none;
   color: #69ffad;
   font-family: 'josefinsans regular';
-}
+} 
 
 .link {
+  text-decoration: none;
   color: #ffffff;
 }
 
@@ -101,10 +96,30 @@ body,
   font-size: 1.3rem;
 }
 
+.page_link {
+  color: wheat;
+  display: none;
+  visibility: hidden; 
+}
+
+.page_link a:hover {
+  color: #69ffad;
+}
+
+
+.page_link a::before {
+  content: '    ';
+  padding: 0 4px;
+}
+
+.page_link a::after {
+  content: '    ';
+}
+
 .menu_overlay {
   background: #02131d;
   transition: all 0.8s ease;
-  padding-bottom: 8vh;
+  padding-bottom: 52px;
   z-index: 16;
 }
 
@@ -144,7 +159,7 @@ body,
 
 .head_bg_container {
   position: relative;
-  top: 8%;
+  top: 51px;
   height: 92%;
   clip-path: polygon(0 0, 100% 0, 100% 96%, 0% 100%);
 }
@@ -192,8 +207,8 @@ body,
 }
 
 .page_content {
-  font-family: 'majari regular';
-  margin: 4%;
+  /* font-family: 'majari regular'; */
+  padding: 4%;
 }
 
 .tagline,
@@ -284,14 +299,6 @@ body,
   padding: 6% 3%;
 }
 
-.line {
-  width: 100%;
-  margin: 30px auto;
-  border-radius: 4px;
-  padding: 0.8px;
-  background-color: #14334da8;
-}
-
 .footer_item {
   display: flex;
   justify-content: center;
@@ -337,4 +344,23 @@ body,
 
 .arrow_up:hover {
   transform: scale(1.5);
+}
+
+.map {
+  margin: 30px 8px;
+  padding: 2px;
+  border: 1px solid #c5c5c5;
+  border-radius: 3px;
+}
+
+.map_frame {
+  height: 199px;
+}
+
+address {
+  font-style: normal;
+}
+
+.contact_info {
+  column-count: 2;
 }

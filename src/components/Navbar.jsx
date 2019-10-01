@@ -55,12 +55,12 @@ function Navbar({logo, alt}) {
   return (
     <nav className="navbar">
       <div className="navbar_content">
-        <div className="nav_item">
+        <div className="nav_item og_item">
           <a className="nav_link link" href="#" ref={ogRef}>
             OG World
           </a>
         </div>
-        <div className="nav_item">
+        <div className="logo_item nav_item">
           <img
             className="og_logo"
             src={logo}
@@ -76,6 +76,26 @@ function Navbar({logo, alt}) {
             alt="menu"
             ref={hamburgerRef}
           />
+        </div>
+        <div className="page_link nav_item">
+        <a
+        className="link nav_item"
+        href="#services"
+      >
+        services
+      </a>
+      <a
+        className="link nav_item"
+        href="#projects"
+      >
+        projects
+      </a>
+      <a
+        className="link nav_item"
+        href="#feedback"
+      >
+        comments
+      </a>
         </div>
       </div>
       <div
@@ -107,7 +127,7 @@ function Navbar({logo, alt}) {
             href="#feedback"
             style={{display: `${showOverlay ? 'block' : 'none'}`}}
           >
-            compliments
+            comments
           </a>
         </div>
       </div>

@@ -2,15 +2,12 @@ import React from 'react';
 
 function Map() {
   return (
-    <div className="mapouter">
-      <div className="gmap_canvas">
-        <iframe
-          id="gmap_canvas"
-          src="https://maps.google.com/maps?q=og%20world&t=&z=19&ie=UTF8&iwloc=&output=embed"
-        ></iframe>
-        <a href="https://www.embedgooglemap.org">embedgooglemap.org</a>
-      </div>
-    </div>
+    <iframe
+      className="map_frame full_dimension"
+      frameBorder="0"
+      src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJZxVZklub3w8RNORA1tiswUA&key=AIzaSyA-DmVnumR6-EPbKWpZE2odtLyZK-7DB_E"
+      allowFullScreen
+    ></iframe>
   );
 }
 

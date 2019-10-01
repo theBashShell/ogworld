@@ -12,6 +12,7 @@
     "react-helmet": "^5.2.1"
   },
   "scripts": {
-    "dev": "gatsby develop"
+    "dev": "gatsby develop",
+    "dev:n": "gatsby develop -H 0.0.0.0 -p 5000"
   }
 }
