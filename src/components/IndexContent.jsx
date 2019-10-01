@@ -6,7 +6,6 @@ import exchange_program from '../static/images/exchange_program.svg';
 import visa from '../static/images/passport.svg';
 import more from '../static/images/more.svg';
 
-
 function IndexContent() {
   return (
     <main id="main_content" className="page_content">
@@ -47,7 +46,7 @@ function IndexContent() {
           <Service
             img={more}
             heading="More..."
-            description="visa on arival sharp and sharpine djkdafsk  d;adsfk d ;dsjd and the main reason nothing is appearing is that"
+            description="OG World will help you in visitig Ghana and "
           >
             <a href="http://www.freepik.com">
               Designed by macrovector / Freepik
@@ -72,7 +71,14 @@ function IndexContent() {
       <section id="feedback" className="services">
         <h2>What People Have to Say</h2>
         <div className="feedback_container">
-          <Feedback words="Thank you so much [OG World]. I absolutely cannot express my gratitude enough." client="MIT Student" />
+          <Feedback
+            words="Thank you so much [OG World]. I absolutely cannot express my gratitude enough."
+            client="MIT Student"
+          />
+          <Feedback
+            words="Thanks for a terrific trip. Amazing company and incredible connections. It's been such a pleasure to work with [OG World]. Hope to see you again"
+            client="U of W Faculty"
+          />
         </div>
       </section>
     </main>

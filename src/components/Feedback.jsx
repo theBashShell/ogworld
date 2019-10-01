@@ -9,7 +9,7 @@ function Feedback({words, client}) {
       <div className='quote'><img src={left_quote} alt='left quote' /></div>
       <div>{words}</div>
       <div className='quote'><img src={right_quote} alt='right quote' /></div>
-      <div className="commentor"> <img src={commentor} alt='commentor' /> {client}</div>
+      <div className="commentor"> <img src={commentor} alt='commentor' /> {client}</div>  
     </div>
   );
 }

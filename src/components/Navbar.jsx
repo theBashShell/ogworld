@@ -107,7 +107,7 @@ function Navbar({logo, alt}) {
             href="#feedback"
             style={{display: `${showOverlay ? 'block' : 'none'}`}}
           >
-            comments
+            compliments
           </a>
         </div>
       </div>
