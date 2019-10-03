@@ -1,6 +1,6 @@
 import React from 'react';
 import {Helmet} from 'react-helmet';
-import favicon from '../static/images/favicon16.png';
+import favicon from '../static/images/favicon.png';
 
 const HeadMeta = ({title, children}) => (
   <Helmet>

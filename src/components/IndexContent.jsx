@@ -1,6 +1,7 @@
 import React from 'react';
 import Service from '../components/Service';
 import Feedback from '../components/Feedback';
+import ContactForm from '../components/ContactForm';
 import logistics from '../static/images/logistics.svg';
 import exchange_program from '../static/images/exchange_program.svg';
 import visa from '../static/images/passport.svg';
@@ -23,7 +24,7 @@ function IndexContent() {
           <Service
             img={visa}
             heading="Visa & Ticket"
-            description=" OG World facilitates Visa and Ticketing services, the aim is to reduce the burden and sometimes cumbersome procedures that they need to go through"
+            description=" OG World facilitates visas and tickets for people visiting Ghana. Experience and explore Ghana while OG World does the heavy lifting."
           >
             <a href="http://www.freepik.com">
               Designed by macrovector / Freepik
@@ -39,7 +40,7 @@ function IndexContent() {
           <Service
             img={logistics}
             heading="Logisitics & Accomodation"
-            description="OG WORLD provides In – Country Logistics primarily for its guests, partners and like minded organizations which may require the service, these include, internal travel arrangements, setting up of meetings, visits to places of interest in Ghana as well as community needs assessment for Project development."
+            description="OG WORLD provides in-country logistics primarily for its guests, partners and partner organizations including, internal travel arrangements, setting up of meetings, visits to places of interest in Ghana as well as community needs assessment for Project development."
           >
             <a href="http://www.freepik.com">Designed by Freepik</a>
           </Service>
@@ -81,6 +82,10 @@ function IndexContent() {
           />
         </div>
       </section>
+      {/*<section id="reach_out" className="reach_out">
+        <h2>Reach Out</h2>
+        <ContactForm />
+  </section>*/}
     </main>
   );
 }

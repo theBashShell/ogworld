@@ -33,6 +33,7 @@ body,
   margin: 0;
   padding: 0;
   height: 100vh;
+  min-width: 310px;
 }
 
 .heading {
@@ -42,13 +43,13 @@ body,
 
 .head_all {
   height: 100%;
-} 
+}
 
 .navbar {
   position: fixed;
   width: 100%;
   height: 52px;
-  background: #02131d; 
+  background: #02131d;
   z-index: 20;
 }
 
@@ -78,11 +79,10 @@ body,
   text-decoration: none;
   color: #69ffad;
   font-family: 'josefinsans regular';
-} 
+}
 
 .link {
   text-decoration: none;
-  color: #ffffff;
 }
 
 .nav_item {
@@ -99,13 +99,12 @@ body,
 .page_link {
   color: wheat;
   display: none;
-  visibility: hidden; 
+  visibility: hidden;
 }
 
 .page_link a:hover {
   color: #69ffad;
 }
-
 
 .page_link a::before {
   content: '    ';
@@ -223,28 +222,32 @@ body,
 }
 
 .service_image_container {
-  height: 20vh;
-  /* padding: 1%; */
+  padding-top: 15px;
+  width: 100%;
+  height: calc(450px / 2);
+  background: #5a859f;
 }
 
 .service_image {
   object-fit: cover;
   object-position: center center;
-  height: 100%;
-  margin: 10px 0;
+}
+
+.service_heading {
+  margin-top: 10px;
 }
 
 .service_description {
-  padding: 4%;
+  padding: 4px;
 }
 
 .service {
-  background: #f5f5f5b0;
-  padding: 3%;
-  margin-bottom: 40px;
-  min-height: 400px;
+  background: #dee1e4;
+  height: 450px;
   transition: all 0.5s ease-out 0.2s;
-  width: 93%;
+  width: 95%;
+  margin-bottom: 38px;
+  border-radius: 4px;
 }
 
 .service:hover {
@@ -292,11 +295,13 @@ body,
 .page_footer {
   display: flex;
   flex-direction: column;
-  color: #5f5f5f;
+  color: #1b2638;
   font-size: 16px;
-  background: #f2f2f2;
+  background: #ececec;
   font-family: 'josefinsans regular';
   padding: 6% 3%;
+  width: 100%;
+  min-width: 310px;
 }
 
 .footer_item {
@@ -346,21 +351,40 @@ body,
   transform: scale(1.5);
 }
 
+.theBashShell {
+  color: #6f2020;
+}
+
 .map {
-  margin: 30px 8px;
-  padding: 2px;
+  padding: 1px;
   border: 1px solid #c5c5c5;
   border-radius: 3px;
+  margin: 10px;
 }
 
 .map_frame {
   height: 199px;
-}
-
-address {
-  font-style: normal;
+  width: 100%;
+  padding: 1px;
 }
 
 .contact_info {
-  column-count: 2;
+  font-style: normal;
+  width: 100%;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  padding: 10px 0;
+}
+
+.contact_info a {
+  color: #7d1184;
+}
+
+.copyright {
+  padding-top: 30px;
+}
+
+.input_group {
+  display: block;
 }

@@ -13,8 +13,17 @@ function IndexFooter() {
       <address className="contact_info">
         <div className="post_box">P. O. BOX MP 2344, Mamprobi — Accra</div>
         <div class="phone">
-          <a href="tel:+233 (0) 302 261486">+233(0)302 261486</a><br />
-          <a href="tel:+233 (0) 548 585888">+233(0)548 585888</a>
+          <a className="link" href="tel:+233302261486">
+            +233 (0) 302 261486
+          </a>
+          <br />
+          <a className="link" href="tel:+233548585888">
+            +233 (0) 548 585888
+          </a>
+          <br />
+          <a className="link" href="mailto:info@ogworldgh.com">
+            info@ogworldgh.com
+          </a>
         </div>
       </address>
       <div className="copyright footer_item">
@@ -23,7 +32,11 @@ function IndexFooter() {
       <div className="dev_info footer_item">
         <span>
           Designed with a pint of 💕 by
-          <a href="https://github.com/theBashShell" target="_blank">
+          <a
+            className="link theBashShell"
+            href="https://github.com/theBashShell"
+            target="_blank"
+          >
             theBashShell
             <img className="link_image" src={a_link} alt="visit link" />
           </a>
