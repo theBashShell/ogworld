@@ -218,7 +218,7 @@ body,
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 70px;
+  padding-top: 20px;
 }
 
 .service_image_container {
@@ -228,13 +228,16 @@ body,
   background: #5a859f;
 }
 
+.services_container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .service_image {
   object-fit: cover;
   object-position: center center;
-}
-
-.service_heading {
-  margin-top: 10px;
 }
 
 .service_description {
@@ -256,9 +259,46 @@ body,
   transition: all 0.5s ease 0.2s;
 }
 
+section h2 {
+  text-align: center;
+}
+
+.services, #projects, #services {
+  padding-top: 53px;
+}
+
+.feedback_head {
+  padding-right: 20px;
+}
+
+.reach_container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.reach_us {
+  border: 2px solid #000000;
+  border-radius: 4px;
+  width: 100%;
+  min-width: 300px;
+  align-self: center;
+  max-width: 930px;
+  padding: 20px;
+}
+
+.reach_heading {
+  margin-top: 53px;
+}
+
+.reach_form {
+}
+
 .feedback_container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-bottom: 40px;
 }
 
@@ -268,6 +308,7 @@ body,
   text-align: center;
   border-radius: 4px;
   min-width: 308px;
+  max-width: 760px;
   transition: all 0.1s ease;
   margin-bottom: 15px;
 }
@@ -385,6 +426,47 @@ body,
   padding-top: 30px;
 }
 
+.input_item {
+  width: 100%;
+  padding: 8px;
+  max-width: 100%;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  font-size: 120%;
+}
+
+.input_btn {
+  margin: 14px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  background: transparent;
+}
+
+textarea.input_item {
+  height: 150px;
+  min-width: 100%;
+}
+
 .input_group {
   display: block;
+  padding: 14px;
+}
+
+.input_tag {
+  display: block;
+  padding-bottom: 10px;
+}
+
+.contact_form,
+.input_item {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.contact_image {
+  position: relative;
+  top: -43px;
+  right: 32%;
+  transform: scale(1.4);
 }

@@ -96,6 +96,12 @@ function Navbar({logo, alt}) {
       >
         comments
       </a>
+      <a
+        className="link nav_item"
+        href="#reach_us"
+      >
+        reach us
+      </a>
         </div>
       </div>
       <div
@@ -128,6 +134,13 @@ function Navbar({logo, alt}) {
             style={{display: `${showOverlay ? 'block' : 'none'}`}}
           >
             comments
+          </a>
+          <a
+            className="nav_link"
+            href="#reach_us"
+            style={{display: `${showOverlay ? 'block' : 'none'}`}}
+          >
+            reach us
           </a>
         </div>
       </div>

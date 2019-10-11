@@ -14,7 +14,8 @@
     display: flex;
     visibility: unset;
     justify-content: space-around;
-    margin-left: 40%;
+    margin-left: 25%;
+    padding-left: 5%;
   }
 
   .head_bg_container {
@@ -40,15 +41,21 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    max-width: 1280px;
   }
 
-  .service {   
+  .service {
     height: 490px;
     width: 30%;
     margin-bottom: 42px;
+    min-width: 450px;
+    padding: 4px;
   }
 
-
+  .service:hover {
+    background: #8f8f8f4a;
+    transform: unset;
+  }
 
   .menu_overlay {
     display: none;
@@ -91,13 +98,12 @@
     opacity: 0.2;
   }
 
-  .map { 
+  .map {
     margin: 24px;
     width: 75%;
     justify-self: center;
     align-self: center;
   }
-
 
   .map_frame {
     height: 320px;
@@ -106,5 +112,10 @@
 
   .contact_info {
     width: 60%;
+  }
+
+  .reach_us {
+    width: 90%;
+    padding: 40px;
   }
 }
