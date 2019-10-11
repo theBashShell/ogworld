@@ -31,7 +31,7 @@ function IndexFooter() {
       </div>
       <div className="dev_info footer_item">
         <span>
-          Designed with a pint of 💕 by
+          Designed with a pint of 💕 by &nbsp;
           <a
             className="link theBashShell"
             href="https://github.com/theBashShell"

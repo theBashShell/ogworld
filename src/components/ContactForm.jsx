@@ -6,6 +6,7 @@ function ContactForm() {
       <label className="input_group">
         <span className="input_tag">Email</span>
         <input
+          required
           className="input_item"
           id="user_email"
           type="email"
@@ -14,11 +15,20 @@ function ContactForm() {
       </label>
       <label className="input_group">
         <span className="input_tag">Name</span>
-        <input className="input_item" type="text" placeholder="John Doe" />
+        <input
+          required
+          className="input_item"
+          type="text"
+          placeholder="John Doe"
+        />
       </label>
       <label className="input_group">
         <span className="input_tag">Message</span>
-        <textarea className="input_item" placeholder="What's on your mind?" />
+        <textarea
+          required
+          className="input_item"
+          placeholder="What's on your mind?"
+        />
       </label>
       <input className="input_group input_btn" type="button" value="Send" />
     </form>
