@@ -1,7 +1,7 @@
 import React, {useState, createContext} from 'react';
 import axios from 'axios';
 
-const url = 'http://localhost:5000'; // https://ogworldbackend.herokuapp.com/;
+const url = 'https://ogworldbackend.herokuapp.com/';
 export const NotificationContext = createContext(null);
 
 function ContactForm() {
