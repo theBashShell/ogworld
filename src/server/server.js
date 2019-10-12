@@ -3,18 +3,16 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const PORT = process.env.PORT || 9090;
-const url = 'https://ogworldbackend.herokuapp.com/';
 
-app.use(cors({
-    origin: url
-}));
+app.use(cors());
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/', (req, res) => res.send('working'));
 
 app.post('/', (req, res) => {
   console.log(req.hostname);
+  //    res.send(req)
   console.log(req.body);
 });
 

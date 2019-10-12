@@ -1,15 +1,23 @@
 import React, {useState, createContext} from 'react';
 import axios from 'axios';
 
-let email, name, message;
-const url = 'https://ogworldbackend.herokuapp.com/' // 'http://localhost:9090' // https://ogworldbackend.herokuapp.com/;
+const url = 'http://localhost:5000'; // https://ogworldbackend.herokuapp.com/;
 export const NotificationContext = createContext(null);
 
 function ContactForm() {
-  const handleSend = e =>
-    axios.post(url, {
-      name, email, message
-    });
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSend = e => {
+    axios
+      .post(url, {
+        name,
+        email,
+        message,
+      })
+      .then(a => console.log(a));
+  };
 
   return (
     <form className="contact_form" method="POST" action="">
@@ -21,7 +29,7 @@ function ContactForm() {
           id="user_email"
           type="email"
           placeholder="example@exmaple.com"
-          onChange={e => (email = e.target.value)}
+          onChange={e => setEmail(e.target.value)}
         />
       </label>
       <label className="input_group">
@@ -31,7 +39,7 @@ function ContactForm() {
           className="input_item"
           type="text"
           placeholder="John Doe"
-          onChange={e => (name = e.target.value)}
+          onChange={e => setName(e.target.value)}
         />
       </label>
       <label className="input_group">
@@ -40,7 +48,7 @@ function ContactForm() {
           required
           className="input_item"
           placeholder="What's on your mind?"
-          onChange={e => (message = e.target.value)}
+          onChange={e => setMessage(e.target.value)}
         />
       </label>
       <input
