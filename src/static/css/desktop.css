@@ -118,4 +118,12 @@
     width: 90%;
     padding: 40px;
   }
+
+  /* .notification {
+    position: fixed;
+    bottom: 0;
+    background: #e40431;
+    z-index: 5;
+    width: 40%; 
+  } */
 }

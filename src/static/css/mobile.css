@@ -286,6 +286,7 @@ section h2 {
   align-self: center;
   max-width: 930px;
   padding: 20px;
+  margin-bottom: 50px;
 }
 
 .reach_heading {
@@ -469,4 +470,17 @@ textarea.input_item {
   top: -43px;
   right: 32%;
   transform: scale(1.4);
+}
+
+.notification {
+  position: fixed;
+  bottom: 0;
+  background: #e40431;
+  z-index: 5;
+  width: 100%;
+  height: 0px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }

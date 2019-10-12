@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import arrow_down from '../static/images/arrow_down.svg';
 import a_link from '../static/images/link.svg';
 import arrow_up from '../static/images/arrow_up.svg';
 import Map from '../components/Map';
+import {NotificationContext} from './ContactForm';
 
 function IndexFooter() {
   return (
+    <>
     <footer className="page_footer">
       <div className="map footer_item">
         <Map />
@@ -52,6 +54,10 @@ function IndexFooter() {
         </a>
       </div>
     </footer>
+    <div className="notification"> 
+    dafdfsa
+    </div>
+    </>
   );
 }
 
