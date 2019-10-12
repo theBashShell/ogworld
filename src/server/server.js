@@ -6,11 +6,12 @@ const PORT = process.env.PORT || 9090;
 
 app.use(cors());
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
 
 app.get('/', (req, res) => res.send('working'));
 
 app.post('/', (req, res) => {
-    console.log(req.hostname);
+  console.log(req.hostname);
   console.log(req.body);
 });
 
