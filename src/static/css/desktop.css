@@ -50,6 +50,7 @@
     margin-bottom: 42px;
     min-width: 450px;
     padding: 4px;
+    background: unset;
   }
 
   .service:hover {
@@ -119,11 +120,7 @@
     padding: 40px;
   }
 
-  /* .notification {
-    position: fixed;
-    bottom: 0;
-    background: #e40431;
-    z-index: 5;
-    width: 40%; 
-  } */
+  .notification { 
+    max-height: 140px;
+  }
 }

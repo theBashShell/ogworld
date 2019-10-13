@@ -24,20 +24,21 @@ const sendMail = async (name, email, message) => {
     html: `<p>${message}</p>`,
   });
 
-  console.log('Message sent: %s', info.messageId);
-  return info.messageId;
+  const result = await info.messageId;
+  console.log('Message sent: %s', result);
+  return result;
 };
 
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.get('/', (req, res) => res.send('working'));
+app.get('/', (req, res) => res.redirect('https://ogworldgh.com'));
 
 app.post('/', (req, res) => {
-  console.log(req.hostname);
-  const result = sendMail(req.body.name, req.body.email, req.body.message);
-  res.send(result);
+  const result = sendMail(req.body.name, req.body.email, req.body.message)
+    .then(result => res.send({message: 'Successful'}))
+    .catch(error => res.send({message: 'Server Error'}));
 });
 
-app.listen(PORT, a => console.log('app running on http://localhost:', PORT));
+app.listen(PORT, a => console.log(`app running on http://localhost:${PORT}`));

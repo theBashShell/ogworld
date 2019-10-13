@@ -1,5 +1,7 @@
 import React from 'react';
 import {graphql} from 'gatsby';
+import {Provider} from 'react-redux';
+import {store} from '../util/globalState';
 import HeadMeta from '../components/HeadMeta';
 import IndexHead from '../components/IndexHead';
 import IndexContent from '../components/IndexContent';
@@ -9,9 +11,11 @@ const HomePage = ({data}) => (
   <>
     <HeadMeta title={data.site.siteMetadata.title} />
     <div id="ogworld_app">
-      <IndexHead />
-      <IndexContent />
-      <IndexFooter />
+      <Provider store={store}>
+        <IndexHead />
+        <IndexContent />
+        <IndexFooter />
+      </Provider>
     </div>
   </>
 );
@@ -25,4 +29,4 @@ export const query = graphql`
     }
   }
 `;
-export default HomePage; 
+export default HomePage;
