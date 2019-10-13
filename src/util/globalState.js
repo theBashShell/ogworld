@@ -3,23 +3,19 @@ import redux, {createStore} from 'redux';
 const SHOW_NOTIFICATION = 'SHOW_NOTIFICATION';
 
 const initialState = {
-  notification: '<></>',
-  colour: '',
+  notification: '', 
 };
 
-const showNotification = (notificationToShow, colour) => ({
+const showNotification = (notificationToShow) => ({
   type: SHOW_NOTIFICATION,
-  notificationToShow,
-  colour,
+  notificationToShow, 
 });
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case SHOW_NOTIFICATION:
-      return {
-        ...state,
-        notification: action.notificationToShow,
-        colour: action.colour,
+      return {  
+        notification: action.notificationToShow 
       };
     default:
       return state;

@@ -4,6 +4,8 @@ import {store, showNotification} from '../util/globalState';
 
 const url = 'https://ogworldbackend.herokuapp.com/'; // 'http://localhost:9090';
 
+let msg;
+
 function ContactForm() {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
@@ -23,12 +25,14 @@ function ContactForm() {
       })
       .then(res => {
         console.log(res.data.message);
-        const msg = <h1>{res.data.message}</h1>;
-        store.dispatch(showNotification(msg, '#e40431'));
+        msg = <div>{res.data.message}</div>;
+        store.dispatch(showNotification(msg));
         return res.data.message;
       })
       .catch(e => {
         console.log(e.message);
+        msg = <div>{e.message}</div>;
+        store.dispatch(showNotification(msg));
         return e.message;
       });
   }
@@ -76,10 +80,5 @@ function ContactForm() {
     </>
   );
 }
-
-// export default connect(
-//   mapStateToProps,
-//   mapDispatchToProps
-// )(ContactForm);
 
 export default ContactForm;

@@ -7,17 +7,20 @@ import logistics from '../static/images/logistics.svg';
 import exchange_program from '../static/images/exchange_program.svg';
 import visa from '../static/images/passport.svg';
 import more from '../static/images/more.svg';
+import hmm from '../static/images/independence.jpg';
 
 function IndexContent() {
   return (
     <main id="main_content" className="page_content">
-      <div className="tagline">
-        <h2>
-          <sup>
-            <s className="incorrect">Tour </s>
-          </sup>
-          Experience <br /> & <br /> Explore Ghana
-        </h2>
+      <div className="tagline" style={{backgroundImage: `url(${hmm})`}}>
+        <div className="tagline_filter">
+          <h2>
+            <sup>
+              <s className="incorrect">Tour </s>
+            </sup>
+            Experience <br /> & <br /> Explore Ghana
+          </h2>
+        </div>
       </div>
       <section id="services">
         <h2 className="service_heading">Services</h2>
@@ -73,7 +76,7 @@ function IndexContent() {
           </div>
         </div>
       </section>
-      <div className="services_container">
+      <div id="saying" className="services_container">
         <section id="feedback" className="services">
           <h2 className="feedback_head">What People Have to Say</h2>
           <div className="feedback_container">

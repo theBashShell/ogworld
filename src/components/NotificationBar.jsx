@@ -5,30 +5,34 @@ import {store} from '../util/globalState';
 import close from '../static/images/close_notification.svg';
 
 const mapStateToProps = state => ({
-  notification: state.notification,
-  colour: state.colour,
+  notification: state.notification, 
 });
 
-function NotificationBar({colour, notification}) {
+function NotificationBar({notification, color}) {
   const [notificationState, setNotificationState] = useState('hidden');
   const [styles, setStyles] = useState({});
 
   const showNotificationBar = e => {
     setStyles({
+      ...styles,
       height: '100%',
-      display: 'block',
+      display: 'flex',
       visibility: 'visible',
-      background: colour,
+      opacity: 1,
+      background: color,
     });
     setNotificationState('showing');
   };
   const hideNotificationBar = e => {
-    setStyles({height: '0%'});
+    setStyles({...styles, height: '0%', opacity: 0});
     setNotificationState('hidden');
   };
 
   useEffect(() => {
-    store.subscribe(() => showNotificationBar());
+    store.subscribe(a => {
+      console.log(a);
+      showNotificationBar();
+    });
   });
 
   const handleClose = e => hideNotificationBar();
