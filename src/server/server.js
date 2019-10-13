@@ -3,10 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
 
-const PORT = process.env.PORT || 9090;
-const HOSTNAME = 'ogworldbackend.herokuapp.com';
-const RECEIVER_EMAIL = 'test@ogworldgh.com';
-const HOST = 'uk7.fcomet.com'
+const PORT = process.env.PORT || 9090; 
 
 
 
@@ -14,7 +11,7 @@ const HOST = 'uk7.fcomet.com'
 
 const sendMail = async (name, email, message) => {
   let transporter = nodemailer.createTransport({
-    host: HOST,
+    host: process.env.OG_HOST,
     port: 465,
     secure: true,
     auth: {
@@ -25,7 +22,7 @@ const sendMail = async (name, email, message) => {
 
   let info = await transporter.sendMail({
     from: `${name} <${email}>`,
-    to: RECEIVER_EMAIL,
+    to: process.env.OG_RECEIVER,
     subject: `Message from ${name} ✔`,
     text: `${message}`,
     html: `<p>${message}</p>`,
@@ -42,7 +39,7 @@ app.get('/', (req, res) => res.send('working'));
 
 app.post('/', (req, res) => {
   console.log(req.hostname);
-  console.log(req.body);
+//   console.log(req.body);
   sendMail(req.body.name, req.body.email, req.body.message);
 });
 
