@@ -3,11 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
 
-const PORT = process.env.PORT || 9090; 
-
-
-
-
+const PORT = process.env.PORT || 9090;
 
 const sendMail = async (name, email, message) => {
   let transporter = nodemailer.createTransport({
@@ -29,6 +25,7 @@ const sendMail = async (name, email, message) => {
   });
 
   console.log('Message sent: %s', info.messageId);
+  return info.messageId;
 };
 
 app.use(cors());
@@ -39,8 +36,8 @@ app.get('/', (req, res) => res.send('working'));
 
 app.post('/', (req, res) => {
   console.log(req.hostname);
-//   console.log(req.body);
-  sendMail(req.body.name, req.body.email, req.body.message);
+  const result = sendMail(req.body.name, req.body.email, req.body.message);
+  res.send(result);
 });
 
 app.listen(PORT, a => console.log('app running on http://localhost:', PORT));
