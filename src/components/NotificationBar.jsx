@@ -1,59 +1,59 @@
 import React, {useState, useEffect} from 'react';
-import {connect} from 'react-redux';
 import {store} from '../util/globalState';
-
+// import {connect} from 'react-redux';
 import close from '../static/images/close_notification.svg';
 
-const mapStateToProps = state => ({
-  notification: state.notification, 
-});
+// const mapStateToProps = state => ({
+//   toRender: state.toRender,
+//   background: state.background,
+//   show: state.show,
+// });
 
-function NotificationBar({notification, color}) {
-  const [notificationState, setNotificationState] = useState('hidden');
-  const [styles, setStyles] = useState({});
+function NotificationBar() {
+  let activeStyle = {
+    height: '100%',
+    display: 'flex',
+    visibility: 'visible',
+    opacity: 1,
+  };
 
-  const showNotificationBar = e => {
-    setStyles({
-      ...styles,
-      height: '100%',
-      display: 'flex',
-      visibility: 'visible',
-      opacity: 1,
-      background: color,
-    });
-    setNotificationState('showing');
-  };
-  const hideNotificationBar = e => {
-    setStyles({...styles, height: '0%', opacity: 0});
-    setNotificationState('hidden');
-  };
+  let hiddenStyles = {height: '0%', opacity: '0'};
+
+  const [styles, setStyles] = useState(hiddenStyles);
+  const [show, setShow] = useState(false);
+  const [background, setBackground] = useState('none');
+  const [toRender, setToRender] = useState(null);
+
+  const handleClose = e => setShow(false);
 
   useEffect(() => {
-    store.subscribe(a => {
-      console.log(a);
-      showNotificationBar();
+    store.subscribe(() => {
+      setShow(store.getState().show);
+      setBackground(store.getState().background);
+      setToRender(store.getState().toRender);
+      // setStyles({})
     });
   });
 
-  const handleClose = e => hideNotificationBar();
-
   return (
-    <div className="notification" style={styles}>
-      <div className="notification_close_container">
-        <img
-          className="notification_close"
-          src={close}
-          alt="close notification"
-          onClick={handleClose}
-        />
+    <>
+      <div
+        className="notification"
+        style={show ? {...activeStyle, background} : hiddenStyles}
+      >
+        <div className="notification_close_container">
+          <img
+            className="notification_close"
+            src={close}
+            alt="close notification"
+            onClick={handleClose}
+          />
+        </div>
+        <div className="notification_body">{toRender}</div>
       </div>
-      {notificationState === 'hidden' ? (
-        <></>
-      ) : (
-        <section className="notification_body">{notification}</section>
-      )}
-    </div>
+    </>
   );
 }
 
-export default connect(mapStateToProps)(NotificationBar);
+// export default connect(mapStateToProps)(NotificationBar);
+export default NotificationBar;

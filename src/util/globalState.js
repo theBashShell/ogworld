@@ -1,21 +1,26 @@
 import redux, {createStore} from 'redux';
+import {red} from 'ansi-colors';
 
 const SHOW_NOTIFICATION = 'SHOW_NOTIFICATION';
 
 const initialState = {
-  notification: '', 
+  toRender: null,
+  background: 'none',
+  show: false,
 };
 
-const showNotification = (notificationToShow) => ({
-  type: SHOW_NOTIFICATION,
-  notificationToShow, 
-});
+function sendNotification(toRender, background, show) {
+  return {type: SHOW_NOTIFICATION, toRender, background, show};
+}
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case SHOW_NOTIFICATION:
-      return {  
-        notification: action.notificationToShow 
+      return {
+        ...state,
+        toRender: action.toRender,
+        background: action.background,
+        show: action.show,
       };
     default:
       return state;
@@ -24,5 +29,4 @@ const reducer = (state = initialState, action) => {
 
 const store = createStore(reducer);
 
-export default reducer;
-export {store, showNotification};
+export {store, sendNotification};

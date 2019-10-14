@@ -37,7 +37,7 @@ app.get('/', (req, res) => res.redirect('https://ogworldgh.com'));
 
 app.post('/', (req, res) => {
   const result = sendMail(req.body.name, req.body.email, req.body.message)
-    .then(result => res.send({message: 'Successful'}))
+    .then(result => res.send({message: 'Message Sent'}))
     .catch(error => res.send({message: 'Server Error'}));
 });
 

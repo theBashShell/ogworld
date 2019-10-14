@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import axios from 'axios';
-import {store, showNotification} from '../util/globalState';
+import {store, sendNotification} from '../util/globalState';
 
 const url = 'https://ogworldbackend.herokuapp.com/'; // 'http://localhost:9090';
 
@@ -13,7 +13,6 @@ function ContactForm() {
 
   const handleSend = e => {
     const result = makePostRequest(email, name, message);
-    // console.log(result.message);
   };
 
   async function makePostRequest(email, name, message) {
@@ -25,14 +24,12 @@ function ContactForm() {
       })
       .then(res => {
         console.log(res.data.message);
-        msg = <div>{res.data.message}</div>;
-        store.dispatch(showNotification(msg));
+        store.dispatch(sendNotification(res.data.message, '#2bc138', true));
         return res.data.message;
       })
       .catch(e => {
         console.log(e.message);
-        msg = <div>{e.message}</div>;
-        store.dispatch(showNotification(msg));
+        store.dispatch(sendNotification(e.message, '#f44336', true));
         return e.message;
       });
   }

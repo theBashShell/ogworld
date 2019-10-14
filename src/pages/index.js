@@ -1,11 +1,11 @@
 import React from 'react';
 import {graphql} from 'gatsby';
-import {Provider} from 'react-redux';
-import {store} from '../util/globalState';
 import HeadMeta from '../components/HeadMeta';
 import IndexHead from '../components/IndexHead';
 import IndexContent from '../components/IndexContent';
 import IndexFooter from '../components/IndexFooter';
+import {Provider} from 'react-redux';
+import {store} from '../util/globalState';
 
 const HomePage = ({data}) => (
   <>
