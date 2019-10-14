@@ -16,7 +16,7 @@
     justify-content: space-around;
     margin-left: 25%;
     padding-left: 5%;
-  } 
+  }
 
   .og_item {
     display: none;
@@ -54,6 +54,16 @@
   .service:hover {
     background: #8f8f8f4a;
     transform: unset;
+  }
+
+  #projects {
+    background: #231c23;
+    color: #ffffff;
+  }
+
+  #projects > div > div > div {
+    background: transparent;
+    color: inherit;
   }
 
   .menu_overlay {
@@ -132,6 +142,26 @@
   .reach_us {
     width: 90%;
     padding: 40px;
+    border-color: #ffffff;
+  }
+
+  #reach_us {
+    background: #7a5d7d;
+    color: #ffbd00;
+  }
+
+  .input_item {
+    border-color: #ffffff;
+  }
+
+  .input_btn {
+    border-color: #ffffff;
+  }
+
+  input,
+  textarea,
+  ::placeholder {
+    color: #ffffff;
   }
 
   .notification {

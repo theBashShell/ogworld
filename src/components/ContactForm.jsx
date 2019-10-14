@@ -76,7 +76,7 @@ function ContactForm() {
           type="button"
           value="Send"
         />
-      </form>{' '}
+      </form>
     </>
   );
 }
