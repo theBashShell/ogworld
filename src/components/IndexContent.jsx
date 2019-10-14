@@ -3,11 +3,11 @@ import Service from '../components/Service';
 import Feedback from '../components/Feedback';
 import ContactForm from '../components/ContactForm';
 import ReachUS from '../components/ReachUs';
-import logistics from '../static/images/logistics.svg';
-import exchange_program from '../static/images/exchange_program.svg';
-import visa from '../static/images/passport.svg';
 import more from '../static/images/more.svg';
+import visa from '../static/images/passport.svg';
+import logistics from '../static/images/logistics.svg';
 import hmm from '../static/images/independence.jpg';
+import exchange_program from '../static/images/exchange_program.svg';
 
 function IndexContent() {
   return (
@@ -52,7 +52,7 @@ function IndexContent() {
             <Service
               img={more}
               heading="More..."
-              description="OG World will help you in visitig Ghana and "
+              description="OG World will help you in visitig Ghana. Coming to Ghana? Then speak to us"
             >
               <a href="http://www.freepik.com">
                 Designed by macrovector / Freepik
@@ -71,7 +71,9 @@ function IndexContent() {
             />
             <Service
               heading="Community Empowerment Projects"
-              description="the community"
+              description="OG World has several projects in sports, public health, and human services. The goals of these
+              projects are to engage the youth, harness their talents, and improve their welfare, at the same time, 
+              helping society."
             />
           </div>
         </div>
