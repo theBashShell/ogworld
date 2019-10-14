@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import axios from 'axios';
 import {store, sendNotification} from '../util/globalState';
 
-const url = 'https://ogworldbackend.herokuapp.com/'; // 'http://localhost:9090';
+const url = 'https://ogworldbackend.herokuapp.com/';
 
 let msg;
 
@@ -11,8 +11,25 @@ function ContactForm() {
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
 
+  const validateInput = () => {};
+
   const handleSend = e => {
-    const result = makePostRequest(email, name, message);
+    const result = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (
+      result.test(String(email).toLowerCase()) &&
+      name.length >= 1 &&
+      message.length >= 1
+    ) {
+      makePostRequest(email, name, message);
+    } else {
+      store.dispatch(
+        sendNotification(
+          'Ensure email and the other input are correct',
+          '#f44336',
+          true
+        )
+      );
+    }
   };
 
   async function makePostRequest(email, name, message) {
@@ -36,7 +53,7 @@ function ContactForm() {
 
   return (
     <>
-      <form className="contact_form" method="POST" action="">
+      <form className="contact_form" method="POST">
         <label className="input_group">
           <span className="input_tag">Email</span>
           <input

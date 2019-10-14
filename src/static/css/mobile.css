@@ -553,7 +553,7 @@ textarea.input_item {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  transition: all 1s ease 1s; 
+  transition: height 1s ease 1s, opacity 1s ease; 
 }
 
 .notification_close_container {

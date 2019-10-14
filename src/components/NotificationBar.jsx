@@ -3,12 +3,6 @@ import {store} from '../util/globalState';
 // import {connect} from 'react-redux';
 import close from '../static/images/close_notification.svg';
 
-// const mapStateToProps = state => ({
-//   toRender: state.toRender,
-//   background: state.background,
-//   show: state.show,
-// });
-
 function NotificationBar() {
   let activeStyle = {
     height: '100%',
@@ -30,8 +24,7 @@ function NotificationBar() {
     store.subscribe(() => {
       setShow(store.getState().show);
       setBackground(store.getState().background);
-      setToRender(store.getState().toRender);
-      // setStyles({})
+      setToRender(store.getState().toRender); 
     });
   });
 
