@@ -53,7 +53,5 @@ function NotificationBar() {
       </div>
     </>
   );
-}
-
-// export default connect(mapStateToProps)(NotificationBar);
+} 
 export default NotificationBar;

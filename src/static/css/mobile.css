@@ -573,6 +573,7 @@ textarea.input_item {
 }
 
 .notification_body {
+  color: #ffffff;
   align-items: center;
   width: 100%;
 }
