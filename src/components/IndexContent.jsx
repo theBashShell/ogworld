@@ -67,7 +67,7 @@ function IndexContent() {
           <div className="projects">
             <Service
               heading="Experiential Learning Program (ELP)"
-              description="The ELP program creates a forum for Ghanaians and their foreign counterparts to connect for a mutually beneficial engagement, the same time affecting the local community positively. The programs sees many institutions and various groups visit Ghana to share knowledge and contribute posively to society. Since 2016, the program has seen 150+ students and faculty from various universities in the United States visit Ghana."
+              description="The ELP program creates a forum for Ghanaians and their foreign counterparts to connect for a mutually beneficial engagement, the same time affecting the local community positively. The programs sees many institutions and various groups visit Ghana to share knowledge and contribute positively to society. Since 2016, the program has seen 150+ students and faculty from various universities in the United States visit Ghana."
             />
             <Service
               heading="Community Empowerment Projects"
