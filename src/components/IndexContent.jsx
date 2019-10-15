@@ -52,7 +52,7 @@ function IndexContent() {
             <Service
               img={more}
               heading="More..."
-              description="OG World will help you in visitig Ghana. Coming to Ghana? Then speak to us"
+              description="OG World will help you in visiting Ghana. Coming to Ghana? Then speak to us"
             >
               <a href="http://www.freepik.com">
                 Designed by macrovector / Freepik
@@ -67,7 +67,7 @@ function IndexContent() {
           <div className="projects">
             <Service
               heading="Experiential Learning Program (ELP)"
-              description="The ELP program creates a forum for Ghanaians and their foreign counterparts to connect for a mutually beneficial engagement, the same time affecting positively the local community. The programs sees many institutions and various groups visit Ghana to share knowledge and contribute posively to society. Since 2016, the program has seen 150+ students and faculty from various universities in the United States visit Ghana."
+              description="The ELP program creates a forum for Ghanaians and their foreign counterparts to connect for a mutually beneficial engagement, the same time affecting the local community positively. The programs sees many institutions and various groups visit Ghana to share knowledge and contribute posively to society. Since 2016, the program has seen 150+ students and faculty from various universities in the United States visit Ghana."
             />
             <Service
               heading="Community Empowerment Projects"
