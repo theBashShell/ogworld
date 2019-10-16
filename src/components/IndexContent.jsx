@@ -45,7 +45,10 @@ function IndexContent() {
             <Service
               img={logistics}
               heading="Logisitics & Accomodation"
-              description="OG WORLD provides in-country logistics primarily for its guests, partners and partner organizations including, internal travel arrangements, setting up of meetings, visits to places of interest in Ghana as well as community needs assessment for Project development."
+              description="OG WORLD provides in-country logistics primarily for its guests, 
+              partners and partner organizations including, internal travel arrangements, 
+              setting up of meetings, visits to places of interest in Ghana as well as 
+              community needs assessment for Project development."
             >
               <a href="http://www.freepik.com">Designed by Freepik</a>
             </Service>
@@ -67,7 +70,13 @@ function IndexContent() {
           <div className="projects">
             <Service
               heading="Experiential Learning Program (ELP)"
-              description="The ELP program creates a forum for Ghanaians and their foreign counterparts to connect for a mutually beneficial engagement, the same time affecting the local community positively. The programs sees many institutions and various groups visit Ghana to share knowledge and contribute positively to society. Since 2016, the program has seen 150+ students and faculty from various universities in the United States visit Ghana."
+              description="The ELP program creates a forum for Ghanaians and their 
+              foreign counterparts to connect for a mutually beneficial engagement, 
+              the same time affecting the local community positively. The programs 
+              sees many institutions and various groups visit Ghana to share knowledge
+               and contribute positively to society. Since 2016, the program has seen 
+               150+ students and faculty from various universities in the United States
+                visit Ghana."
             />
             <Service
               heading="Community Empowerment Projects"
