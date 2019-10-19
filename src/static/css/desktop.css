@@ -168,5 +168,29 @@
     max-height: 140px;
   }
 
-  
+  #team {
+    padding-bottom: 60px;
+  }
+
+  .team_container {
+    flex-flow: row wrap;
+    max-width: 1100px;
+    margin: 2px auto;
+  }
+
+  .team_img {
+    width: 270px;
+    height: 270px;
+  }
+
+  /* .team_card {
+    max-height: 600px;
+    height: 570px;
+  } */
+
+  .team_card:hover {
+    background: none;
+    border: unset;
+    border-radius: unset;
+  }
 }

@@ -91,6 +91,12 @@ function Navbar({logo, alt}) {
         projects
       </a>
       <a
+      className="link nav_item"
+      href="#team"
+    >
+      team
+    </a>
+      <a
         className="link nav_item"
         href="#feedback"
       >
@@ -127,6 +133,13 @@ function Navbar({logo, alt}) {
             style={{display: `${showOverlay ? 'block' : 'none'}`}}
           >
             projects
+          </a>
+          <a
+            className="nav_link"
+            href="#team"
+            style={{display: `${showOverlay ? 'block' : 'none'}`}}
+          >
+            team
           </a>
           <a
             className="nav_link"

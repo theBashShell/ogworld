@@ -8,6 +8,8 @@ import visa from '../static/images/passport.svg';
 import logistics from '../static/images/logistics.svg';
 import hmm from '../static/images/independence.jpg';
 import exchange_program from '../static/images/exchange_program.svg';
+import eddy from '../static/images/eddy.jpg';
+import veronica from '../static/images/veronica.jpg';
 
 function IndexContent() {
   return (
@@ -83,6 +85,37 @@ function IndexContent() {
               description="OG World has several projects in sports, public health, and human services. The goals of these
               projects are to engage the youth, harness their talents, and improve their welfare, at the same time, 
               helping society."
+            />
+          </div>
+        </div>
+      </section>
+      <section id="team">
+        <h2>Team</h2>
+        <div className="team_container">
+          <div className="services team">
+            <Service
+              imgClass="team_img"
+              serviceClass="team_card"
+              img={eddy}
+              heading="Director"
+              description="Edward(Eddie) has over the past decade 
+              supported individuals and groups willing to visit
+               Ghana with the aim of making the desired impact on 
+               the lives of others. He is passionate about giving
+               the needed exposure to the youth through interactions
+               with other persons from the diaspora. Edward is always
+                determined to achieve success in all his endevors"
+            />
+            <Service
+              imgClass="team_img"
+              serviceClass="team_card"
+              img={veronica}
+              heading="Resource Manager"
+              description="Veronica has great passion for reaching out to 
+              the less privileged. She has 9 years of experience in
+               resource management. Her high sense of integrity and 
+               commitment with which she takes on tasks are excellent.
+                She loves to swim and read"
             />
           </div>
         </div>
