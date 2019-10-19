@@ -580,7 +580,7 @@ textarea.input_item {
 
 #team {
   padding-top: 53px;
-  background: #ffbd00;
+  background: #ffc92e;
   padding-bottom: 40px;
 }
 
@@ -611,4 +611,9 @@ textarea.input_item {
 
 .team_card:hover {
   background: none;
+}
+
+.nav_link {
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
