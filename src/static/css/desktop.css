@@ -183,10 +183,9 @@
     height: 270px;
   }
 
-  /* .team_card {
-    max-height: 600px;
-    height: 570px;
-  } */
+  .team_card {
+    min-width: 300px;
+  }
 
   .team_card:hover {
     background: none;

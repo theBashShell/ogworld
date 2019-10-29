@@ -10,6 +10,7 @@ import hmm from '../static/images/independence.jpg';
 import exchange_program from '../static/images/exchange_program.svg';
 import eddy from '../static/images/eddy.jpg';
 import veronica from '../static/images/veronica.jpg';
+import bruno from '../static/images/bruno.jpg';
 
 function IndexContent() {
   return (
@@ -116,6 +117,17 @@ function IndexContent() {
                resource management. Her high sense of integrity and 
                commitment with which she takes on tasks are excellent.
                 She loves to swim and read"
+            />
+            <Service
+              imgClass="team_img"
+              serviceClass="team_card"
+              img={bruno}
+              heading="Software & Media"
+              description="Bruno is a software engineer currently working 
+              with OG World. He has a B.Sc. in Computer Science from Ashesi
+               University. He is interested in building productivity tools
+               and enjoys technical writing. In his spare time, he is tinkering
+               with new technology."
             />
           </div>
         </div>
