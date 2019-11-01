@@ -3,6 +3,7 @@ import Service from '../components/Service';
 import Feedback from '../components/Feedback';
 import ContactForm from '../components/ContactForm';
 import ReachUS from '../components/ReachUs';
+import Partner from '../components/Partner';
 import more from '../static/images/more.svg';
 import visa from '../static/images/passport.svg';
 import logistics from '../static/images/logistics.svg';
@@ -11,6 +12,9 @@ import exchange_program from '../static/images/exchange_program.svg';
 import eddy from '../static/images/eddy.jpg';
 import veronica from '../static/images/veronica.jpg';
 import bruno from '../static/images/bruno.jpg';
+import northeastern from '../static/images/neu.png';
+import uw from '../static/images/uow.png';
+import ashesi from '../static/images/ashesi.jpeg';
 
 function IndexContent() {
   return (
@@ -150,6 +154,26 @@ function IndexContent() {
       <div id="reach_us" className="reach_container">
         <ReachUS />
       </div>
+      <section id="partnerships" style={{paddingTop: '58px'}}>
+        <h2>Partnerships</h2>
+        <div className="partners">
+          <Partner
+            img={northeastern}
+            name="north eastern university"
+            program="Dialogue of Civilizations"
+          />
+          <Partner
+            img={uw}
+            name="university of washington"
+            program="Entrepreneurship Ecosystems in Ghana"
+          />
+          <Partner
+            img={ashesi}
+            name="ashesi university"
+            program="Ashesi Venture Incubator"
+          />
+        </div>
+      </section>
     </main>
   );
 }

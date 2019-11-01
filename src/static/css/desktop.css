@@ -192,4 +192,8 @@
     border: unset;
     border-radius: unset;
   }
+
+  .partners { 
+    height: 340px;
+  }
 }

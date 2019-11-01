@@ -622,3 +622,33 @@ textarea.input_item {
 .heart {
   width: 20px;
 }
+
+.partners {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 240px; 
+}
+
+.partner {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.partner_img {
+  object-fit: contain;
+  height: 100%;
+  width: 80%;
+  filter: grayscale(0.4);
+}
+
+.partner_program {
+  color: #7b6d6d;
+  text-align: center;
+}

@@ -106,7 +106,13 @@ function Navbar({logo, alt}) {
         className="link nav_item"
         href="#reach_us"
       >
-        reach us
+        contact
+      </a>
+      <a
+        className="link nav_item"
+        href="#partnerships"
+      >
+        partnerships
       </a>
         </div>
       </div>
@@ -153,7 +159,14 @@ function Navbar({logo, alt}) {
             href="#reach_us"
             style={{display: `${showOverlay ? 'block' : 'none'}`}}
           >
-            reach us
+            contact
+          </a>
+          <a
+            className="nav_link"
+            href="#partnerships"
+            style={{display: `${showOverlay ? 'block' : 'none'}`}}
+          >
+            partnerships
           </a>
         </div>
       </div>

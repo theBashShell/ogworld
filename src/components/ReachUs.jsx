@@ -6,7 +6,7 @@ function ReachUs() {
   return (
     <>
       <div className="reach_heading">
-        <h2>Reach Us</h2>
+        <h2>Contact Us</h2>
       </div>
       <section className="reach_us">
         <ContactForm />
