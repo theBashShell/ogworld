@@ -2,6 +2,7 @@ import React from 'react';
 import arrow_down from '../static/images/arrow_down.svg';
 import a_link from '../static/images/link.svg';
 import arrow_up from '../static/images/arrow_up.svg';
+import heart from '../static/images/heart.svg';
 import Map from '../components/Map';
 import NotificationBar from '../components/NotificationBar';
 
@@ -33,7 +34,7 @@ function IndexFooter() {
         </div>
         <div className="dev_info footer_item">
           <span>
-            Designed with a pint of 💕 by &nbsp;
+            Designed with a pint of <img className="heart" src={heart} alt="heart" /> by &nbsp;
             <a
               className="link theBashShell"
               href="https://github.com/theBashShell"

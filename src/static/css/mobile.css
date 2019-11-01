@@ -596,6 +596,7 @@ textarea.input_item {
   width: 250px;
   height: 250px;
   border-radius: 50%;
+  filter: grayscale(1);
 }
 
 .team_card {
@@ -616,4 +617,8 @@ textarea.input_item {
 .nav_link {
   padding-top: 3px;
   padding-bottom: 3px;
+}
+
+.heart {
+  width: 20px;
 }
