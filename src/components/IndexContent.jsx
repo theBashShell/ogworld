@@ -24,7 +24,7 @@ function IndexContent() {
           <h2>
             <sup>
               <s className="incorrect">Tour </s>
-            </sup>
+            </sup> 
             Experience <br /> & <br /> Explore Ghana
           </h2>
         </div>
@@ -32,16 +32,7 @@ function IndexContent() {
       <section id="services">
         <h2 className="service_heading">Services</h2>
         <div className="services_container">
-          <div className="services">
-            <Service
-              img={visa}
-              heading="Visa & Ticket"
-              description=" OG World facilitates visas and tickets for people visiting Ghana. Experience and explore Ghana while OG World does the heavy lifting."
-            >
-              <a href="http://www.freepik.com">
-                Designed by macrovector / Freepik
-              </a>
-            </Service>
+          <div className="services">            
             <Service
               img={exchange_program}
               heading="Exchange Program"
@@ -58,6 +49,15 @@ function IndexContent() {
               community needs assessment for Project development."
             >
               <a href="http://www.freepik.com">Designed by Freepik</a>
+            </Service>
+            <Service
+              img={visa}
+              heading="Visa & Ticket"
+              description=" OG World facilitates visas and tickets for people visiting Ghana. Experience and explore Ghana while OG World does the heavy lifting."
+            >
+              <a href="http://www.freepik.com">
+                Designed by macrovector / Freepik
+              </a>
             </Service>
             <Service
               img={more}
