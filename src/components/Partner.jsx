@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
-function Partner({img, name, program}) {
+function Partner({ img, name, program }) {
   return (
     <div className="partner">
       <img className="partner_img" src={img} alt={name} title={name} />
-      <p className="partner_program">{program}</p>
+      <div className="partner_program">{}</div>
     </div>
   );
 }

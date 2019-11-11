@@ -193,7 +193,11 @@
     border-radius: unset;
   }
 
-  .partners { 
+  .partners {
     height: 340px;
+  }
+
+  .partner {
+    height: 240px;
   }
 }

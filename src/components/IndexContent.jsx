@@ -1,30 +1,40 @@
-import React from 'react';
-import Service from '../components/Service';
-import Feedback from '../components/Feedback';
-import ContactForm from '../components/ContactForm';
-import ReachUS from '../components/ReachUs';
-import Partner from '../components/Partner';
-import more from '../static/images/more.svg';
-import visa from '../static/images/passport.svg';
-import logistics from '../static/images/logistics.svg';
-import hmm from '../static/images/independence.jpg';
-import exchange_program from '../static/images/exchange_program.svg';
-import eddy from '../static/images/eddy.jpg';
-import veronica from '../static/images/veronica.jpg';
-import bruno from '../static/images/bruno.jpg';
-import northeastern from '../static/images/neu.png';
-import uw from '../static/images/uow.png';
-import ashesi from '../static/images/ashesi.jpeg';
+import React, { useEffect } from "react";
+import $ from "jquery";
+import Service from "../components/Service";
+import Feedback from "../components/Feedback";
+import ContactForm from "../components/ContactForm";
+import ReachUS from "../components/ReachUs";
+import Partner from "../components/Partner";
+import more from "../static/images/more.svg";
+import visa from "../static/images/passport.svg";
+import logistics from "../static/images/logistics.svg";
+import hmm from "../static/images/independence.jpg";
+import exchange_program from "../static/images/exchange_program.svg";
+import eddy from "../static/images/eddy.jpg";
+import veronica from "../static/images/veronica.jpg";
+import bruno from "../static/images/bruno.jpg";
+import northeastern from "../static/images/neu.png";
+import uw from "../static/images/uow.png";
+import ashesi from "../static/images/ashesi.jpeg";
+import Slider from "react-slick";
+
+const settings = {
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2500,
+  lazyLoad: 'ondemand'
+};
 
 function IndexContent() {
   return (
     <main id="main_content" className="page_content">
-      <div className="tagline" style={{backgroundImage: `url(${hmm})`}}>
+      <div className="tagline" style={{ backgroundImage: `url(${hmm})` }}>
         <div className="tagline_filter">
           <h2>
             <sup>
-              <s className="incorrect">Tour </s>
-            </sup> 
+              <s className="incorrect">Tour</s>
+            </sup>
             Experience <br /> & <br /> Explore Ghana
           </h2>
         </div>
@@ -32,7 +42,7 @@ function IndexContent() {
       <section id="services">
         <h2 className="service_heading">Services</h2>
         <div className="services_container">
-          <div className="services">            
+          <div className="services">
             <Service
               img={exchange_program}
               heading="Exchange Program"
@@ -141,11 +151,11 @@ function IndexContent() {
           <h2 className="feedback_head">What People Have to Say</h2>
           <div className="feedback_container">
             <Feedback
-              words="Thank you so much [OG World]. I absolutely cannot express my gratitude enough."
+              words="Thank you so much OG World. I absolutely cannot express my gratitude enough."
               client="MIT Student"
             />
             <Feedback
-              words="Thanks for a terrific trip. Amazing company and incredible connections. It's been such a pleasure to work with [OG World]. Hope to see you again"
+              words="Thanks for a terrific trip. Amazing company and incredible connections. It's been such a pleasure to work with OG World. Hope to see you again"
               client="U of W Faculty"
             />
           </div>
@@ -154,25 +164,29 @@ function IndexContent() {
       <div id="reach_us" className="reach_container">
         <ReachUS />
       </div>
-      <section id="partnerships" style={{paddingTop: '58px'}}>
-        <h2>Partnerships</h2>
-        <div className="partners">
-          <Partner
-            img={northeastern}
-            name="north eastern university"
-            program="Dialogue of Civilizations"
-          />
-          <Partner
-            img={uw}
-            name="university of washington"
-            program="Entrepreneurship Ecosystems in Ghana"
-          />
-          <Partner
-            img={ashesi}
-            name="ashesi university"
-            program="Ashesi Venture Incubator"
-          />
-        </div>
+      <section id="partnerships" style={{ paddingTop: "58px" }}>
+        <h2>Partnerships</h2> 
+          <Slider {...settings}>
+            <Partner
+              img={northeastern}
+              name="north eastern university"
+              program="Dialogue of Civilizations"
+            />
+            <Partner
+              img={uw}
+              name="university of washington"
+              program="Entrepreneurship Ecosystems in Ghana"
+            />
+            <Partner
+              img={ashesi}
+              name="ashesi university"
+              program="Ashesi Venture Incubator"
+            />
+            <Partner
+              img="https://seeklogo.com/images/M/MIT-logo-C802537651-seeklogo.com.png"
+              name="MIT logo"
+            />
+          </Slider> 
       </section>
     </main>
   );

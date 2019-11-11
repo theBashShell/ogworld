@@ -1,21 +1,21 @@
 @font-face {
-  font-family: 'majari bold';
-  src: url('../fonts/majari_bold.ttf');
+  font-family: "majari bold";
+  src: url("../fonts/majari_bold.ttf");
 }
 
 @font-face {
-  font-family: 'majari regular';
-  src: url('../fonts//manjari_regular.ttf');
+  font-family: "majari regular";
+  src: url("../fonts//manjari_regular.ttf");
 }
 
 @font-face {
-  font-family: 'josefinsans regular';
-  src: url('../fonts/josefinsans_regular.ttf');
+  font-family: "josefinsans regular";
+  src: url("../fonts/josefinsans_regular.ttf");
 }
 
 @font-face {
-  font-family: 'josefinsans bold';
-  src: url('../fonts/josefinsans_bold.ttf');
+  font-family: "josefinsans bold";
+  src: url("../fonts/josefinsans_bold.ttf");
 }
 
 *,
@@ -78,7 +78,7 @@ body,
 .nav_link {
   text-decoration: none;
   color: #69ffad;
-  font-family: 'josefinsans regular';
+  font-family: "josefinsans regular";
 }
 
 .link {
@@ -92,7 +92,7 @@ body,
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  font-family: 'josefinsans regular';
+  font-family: "josefinsans regular";
   font-size: 1.3rem;
   font-weight: bold;
 }
@@ -101,6 +101,7 @@ body,
   color: wheat;
   display: none;
   visibility: hidden;
+  padding-righ: 10px;
 }
 
 .page_link a:hover {
@@ -108,12 +109,12 @@ body,
 }
 
 .page_link a::before {
-  content: '    ';
+  content: "    ";
   padding: 0 4px;
 }
 
 .page_link a::after {
-  content: '    ';
+  content: "    ";
 }
 
 .menu_overlay {
@@ -144,9 +145,11 @@ body,
   0% {
     transform: translateY(-10px);
   }
+
   50% {
     transform: translateY(18px);
   }
+
   100% {
     transform: translateY(-10px);
   }
@@ -189,7 +192,7 @@ body,
 
 .slogan {
   width: 80%;
-  font-family: 'josefinsans bold';
+  font-family: "josefinsans bold";
   font-size: 2rem;
   line-height: 1.2;
   text-align: center;
@@ -399,7 +402,7 @@ section h2 {
   color: #1b2638;
   font-size: 16px;
   background: #ececec;
-  font-family: 'josefinsans regular';
+  font-family: "josefinsans regular";
   padding: 6% 3%;
   width: 100%;
   min-width: 310px;
@@ -629,26 +632,44 @@ textarea.input_item {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 240px; 
+  height: 242px;
 }
 
 .partner {
+  height: 160px;
+  /* width: 200px; */
+  /* background-color: #dc143c; */
+}
+ 
+
+.partner,
+.p_img_box {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 50%;
+  width: 100%; 
 }
+ 
 
 .partner_img {
   object-fit: contain;
-  height: 100%;
-  width: 80%;
+  height: 80%;
+  width: 100%;
   filter: grayscale(0.4);
 }
 
 .partner_program {
   color: #7b6d6d;
   text-align: center;
+}
+
+section#partnerships {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+#partnerships > div > button.slick-arrow.slick-prev,
+#partnerships > div > button.slick-arrow.slick-next {
+  display: none !important;
 }
