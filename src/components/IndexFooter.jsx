@@ -4,6 +4,7 @@ import a_link from '../static/images/link.svg';
 import arrow_up from '../static/images/arrow_up.svg';
 import heart from '../static/images/heart.svg';
 import Map from '../components/Map';
+import Credits from './Credits';
 import NotificationBar from '../components/NotificationBar';
 import Reveal from 'react-reveal/Reveal';
 import config from 'react-reveal/globals';
@@ -61,6 +62,7 @@ function IndexFooter() {
         </div>{' '}
       </Reveal>
       <NotificationBar />
+      <Credits />
     </footer>
   );
 }

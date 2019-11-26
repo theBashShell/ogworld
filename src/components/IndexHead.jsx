@@ -27,7 +27,7 @@ const settings = {
   Reveal: true,
   mobileFirst: true, 
   cssEase: 'linear',
-  lazyLoad: true,
+  lazyLoad: 'ondemand',
 };
 
 function IndexHead() {

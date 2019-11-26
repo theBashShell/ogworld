@@ -93,6 +93,25 @@
     top: 60px;
   }
 
+  .service_layout {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+
+  .og-service {
+    width: 460px;
+    height: 460px;
+    margin-bottom: 32px;
+  }
+
+  .og-service-img {
+    height: 300px;
+  }
+
+  .bg_container {
+    height: calc(100vh - 60px);
+  }
+
   .ham_btn {
     display: none;
   }

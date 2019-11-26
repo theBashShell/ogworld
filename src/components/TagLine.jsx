@@ -1,15 +1,21 @@
-import React from 'react'
+import React from 'react';
+import Reveal from 'react-reveal/Reveal';
+import config from 'react-reveal/globals';
+
+config({ ssrFadeout: true });
 
 function TagLine() {
-    return (
-        <div className="tagline">
-        <div className="tagline_filter">
-          <h2> 
+  return (
+    <div className="tagline">
+      <div className="tagline_filter">
+        <Reveal opposite bottom duration={7000}>
+          <h2>
             Experience <br /> & <br /> Explore Ghana
           </h2>
-        </div>
+        </Reveal>
       </div>
-    )
+    </div>
+  );
 }
 
-export default TagLine
+export default TagLine;

@@ -19,6 +19,7 @@ import uw from '../static/images/uow.png';
 import ashesi from '../static/images/ashesi.jpeg';
 import Slider from 'react-slick';
 import TagLine from './TagLine';
+import OGService from './OGService';
 
 const settings = {
   slidesToShow: 3,
@@ -32,6 +33,7 @@ function IndexContent() {
   return (
     <main id="main_content" className="page_content">
       <TagLine />
+      <OGService />
       <section id="services">
         <h2 className="service_heading">Services</h2>
         <div className="services_container">
