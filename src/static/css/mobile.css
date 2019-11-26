@@ -168,17 +168,43 @@ body,
   z-index: 4;
 }
 
-#service {
+#service, #project {
   position: relative;
   width: 100%;
+  flex-flow: column nowrap;
 }
 
+#project {
+  padding-bottom: 100px;
+}
+
+.card-container {
+  margin-bottom: 30px;
+}
 
 .og-service {
   width: 90%;
-  height: 300px;
-  margin-bottom: 30px;
+  height: 490px;
 }
+
+.og-service .ant-card-body {
+  height: 200px;
+}
+
+.og-project {
+  width: 260px;
+  height: 300px;
+  position: relative;
+}
+
+.project-head {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+/* .og-project:nth-child(odd) {
+  left: -50px;
+} */
 
 .og-service-img {
   object-fit: cover;
@@ -191,12 +217,8 @@ body,
   font-family: 'Abril Fatface', cursive;
 }
 
-
-.service_layout {
-  display: flex;
+.service_layout, .project_layout {
   flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
 }
 
 .head_content {
@@ -263,6 +285,7 @@ body,
   padding: 0;
   color: #ffffff;
   font-size: 18px;
+  position: relative;
 }
 
 .tagline h2 {
@@ -279,13 +302,19 @@ body,
   padding: 20px 0px;
 }
 
-.service_heading {
+.service_heading, .project_heading {
   text-align: left;
   padding-left: 30px;
-  ;
-  padding-top: 20px;
+  width: 100%;
+  padding-top: 54px;
   font-size: 40px;
   font-family: 'Abril Fatface', cursive;
+}
+
+.project_heading {
+  text-align: right;
+  padding-left: unset;
+  padding-right: 30px;
 }
 
 .service_image_container {

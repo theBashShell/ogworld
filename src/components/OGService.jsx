@@ -13,7 +13,7 @@ config({ ssrFadeout: true });
 const Service = ({ img, title, description }) => (
   <Slide opposite bottom duration={2000}>
     <div className="og-service">
-      <div>
+      <div className='card-container'>
         <Card
           cover={<img className="og-service-img" src={img} alt="title" />}
           hoverable
@@ -27,13 +27,26 @@ const Service = ({ img, title, description }) => (
 
 function OGService() {
   return (
-    <div id="service">
+    <div id="service" className="centered">
       <h2 className="service_heading">Services</h2>
-      <div className="service_layout">
-        <Service img={exchange_program} title="Exchange Program" />
-        <Service img={logistics} title="Logisitics & Accomodation" />
-        <Service img={visa} title="Visa & Ticket" />
-        <Service img={more} title="More..." />
+      <div className="service_layout centered">
+        <Service img={exchange_program} title="Exchange Program" 
+        description='OG World connects institutions willing to give opportunity 
+        to young Ghanaians to develop their talent and return to their communities
+         to help make a difference. OG world depends on its partners to achieve the
+          objectives of this program.' />
+        <Service img={logistics} title="Logisitics & Accomodation" 
+        description='OG WORLD provides 
+        in-country logistics primarily for its guests, partners and partner 
+        organizations including, 
+        internal travel arrangements, setting up of meetings, visits to places
+         of interest in Ghana as well as community needs assessment for Project
+          development.' />
+        <Service img={visa} title="Visa & Ticket" description='OG World facilitates
+         visas and tickets for people visiting Ghana. Experience and explore Ghana
+          while OG World does the heavy lifting.' />
+        <Service img={more} title="More..." description='OG World will help you in
+         visiting Ghana. Coming to Ghana? Then speak to us' />
       </div>
     </div>
   );

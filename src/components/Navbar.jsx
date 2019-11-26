@@ -71,8 +71,8 @@ function Navbar({ logo, alt }) {
         </div>
 
         <div className="page_link nav_item">
-          <NavLink id="#services" link="services" />
-          <NavLink id="#projects" link="projects" />
+          <NavLink id="#service" link="services" />
+          <NavLink id="#project" link="projects" />
           <NavLink id="#team" link="team" />
           <NavLink id="#feedback" link="comments" />
           <NavLink id="#reach_us" link="contact" />
@@ -89,8 +89,8 @@ function Navbar({ logo, alt }) {
           ref={hamContentRef}
           style={showOverlay ? activeStyle.content : inActiveStyle.content}
         >
-          <NavLink id="#services" link="services" kind={2} />
-          <NavLink id="#projects" link="projects" kind={2} />
+          <NavLink id="#service" link="services" kind={2} />
+          <NavLink id="#project" link="projects" kind={2} />
           <NavLink id="#team" link="team" kind={2} />
           <NavLink id="#feedback" link="comments" kind={2} />
           <NavLink id="#reach_us" link="contact" kind={2} />

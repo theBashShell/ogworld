@@ -93,15 +93,46 @@
     top: 60px;
   }
 
-  .service_layout {
+  .service_heading, .project_heading {
+    padding-top: 64px;
+  }
+
+  .service_layout, .project_layout {
     flex-flow: row wrap;
     justify-content: space-evenly;
+    max-width: 1300px;
+  }
+
+  .project_layout {
+    justify-content: space-around;
+  }
+
+  .og-project {
+    width: 460px;
+    height: 300px;
+
+  }
+
+  .project-head {
+    font-size: 24px;
+  }
+
+  /* .og-project:nth-child(1) {
+    left: unset;
+    top: -50px;
+  }
+
+  .og-project:nth-child(even) {
+    top: 50px;
+  } */
+
+  .card-container {
+    margin-bottom: 32px;
   }
 
   .og-service {
     width: 460px;
-    height: 460px;
-    margin-bottom: 32px;
+    height: 560px;
   }
 
   .og-service-img {

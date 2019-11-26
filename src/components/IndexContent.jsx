@@ -20,6 +20,7 @@ import ashesi from '../static/images/ashesi.jpeg';
 import Slider from 'react-slick';
 import TagLine from './TagLine';
 import OGService from './OGService';
+import OGProjects from './OGProjects'; 
 
 const settings = {
   slidesToShow: 3,
@@ -34,71 +35,7 @@ function IndexContent() {
     <main id="main_content" className="page_content">
       <TagLine />
       <OGService />
-      <section id="services">
-        <h2 className="service_heading">Services</h2>
-        <div className="services_container">
-          <div className="services">
-            <Service
-              img={exchange_program}
-              heading="Exchange Program"
-              description="OG World connects institutions willing to give opportunity to young Ghanaians to develop their talent and return to their communities to help make a difference. OG world depends on its partners to achieve the objectives of this program."
-            >
-              <a href="http://www.freepik.com">Designed by Freepik</a>
-            </Service>
-            <Service
-              img={logistics}
-              heading="Logisitics & Accomodation"
-              description="OG WORLD provides in-country logistics primarily for its guests, 
-              partners and partner organizations including, internal travel arrangements, 
-              setting up of meetings, visits to places of interest in Ghana as well as 
-              community needs assessment for Project development."
-            >
-              <a href="http://www.freepik.com">Designed by Freepik</a>
-            </Service>
-            <Service
-              img={visa}
-              heading="Visa & Ticket"
-              description=" OG World facilitates visas and tickets for people visiting Ghana. Experience and explore Ghana while OG World does the heavy lifting."
-            >
-              <a href="http://www.freepik.com">
-                Designed by macrovector / Freepik
-              </a>
-            </Service>
-            <Service
-              img={more}
-              heading="More..."
-              description="OG World will help you in visiting Ghana. Coming to Ghana? Then speak to us"
-            >
-              <a href="http://www.freepik.com">
-                Designed by macrovector / Freepik
-              </a>
-            </Service>
-          </div>
-        </div>
-      </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <div className="services_container">
-          <div className="projects">
-            <Service
-              heading="Experiential Learning Program (ELP)"
-              description="The ELP program creates a forum for Ghanaians and their 
-              foreign counterparts to connect for a mutually beneficial engagement, 
-              the same time affecting the local community positively. The programs 
-              sees many institutions and various groups visit Ghana to share knowledge
-               and contribute positively to society. Since 2016, the program has seen 
-               150+ students and faculty from various universities in the United States
-                visit Ghana."
-            />
-            <Service
-              heading="Community Empowerment Projects"
-              description="OG World has several projects in sports, public health, and human services. The goals of these
-              projects are to engage the youth, harness their talents, and improve their welfare, at the same time, 
-              helping society."
-            />
-          </div>
-        </div>
-      </section>
+      <OGProjects />
       <section id="team">
         <h2>Team</h2>
         <div className="team_container">
