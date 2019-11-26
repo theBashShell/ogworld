@@ -75,7 +75,7 @@ body,
   height: 100%;
   justify-content: center;
   align-items: center;
-  color: #ffffff; 
+  color: #ffffff;
   font-size: 18px;
   font-weight: bold;
 }
@@ -147,6 +147,11 @@ body,
   animation: moveupdown infinite 3s ease 0.2s;
 }
 
+.bg_container {
+  height: 100vh;
+  width: 100%;
+}
+
 .head_bg_container {
   position: relative;
   top: 51px;
@@ -159,7 +164,8 @@ body,
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #00000059;
+  background: #00000070;
+  z-index: 4;
 }
 
 .head_content {
@@ -200,6 +206,7 @@ body,
 .page_content {
   /* font-family: 'majari regular'; */
   /* padding: 4%; */
+position: relative;
 }
 
 .tagline,
@@ -216,25 +223,29 @@ body,
 }
 
 .tagline {
-  /* margin-top: -7px;  */
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('../images/independence0.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
-}
-
-.tagline {
   padding: 0;
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 18px;
 }
+
+.tagline h2 {
+  color: white;
+  padding-top: 50px;
+}
+
 
 .tagline_filter {
   position: relative;
   width: 100%;
   height: 100%;
-  background: #1a1919cf;
-  padding: 30px 0px;
+  background: #292929d1;
+  padding: 20px 0px;
 }
 
 .service_image_container {
@@ -662,7 +673,7 @@ section#partnerships {
   margin: 0 auto;
 }
 
-#partnerships>div>button.slick-arrow.slick-prev,
-#partnerships>div>button.slick-arrow.slick-next {
+button.slick-arrow.slick-prev,
+button.slick-arrow.slick-next {
   display: none !important;
 }

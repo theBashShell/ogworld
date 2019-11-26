@@ -5,11 +5,15 @@ import arrow_up from '../static/images/arrow_up.svg';
 import heart from '../static/images/heart.svg';
 import Map from '../components/Map';
 import NotificationBar from '../components/NotificationBar';
+import Reveal from 'react-reveal/Reveal';
+import config from 'react-reveal/globals';
+
+config({ ssrFadeout: true });
 
 function IndexFooter() {
   return (
-    <>
-      <footer className="page_footer">
+    <footer className="page_footer">
+      <Reveal duration={2000}>
         <div className="map footer_item">
           <Map />
         </div>
@@ -34,7 +38,8 @@ function IndexFooter() {
         </div>
         <div className="dev_info footer_item">
           <span>
-            Designed with a pint of <img className="heart" src={heart} alt="heart" /> by &nbsp;
+            Designed with a pint of{' '}
+            <img className="heart" src={heart} alt="heart" /> by &nbsp;
             <a
               className="link theBashShell"
               href="https://github.com/theBashShell"
@@ -53,10 +58,10 @@ function IndexFooter() {
               alt="go to top"
             />
           </a>
-        </div>
-      </footer>
+        </div>{' '}
+      </Reveal>
       <NotificationBar />
-    </>
+    </footer>
   );
 }
 

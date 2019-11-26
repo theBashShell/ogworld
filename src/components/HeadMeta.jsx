@@ -1,6 +1,9 @@
 import React from 'react';
 import {Helmet} from 'react-helmet';
 import favicon from '../static/images/favicon.png';
+import 'normalize.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const HeadMeta = ({title, children}) => (
   <Helmet>

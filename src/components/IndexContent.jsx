@@ -18,6 +18,7 @@ import northeastern from '../static/images/neu.png';
 import uw from '../static/images/uow.png';
 import ashesi from '../static/images/ashesi.jpeg';
 import Slider from 'react-slick';
+import TagLine from './TagLine';
 
 const settings = {
   slidesToShow: 3,
@@ -30,16 +31,7 @@ const settings = {
 function IndexContent() {
   return (
     <main id="main_content" className="page_content">
-      <div className="tagline" style={{ backgroundImage: `url(${hmm})` }}>
-        <div className="tagline_filter">
-          <h2>
-            <sup>
-              <s className="incorrect">Tour</s>
-            </sup>
-            Experience <br /> & <br /> Explore Ghana
-          </h2>
-        </div>
-      </div>
+      <TagLine />
       <section id="services">
         <h2 className="service_heading">Services</h2>
         <div className="services_container">

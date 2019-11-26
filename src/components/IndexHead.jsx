@@ -2,16 +2,19 @@ import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import og_logo from '../static/images/ogworld_official_logo_nt.svg';
 import main_bg from '../static/images/main_bg_mobile_0.jpg';
-import large_bg from '../static/images/main_bg_2.jpg'; 
+import large_bg from '../static/images/main_bg_2.jpg';
+import main_2 from '../static/images/main_bg_3.jpg';
+import main_3 from '../static/images/main_bg_3_0.jpg'; 
 import hamburger from '../static/images/menu.svg';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import 'normalize.css';
-import Slider from 'react-slick';
-import Picture from '../components/PictureSlide';
 import { Icon } from 'antd';
 import { Link } from 'gatsby';
 import Reveal from 'react-reveal/Reveal';
+import Zoom from 'react-reveal/Zoom';
+import config from 'react-reveal/globals';
+import { Carousel } from 'antd';
+import SlideImage from './SlideImage';
+
+config({ ssrFadeout: true });
 
 const settings = {
   dots: false,
@@ -19,10 +22,12 @@ const settings = {
   autoplay: true,
   infinite: true,
   speed: 500,
+  fade: true,  
+  autoplaySpeed: 9000,
   Reveal: true,
-  mobileFirst: true,
-  centerMode: true,
+  mobileFirst: true, 
   cssEase: 'linear',
+  lazyLoad: true,
 };
 
 function IndexHead() {
@@ -36,18 +41,26 @@ function IndexHead() {
             <div className="head_content">
               <h1 className="slogan">Opening Ghana to the World</h1>
               <Link className="continue" to="#main_content">
-                <Icon type="caret-down" className="arrow_down" style={{color: 'white', fontSize: '20px'}} />
+                <Zoom duration={900}>
+                  <Icon
+                    type="down-circle"
+                    className="arrow_down"
+                    style={{ color: 'white', fontSize: '20px' }}
+                  />
+                </Zoom>
               </Link>
             </div>
-            <picture>
-              <source srcSet={large_bg} media="(min-width: 640px)" />
-              <img
-                className="head_background"
-                src={main_bg}
-                alt="head background"
+            <Carousel {...settings}>
+              <SlideImage
+                mobile={main_bg}
+                desktop={large_bg}
               />
-            </picture>
-          </div> 
+              <SlideImage
+              mobile={main_3}
+              desktop={main_2}
+            />
+            </Carousel>
+          </div>
         </Reveal>
       </div>
     </header>
