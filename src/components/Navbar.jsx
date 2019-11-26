@@ -1,12 +1,10 @@
-import React, {useState, useEffect, useRef} from 'react';
-import close from '../static/images/close.svg';
-import hamburger from '../static/images/menu.svg';
+import React, { useState, useRef } from 'react';
+import { Link } from 'gatsby';
+import { Icon, Breadcrumb } from 'antd';
 
-function Navbar({logo, alt}) {
+function Navbar({ logo, alt }) {
   let overlayHeight = 100;
-  const hamburgerRef = useRef(null);
   const hamContentRef = useRef(null);
-  const ogRef = useRef(null);
   const [showOverlay, setShowOverlay] = useState(false);
 
   const activeStyle = {
@@ -31,89 +29,54 @@ function Navbar({logo, alt}) {
     },
   };
 
-  function handleHamburgerClick(event) {
-    if (event.target.id === hamburgerRef.current.id) {
-      setShowOverlay(showOverlay ? false : true);
-    } else if (event.target.id === hamContentRef.current.id) {
-    } else {
-      setShowOverlay(false);
-    }
+  function handleHamburgerClick() {
+    setShowOverlay(!showOverlay);
   }
 
-  function handleLogoClick(event) {
-    ogRef.current.click();
-  }
-
-  useEffect(() => {
-    document.addEventListener('click', handleHamburgerClick);
-
-    return () => {
-      document.removeEventListener('click', handleHamburgerClick);
-    };
-  });
+  const NavLink = ({ id, link, kind = 1 }) => {
+    const css = { style: { display: `${showOverlay ? 'block' : 'none'}` } };
+    return (
+      <Link
+        className={`${kind === 1 ? '' : 'nav_link'}  nav_nav`}
+        to={id}
+        style={kind === 1 ? null : css.style}
+        onClick={() => setShowOverlay(false)}
+      >
+        {link}
+      </Link>
+    );
+  };
 
   return (
     <nav className="navbar">
       <div className="navbar_content">
         <div className="nav_item og_item">
-          <a className="nav_link link" href="#" ref={ogRef}>
-            OG World
-          </a>
+          <Link to="#">
+            <span className="text-white">OG World</span>
+          </Link>
         </div>
         <div className="logo_item nav_item">
-          <img
-            className="og_logo"
-            src={logo}
-            alt={alt}
-            onClick={handleLogoClick}
-          />
+          <div className="full_dimension logo_link">
+            <Link to="#">
+              <img className="og_logo" src={logo} alt={alt} />
+            </Link>
+          </div>
         </div>
         <div className="hamburger nav_item">
-          <img
+          <Icon
+            type={showOverlay ? 'close' : 'menu'}
             className="ham_btn"
-            id="hamburger_btn"
-            src={showOverlay ? close : hamburger}
-            alt="menu"
-            ref={hamburgerRef}
+            onClick={handleHamburgerClick}
           />
         </div>
+
         <div className="page_link nav_item">
-        <a
-        className="link nav_item"
-        href="#services"
-      >
-        services
-      </a>
-      <a
-        className="link nav_item"
-        href="#projects"
-      >
-        projects
-      </a>
-      <a
-      className="link nav_item"
-      href="#team"
-    >
-      team
-    </a>
-      <a
-        className="link nav_item"
-        href="#feedback"
-      >
-        comments
-      </a>
-      <a
-        className="link nav_item"
-        href="#reach_us"
-      >
-        contact
-      </a>
-      <a
-        className="link nav_item"
-        href="#partnerships"
-      >
-        partnerships
-      </a>
+          <NavLink id="#services" link="services" />
+          <NavLink id="#projects" link="projects" />
+          <NavLink id="#team" link="team" />
+          <NavLink id="#feedback" link="comments" />
+          <NavLink id="#reach_us" link="contact" />
+          <NavLink id="#partnerships" link="partnerships" />
         </div>
       </div>
       <div
@@ -126,48 +89,12 @@ function Navbar({logo, alt}) {
           ref={hamContentRef}
           style={showOverlay ? activeStyle.content : inActiveStyle.content}
         >
-          <a
-            className="nav_link"
-            href="#services"
-            style={{display: `${showOverlay ? 'block' : 'none'}`}}
-          >
-            services
-          </a>
-          <a
-            className="nav_link"
-            href="#projects"
-            style={{display: `${showOverlay ? 'block' : 'none'}`}}
-          >
-            projects
-          </a>
-          <a
-            className="nav_link"
-            href="#team"
-            style={{display: `${showOverlay ? 'block' : 'none'}`}}
-          >
-            team
-          </a>
-          <a
-            className="nav_link"
-            href="#feedback"
-            style={{display: `${showOverlay ? 'block' : 'none'}`}}
-          >
-            comments
-          </a>
-          <a
-            className="nav_link"
-            href="#reach_us"
-            style={{display: `${showOverlay ? 'block' : 'none'}`}}
-          >
-            contact
-          </a>
-          <a
-            className="nav_link"
-            href="#partnerships"
-            style={{display: `${showOverlay ? 'block' : 'none'}`}}
-          >
-            partnerships
-          </a>
+          <NavLink id="#services" link="services" kind={2} />
+          <NavLink id="#projects" link="projects" kind={2} />
+          <NavLink id="#team" link="team" kind={2} />
+          <NavLink id="#feedback" link="comments" kind={2} />
+          <NavLink id="#reach_us" link="contact" kind={2} />
+          <NavLink id="#partnerships" link="partnerships" kind={2} />
         </div>
       </div>
     </nav>

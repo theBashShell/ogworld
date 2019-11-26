@@ -14,7 +14,6 @@
     display: flex;
     visibility: unset;
     justify-content: space-around;
-    margin-left: 25%;
     padding-left: 5%;
   }
 
@@ -23,8 +22,14 @@
     visibility: none;
   }
 
+
+  .nav_nav { 
+    color: white;
+  }
+
+
   .og_logo {
-    height: 75%;
+    height: 100%;
   }
 
   .logo_item {
@@ -61,7 +66,7 @@
     color: #ffffff;
   }
 
-  #projects > div > div > div {
+  #projects>div>div>div {
     background: transparent;
     color: inherit;
   }
@@ -90,6 +95,10 @@
 
   .ham_btn {
     display: none;
+  }
+
+  .ant-breadcrumb a {
+    color: #ffffff;
   }
 
   .slogan {
