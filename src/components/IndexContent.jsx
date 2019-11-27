@@ -13,6 +13,7 @@ import OGService from './OGService';
 import OGProjects from './OGProjects';
 import OGTeam from './OGTeam';
 import OGFeedback from './OGFeedback';
+import OGContact from './OGContact';
 
 const settings = {
   dots: true,
@@ -33,6 +34,7 @@ function IndexContent() {
       <OGProjects />
       <OGTeam />
       <OGFeedback />
+      <OGContact />
       <div id="saying" className="services_container" />
        
       <div id="reach_us" className="reach_container">

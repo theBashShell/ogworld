@@ -40,7 +40,7 @@ function IndexHead() {
             <div className="bg_filter" />
             <div className="head_content">
               <h1 className="slogan">Opening Ghana to the World</h1>
-              <Link className="continue" to="#main_content">
+              <Link className="continue" to="/#main_content">
                 <Zoom duration={900}>
                   <Icon
                     type="down-circle"

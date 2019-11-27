@@ -333,7 +333,8 @@ body,
 .service_heading,
 .project_heading,
 .team_heading,
-.feedback_heading {
+.feedback_heading,
+.contact_heading {
   text-align: left;
   padding-left: 30px;
   width: 100%;
@@ -342,7 +343,7 @@ body,
   font-family: 'Abril Fatface', cursive;
 }
 
-.project_heading {
+.project_heading, .feedback_heading {
   text-align: right;
   padding-left: unset;
   padding-right: 30px;

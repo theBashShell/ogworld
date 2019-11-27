@@ -38,7 +38,7 @@ function Navbar({ logo, alt }) {
     return (
       <Link
         className={`${kind === 1 ? '' : 'nav_link'}  nav_nav`}
-        to={id}
+        to={`/${id}`}
         style={kind === 1 ? null : css.style}
         onClick={() => setShowOverlay(false)}
       >
@@ -51,13 +51,13 @@ function Navbar({ logo, alt }) {
     <nav className="navbar">
       <div className="navbar_content">
         <div className="nav_item og_item">
-          <Link to="#">
+          <Link to="/#">
             <span className="text-white">OG World</span>
           </Link>
         </div>
         <div className="logo_item nav_item">
           <div className="full_dimension logo_link">
-            <Link to="#">
+            <Link to="/#">
               <img className="og_logo" src={logo} alt={alt} />
             </Link>
           </div>
