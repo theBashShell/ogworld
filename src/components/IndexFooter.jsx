@@ -1,8 +1,7 @@
 import React from 'react';
 import arrow_down from '../static/images/arrow_down.svg';
 import a_link from '../static/images/link.svg';
-import arrow_up from '../static/images/arrow_up.svg';
-import heart from '../static/images/heart.svg';
+import arrow_up from '../static/images/arrow_up.svg'; 
 import Map from '../components/Map';
 import Credits from './Credits';
 import { Icon, Popover } from 'antd';
@@ -15,7 +14,7 @@ config({ ssrFadeout: true });
 function IndexFooter() {
   return (
     <footer className="page_footer">
-      <Reveal duration={5000}>
+      <Reveal duration={7000}>
         <div className="map footer_item">
           <Map />
         </div>

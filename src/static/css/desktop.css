@@ -93,11 +93,15 @@
     top: 60px;
   }
 
-  .service_heading, .project_heading {
+  .service_heading,
+  .project_heading,
+  .team_heading {
     padding-top: 64px;
   }
 
-  .service_layout, .project_layout {
+  .service_layout,
+  .project_layout,
+  .team_layout {
     flex-flow: row wrap;
     justify-content: space-evenly;
     max-width: 1300px;
@@ -113,18 +117,25 @@
 
   }
 
+  .og-team {
+    width: 350px;
+    height: 500px;
+    transition: all 0.5s ease 0.1s;
+    border-radius: 8px;
+  } 
+
   .project-head {
     font-size: 24px;
   }
 
-  /* .og-project:nth-child(1) {
-    left: unset;
-    top: -50px;
+  .member-img {
+    width: 280px;
+    height: 280px;
   }
 
-  .og-project:nth-child(even) {
-    top: 50px;
-  } */
+  .member-img:nth-child(2n) {
+    height: unset;
+  }
 
   .card-container {
     margin-bottom: 32px;
@@ -258,5 +269,15 @@
 
   .partner {
     height: 240px;
+  }
+}
+
+@media(min-width: 1120px) {
+  .og-team:nth-child(2n) {
+    z-index: 3;
+    border: 1px solid orangered;
+    background: rgb(21, 113, 218);
+    height: 533px;
+    width: 370px;
   }
 }

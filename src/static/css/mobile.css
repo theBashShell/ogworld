@@ -168,7 +168,9 @@ body,
   z-index: 4;
 }
 
-#service, #project {
+#service,
+#project,
+#team {
   position: relative;
   width: 100%;
   flex-flow: column nowrap;
@@ -176,6 +178,7 @@ body,
 
 #project {
   padding-bottom: 100px;
+  background: rgb(238, 238, 235);
 }
 
 .card-container {
@@ -191,10 +194,20 @@ body,
   height: 200px;
 }
 
+
 .og-project {
   width: 260px;
   height: 300px;
   position: relative;
+}
+
+.og-team {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  background: wheat;
+  padding: 12px;
+  margin-bottom: 20px;
 }
 
 .project-head {
@@ -202,9 +215,18 @@ body,
   font-weight: bolder;
 }
 
-/* .og-project:nth-child(odd) {
-  left: -50px;
-} */
+.member-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(1);
+}
+
+.member-img:nth-child(2n) {
+  height: 260px;
+}
 
 .og-service-img {
   object-fit: cover;
@@ -217,7 +239,9 @@ body,
   font-family: 'Abril Fatface', cursive;
 }
 
-.service_layout, .project_layout {
+.service_layout,
+.project_layout,
+.team_layout {
   flex-flow: column nowrap;
 }
 
@@ -293,6 +317,10 @@ body,
   padding-top: 50px;
 }
 
+.comment {
+  padding-bottom: 40px;
+  text-align: center;
+}
 
 .tagline_filter {
   position: relative;
@@ -302,7 +330,10 @@ body,
   padding: 20px 0px;
 }
 
-.service_heading, .project_heading {
+.service_heading,
+.project_heading,
+.team_heading,
+.feedback_heading {
   text-align: left;
   padding-left: 30px;
   width: 100%;
@@ -388,6 +419,7 @@ section h2 {
 
 #feedback {
   padding-top: 77px;
+  background: #daff;
 }
 
 #reach_us {
@@ -443,14 +475,8 @@ section h2 {
   margin-bottom: 15px;
 }
 
-.feedback:hover {
-  /* background: #f34f; */
-  /* color: white; */
-  /* border-width: 2px; */
-}
-
 .quote {
-  padding: 8px;
+  width: 55px;
 }
 
 .commentor {
@@ -652,12 +678,6 @@ textarea.input_item {
   color: #ffffff;
   align-items: center;
   width: 100%;
-}
-
-#team {
-  padding-top: 53px;
-  background: #ffc92e;
-  padding-bottom: 40px;
 }
 
 .team_container {

@@ -11,7 +11,7 @@ const { Meta } = Card;
 config({ ssrFadeout: true });
 
 const Service = ({ img, title, description }) => (
-  <Slide opposite bottom duration={2000}>
+  <Slide opposite bottom duration={5000}>
     <div className="og-service">
       <div className='card-container'>
         <Card

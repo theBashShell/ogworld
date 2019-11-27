@@ -3,6 +3,8 @@ import { Icon } from 'antd';
 import Slide from 'react-reveal/Slide';
 import config from 'react-reveal/globals';
 
+config({ ssrFadeout: true });
+
 const Project = ({ title, description }) => {
   return (
     <div className="og-project">
@@ -11,7 +13,7 @@ const Project = ({ title, description }) => {
           type="check-circle"
           theme="filled"
           style={{ color: 'yellowgreen', fontSize: '16px' }}
-        />{' '}
+        />&nbsp;
         {title}
       </div>
       <div>{description}</div>
@@ -19,7 +21,6 @@ const Project = ({ title, description }) => {
   );
 };
 
-config({ ssrFadeout: true });
 
 function OGProjects() {
   return (
