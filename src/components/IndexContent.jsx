@@ -14,6 +14,7 @@ import OGProjects from './OGProjects';
 import OGTeam from './OGTeam';
 import OGFeedback from './OGFeedback';
 import OGContact from './OGContact';
+import OGPartnership from './OGPartnership';
 
 const settings = {
   dots: true,
@@ -35,35 +36,7 @@ function IndexContent() {
       <OGTeam />
       <OGFeedback />
       <OGContact />
-      <div id="saying" className="services_container" />
-       
-      <div id="reach_us" className="reach_container">
-        <ReachUS />
-      </div>
-      <section id="partnerships" style={{ paddingTop: '58px' }}>
-        <h2>Partnerships</h2>
-        <Slider {...settings}>
-          <Partner
-            img={northeastern}
-            name="north eastern university"
-            program="Dialogue of Civilizations"
-          />
-          <Partner
-            img={uw}
-            name="university of washington"
-            program="Entrepreneurship Ecosystems in Ghana"
-          />
-          <Partner
-            img={ashesi}
-            name="ashesi university"
-            program="Ashesi Venture Incubator"
-          />
-          <Partner
-            img="https://seeklogo.com/images/M/MIT-logo-C802537651-seeklogo.com.png"
-            name="MIT logo"
-          />
-        </Slider>
-      </section>
+      <OGPartnership />
     </main>
   );
 }

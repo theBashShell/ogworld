@@ -76,7 +76,7 @@ function Navbar({ logo, alt }) {
           <NavLink id="#team" link="team" />
           <NavLink id="#feedback" link="comments" />
           <NavLink id="#reach_us" link="contact" />
-          <NavLink id="#partnerships" link="partnerships" />
+          <NavLink id="#partnership" link="partnerships" />
         </div>
       </div>
       <div
@@ -94,7 +94,7 @@ function Navbar({ logo, alt }) {
           <NavLink id="#team" link="team" kind={2} />
           <NavLink id="#feedback" link="comments" kind={2} />
           <NavLink id="#reach_us" link="contact" kind={2} />
-          <NavLink id="#partnerships" link="partnerships" kind={2} />
+          <NavLink id="#partnership" link="partnerships" kind={2} />
         </div>
       </div>
     </nav>

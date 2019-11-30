@@ -1,5 +1,5 @@
 import React from 'react';
-import Zoom from 'react-reveal/Zoom';
+import Reveal from 'react-reveal/Reveal';
 import config from 'react-reveal/globals';
 import { Icon, Carousel } from 'antd';
 
@@ -9,8 +9,8 @@ const settings = {
   dots: true,
   autoplay: true,
   infinite: true,
-  speed: 500,
-  autoplaySpeed: 3000,
+  speed: 300,
+  autoplaySpeed: 4000,
   Reveal: true,
   mobileFirst: true,
   cssEase: 'linear',
@@ -20,7 +20,14 @@ const settings = {
 };
 
 const Comment = ({ comment, user }) => {
-  return <div className="centered comment">{comment}</div>;
+  return (
+    <div className="centered comment">
+      <Reveal duration={3000}>
+        <p>{comment}</p>
+      </Reveal>
+      <div className='commentor'>{user}</div>
+    </div>
+  );
 };
 
 function OGFeedback() {
@@ -28,7 +35,7 @@ function OGFeedback() {
     <div id="feedback">
       <h2 className="feedback_heading">What People Have Said</h2>
       <div className="">
-        <section>
+        <section className="feedback-container">
           <div className="centered">
             <img
               className="quote"

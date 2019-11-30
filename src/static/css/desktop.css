@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media (min-width: 640px) {
+@media (min-width: 700px) {
   .navbar {
     height: 60px;
   }
@@ -24,9 +24,9 @@
 
 
   .nav_nav {
-    color: white;
+    color: #ffffff;
+    font-size: 22px;
   }
-
 
   .og_logo {
     height: 100%;
@@ -104,28 +104,43 @@
   .team_layout {
     flex-flow: row wrap;
     justify-content: space-evenly;
-    max-width: 1300px;
+    max-width: 1150px;
   }
 
   .project_layout {
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .og-project {
-    width: 460px;
+    width: 40%;
     height: 300px;
-
+    padding: 8px;
+    margin: 0px 8px;
   }
 
   .og-team {
     width: 350px;
-    height: 500px;
+    height: 600px;
     transition: all 0.5s ease 0.1s;
     border-radius: 8px;
-  } 
+  }
+  
+  .member-title {
+    font-size: 22px;
+  }
+
+  .member-info {
+    font-size: 18px
+  }
 
   .project-head {
-    font-size: 24px;
+    font-size: 23px;
+
+  }
+
+  .project-description {
+    font-size: 20px;
+    text-align: unset;
   }
 
   .member-img {
@@ -139,11 +154,20 @@
 
   .card-container {
     margin-bottom: 32px;
+    height: 600px;
   }
 
   .og-service {
     width: 460px;
-    height: 560px;
+  }
+
+  .og-service .ant-card-meta-title {
+    font-size: 28px;
+  }
+
+  .og-service .ant-card-body {
+    height: 300px;
+    font-size: 18px;
   }
 
   .og-service-img {
@@ -163,7 +187,7 @@
   }
 
   .slogan {
-    font-size: 3rem;
+    font-size: 50px;
     border-radius: 10px;
     padding: 8px;
     border-left: unset;
@@ -209,6 +233,12 @@
     width: 60%;
   }
 
+  .comment {
+    font-size: 22px;
+    margin: auto 20%;
+    flex-flow: column nowrap;
+  }
+
   .reach_us {
     width: 90%;
     padding: 40px;
@@ -216,8 +246,17 @@
   }
 
   #reach_us {
-    background: #7a5d7d;
+    /* background: #7a5d7d; */
     color: #ffbd00;
+  }
+
+  .partner-container {
+    height: 300px;
+  }
+
+  .partner-img { 
+    height: 80%;
+    width: 40%;
   }
 
   .input_item {
@@ -232,6 +271,10 @@
   textarea,
   ::placeholder {
     color: #ffffff;
+  }
+
+  .feedback-container {
+    padding-bottom: 40px;
   }
 
   .notification {
@@ -272,12 +315,12 @@
   }
 }
 
-@media(min-width: 1120px) {
+/* @media(min-width: 1120px) {
   .og-team:nth-child(2n) {
     z-index: 3;
-    border: 1px solid orangered;
-    background: rgb(21, 113, 218);
+    border: 1px solid rgb(214, 214, 214);
+    background: linear-gradient(to bottom, #f3f3f3, white);
     height: 533px;
     width: 370px;
   }
-}
+} */

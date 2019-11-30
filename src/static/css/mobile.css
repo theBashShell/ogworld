@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Nunito:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One:400,700|Work+Sans:400,600|Caveat:700|Montserrat|Overlock:300&display=swap');
 
 body,
 #ogworld_app {
@@ -56,7 +56,6 @@ body,
 .nav_link {
   text-decoration: none;
   color: #ffffff;
-  font-family: "josefinsans regular";
 }
 
 .link {
@@ -65,7 +64,7 @@ body,
 
 .text-white {
   color: #ffffff;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Poiret One', cursive;
 }
 
 
@@ -120,7 +119,7 @@ body,
 }
 
 .nav_nav {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Poiret One', cursive;
 }
 
 .ham_btn,
@@ -176,9 +175,13 @@ body,
   flex-flow: column nowrap;
 }
 
+#team {
+  /* background: beige; */
+}
+
 #project {
   padding-bottom: 100px;
-  background: rgb(238, 238, 235);
+  background: linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6);
 }
 
 .card-container {
@@ -187,32 +190,48 @@ body,
 
 .og-service {
   width: 90%;
-  height: 490px;
 }
 
 .og-service .ant-card-body {
-  height: 200px;
+  font-size: 18px;
+  font-family: 'Work Sans', sans-serif;
+  background: linear-gradient(45deg, #b53f83, #0f142b);
+}
+
+.og-service .ant-card-meta-description {
+  color: white;
 }
 
 
 .og-project {
-  width: 260px;
-  height: 300px;
+  width: 100%;
+  height: 340px;
+  padding: 5px;
+  margin: 0px 8px;
   position: relative;
 }
 
 .og-team {
   position: relative;
-  width: 100%;
-  height: 480px;
-  background: wheat;
+  width: 90%;
+  /* height: 480px; */
   padding: 12px;
   margin-bottom: 20px;
 }
 
 .project-head {
+  font-family: 'Work Sans', sans-serif;
   font-size: 20px;
   font-weight: bolder;
+  text-align: center;
+  color: #000000;
+}
+
+.project-description {
+  font-size: 18px;
+  color: #000000;
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
 }
 
 .member-img {
@@ -224,9 +243,24 @@ body,
   filter: grayscale(1);
 }
 
-.member-img:nth-child(2n) {
-  height: 260px;
+.member-title {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: black;
 }
+
+.member-info {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+/* .member-img:nth-child(2n) {
+  height: 260px;
+} */
 
 .og-service-img {
   object-fit: cover;
@@ -235,15 +269,13 @@ body,
   height: 250px;
 }
 
-.og-service .ant-card-meta-title {
-  font-family: 'Abril Fatface', cursive;
-}
 
 .service_layout,
 .project_layout,
 .team_layout {
   flex-flow: column nowrap;
 }
+
 
 .head_content {
   color: #ffffff;
@@ -262,9 +294,9 @@ body,
 
 .slogan {
   width: 80%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Overlock', cursive;
   color: white;
-  font-size: 2rem;
+  font-size: 30px;
   line-height: 1.2;
   text-align: center;
   border-radius: 1px;
@@ -281,8 +313,6 @@ body,
 }
 
 .page_content {
-  /* font-family: 'majari regular'; */
-  /* padding: 4%; */
   position: relative;
 }
 
@@ -300,7 +330,7 @@ body,
 }
 
 .tagline {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Overlock', cursive;
   background-image: url('../images/independence0.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -318,15 +348,23 @@ body,
 }
 
 .comment {
+  padding: 1px 8px;
   padding-bottom: 40px;
   text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+  flex-flow: column nowrap;
+}
+
+.comment p {
+  color: white;
 }
 
 .tagline_filter {
   position: relative;
   width: 100%;
   height: 100%;
-  background: #292929d1;
+  background: linear-gradient(to right, #89216b94, #da44538c);
   padding: 20px 0px;
 }
 
@@ -334,16 +372,20 @@ body,
 .project_heading,
 .team_heading,
 .feedback_heading,
-.contact_heading {
+.contact_heading,
+.partnership_heading {
   text-align: left;
-  padding-left: 30px;
   width: 100%;
   padding-top: 54px;
+  padding-left: 20px;
   font-size: 40px;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Caveat', cursive;
 }
 
-.project_heading, .feedback_heading {
+
+.project_heading,
+.feedback_heading,
+.partnership_heading {
   text-align: right;
   padding-left: unset;
   padding-right: 30px;
@@ -354,6 +396,17 @@ body,
   width: 100%;
   height: calc(450px / 2);
   /* background: #5a859f; */
+}
+
+.partner-container {
+  height: 150px;
+}
+
+.partner-img {
+  object-fit: contain;
+  object-position: center center;
+  height: 100%;
+  width: 70%;
 }
 
 .services_container {
@@ -370,6 +423,27 @@ body,
 
 .service_description {
   padding: 4px;
+}
+
+.og-service .ant-card-meta-title {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: rgb(252, 246, 236)
+}
+
+.og-form {
+  width: 90%;
+  max-width: 650px;
+}
+
+.og-form input {
+  padding: 7px;
+}
+
+.form-send {
+  background: linear-gradient(45deg, #c55757, #dc47aa);
+  color: white;
 }
 
 .service {
@@ -419,12 +493,11 @@ section h2 {
 }
 
 #feedback {
-  padding-top: 77px;
-  background: #daff;
+  background: linear-gradient(to right, #89216b, #da4453);
 }
 
 #reach_us {
-  background: #080808c9;
+  /* background: #080808c9; */
   color: #f5deb3;
 }
 
@@ -452,43 +525,41 @@ section h2 {
   margin-bottom: 50px;
 }
 
+.error_message {
+  color: red;
+}
+
+.ant-form-item small {
+  display: block;
+  height: 30px;
+  text-align: right;
+}
+
 .reach_heading {
   margin-top: 53px;
 }
 
 .reach_form {}
 
-.feedback_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 40px;
+.feedback-container {
+  padding-bottom: 30px;
 }
 
-.feedback {
-  padding: 20px;
-  border: 1px solid #c24f;
-  text-align: center;
-  border-radius: 4px;
-  min-width: 308px;
-  max-width: 760px;
-  transition: all 0.1s ease;
-  margin-bottom: 15px;
-}
 
 .quote {
   width: 55px;
 }
 
 .commentor {
-  color: #484848;
+  color: #d1d1d1;
   text-align: right;
+  font-size: 15px;
 }
 
-.commentor img {
+/* .commentor img {
   width: 19px;
   height: 19px;
-}
+} */
 
 .page_footer {
   display: flex;
@@ -496,16 +567,20 @@ section h2 {
   color: #1b2638;
   font-size: 16px;
   background: #ececec;
-  font-family: "josefinsans regular";
   padding: 6% 3%;
   width: 100%;
   min-width: 310px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .footer_item {
   display: flex;
   justify-content: center;
   align-content: center;
+}
+
+footer span {
+  text-align: center;
 }
 
 .dev_info a {
@@ -750,12 +825,16 @@ textarea.input_item {
   object-fit: contain;
   height: 80%;
   width: 100%;
-  filter: grayscale(0.4);
 }
 
 .partner_program {
   color: #7b6d6d;
   text-align: center;
+}
+
+#partnership {
+  background: linear-gradient(to right, #ffe259, #ffa751);
+  padding-bottom: 50px;
 }
 
 section#partnerships {

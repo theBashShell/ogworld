@@ -1,6 +1,6 @@
 import React from 'react';
 import { Icon } from 'antd';
-import Slide from 'react-reveal/Slide';
+import Reveal from 'react-reveal/Reveal';
 import config from 'react-reveal/globals';
 
 config({ ssrFadeout: true });
@@ -8,19 +8,20 @@ config({ ssrFadeout: true });
 const Project = ({ title, description }) => {
   return (
     <div className="og-project">
-      <div className="project-head">
-        <Icon
-          type="check-circle"
-          theme="filled"
-          style={{ color: 'yellowgreen', fontSize: '16px' }}
-        />&nbsp;
-        {title}
-      </div>
-      <div>{description}</div>
+      <Reveal left duration={3000}>
+        <div className="project-head">
+          <Icon
+            type="check-circle"
+            theme="filled"
+            style={{ color: 'black', fontSize: '16px' }}
+          />&nbsp;
+          {title}
+        </div>
+        <div className="project-description">{description}</div>
+      </Reveal>
     </div>
   );
 };
-
 
 function OGProjects() {
   return (

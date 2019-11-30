@@ -1,7 +1,7 @@
 import React from 'react';
 import arrow_down from '../static/images/arrow_down.svg';
 import a_link from '../static/images/link.svg';
-import arrow_up from '../static/images/arrow_up.svg'; 
+import arrow_up from '../static/images/arrow_up.svg';
 import Map from '../components/Map';
 import Credits from './Credits';
 import { Icon, Popover } from 'antd';
@@ -41,6 +41,7 @@ function IndexFooter() {
           <span>
             Designed with a pint of &nbsp;
             <Icon type="heart" theme="filled" style={{ color: 'red' }} /> &nbsp;
+            by &nbsp;
             <Popover content="Bruno Edoh">
               <a
                 className="link theBashShell"

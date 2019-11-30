@@ -27,15 +27,6 @@ function OGTeam() {
       <h2 className="team_heading">Team</h2>
       <div className="team_layout centered">
         <Team
-          img={veronica}
-          title="Resource Manager"
-          duration={2000}
-          description="Veronica has great passion for reaching out to the 
-        less privileged. She has 9 years of experience in resource management.
-         Her high sense of integrity and commitment with which she takes on 
-         tasks are excellent. She loves to swim and read"
-        />
-        <Team
           img={eddy}
           title="Director"
           duration={4000}
@@ -46,6 +37,16 @@ function OGTeam() {
       with other persons from the diaspora. Edward is always determined
        to achieve success in all his endevors"
         />
+        <Team
+          img={veronica}
+          title="Resource Manager"
+          duration={2000}
+          description="Veronica has great passion for reaching out to the 
+        less privileged. She has 9 years of experience in resource management.
+         Her high sense of integrity and commitment with which she takes on 
+         tasks are excellent. She loves to swim and read"
+        />
+
         <Team
           img={bruno}
           title="Software & Media"
