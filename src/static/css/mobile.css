@@ -391,6 +391,23 @@ body,
   padding-right: 30px;
 }
 
+.og-form input,
+.og-form textarea.ant-input {
+  border: 3px solid;
+}
+
+.og-form .ant-input:hover {
+  border-color: unset;
+  border-right-width: unset;
+}
+
+.ant-input:focus {
+  border-color: #40a9ff;
+  border-right-width: unset !important;
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
 .service_image_container {
   padding-top: 15px;
   width: 100%;
@@ -433,12 +450,15 @@ body,
 }
 
 .og-form {
-  width: 90%;
+  width: 100%;
   max-width: 650px;
+  padding: 20px; 
+
 }
 
 .og-form input {
   padding: 7px;
+  height: 50px;
 }
 
 .form-send {
@@ -499,6 +519,7 @@ section h2 {
 #reach_us {
   /* background: #080808c9; */
   color: #f5deb3;
+  padding-bottom: 50px;
 }
 
 .feedback_head {

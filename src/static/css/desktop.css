@@ -124,7 +124,7 @@
     transition: all 0.5s ease 0.1s;
     border-radius: 8px;
   }
-  
+
   .member-title {
     font-size: 22px;
   }
@@ -254,7 +254,7 @@
     height: 300px;
   }
 
-  .partner-img { 
+  .partner-img {
     height: 80%;
     width: 40%;
   }
@@ -313,14 +313,9 @@
   .partner {
     height: 240px;
   }
-}
 
-/* @media(min-width: 1120px) {
-  .og-team:nth-child(2n) {
-    z-index: 3;
-    border: 1px solid rgb(214, 214, 214);
-    background: linear-gradient(to bottom, #f3f3f3, white);
-    height: 533px;
-    width: 370px;
+  .og-form {
+    padding: 40px;
+    border-radius: 8px;
   }
-} */
+}

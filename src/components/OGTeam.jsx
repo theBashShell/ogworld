@@ -9,7 +9,7 @@ config({ ssrFadeout: true });
 
 const Team = ({ img, title, description, duration }) => {
   return (
-    <Reveal bottom duration={duration}>
+    <Reveal right duration={duration}>
       <div className="og-team">
         <div className="centered">
           <img className="member-img" src={img} alt={title} />
