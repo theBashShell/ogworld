@@ -39,7 +39,7 @@ function OGPartnerships() {
         <Partner img={northeastern} partner="Northeastern University" />
         <Partner img={uofw} partner="University of Washington" />
         <Partner
-          img="http://climate-science.mit.edu/wp-content/themes/oceans2015/images/footer-badge_MIT.png"
+          img="https://www.rogerson.org/wp-content/uploads/MIT-logo-with-spelling-office-red-gray-design6.png"
           partner="Massachusetts Institute of Technology"
         />
       </Carousel>

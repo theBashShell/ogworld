@@ -176,7 +176,7 @@ body,
 }
 
 #team {
-  /* background: beige; */
+  padding-bottom: 40px;
 }
 
 #project {
@@ -213,10 +213,8 @@ body,
 
 .og-team {
   position: relative;
-  width: 90%;
-  /* height: 480px; */
-  padding: 12px;
-  margin-bottom: 20px;
+  width: 90%; 
+  padding: 12px; 
 }
 
 .project-head {

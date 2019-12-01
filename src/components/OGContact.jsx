@@ -63,6 +63,7 @@ function OGContact() {
                   name="email"
                   type="email"
                   size="large"
+                  placeholder="example@example.com"
                   allowClear
                   {...formik.getFieldProps('email')}
                 />
@@ -77,6 +78,7 @@ function OGContact() {
                   name="name"
                   type="text"
                   size="large"
+                  placeholder="John Doe"
                   allowClear
                   {...formik.getFieldProps('name')}
                 />
@@ -90,6 +92,7 @@ function OGContact() {
                 <Input.TextArea
                   name="message"
                   rows={9}
+                  placeholder="What's on your mind?"
                   allowClear
                   {...formik.getFieldProps('message')}
                 />
