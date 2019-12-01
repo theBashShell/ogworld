@@ -1,7 +1,7 @@
 import React from 'react';
 import Reveal from 'react-reveal/Reveal';
 import config from 'react-reveal/globals';
-import { Icon, Form, Input, message } from 'antd';
+import { Form, Input, message } from 'antd';
 import { useFormik } from 'formik';
 import { sendEmail } from '../util/sendEmail';
 
@@ -27,7 +27,7 @@ function OGContact() {
       name: '',
       message: '',
     },
-    onSubmit: (values) => {
+    onSubmit: async (values) => {
       sendEmail(values);
       formik.resetForm();
     },
@@ -63,6 +63,7 @@ function OGContact() {
                   name="email"
                   type="email"
                   size="large"
+                  allowClear
                   {...formik.getFieldProps('email')}
                 />
                 <ErrorMessage
@@ -76,6 +77,7 @@ function OGContact() {
                   name="name"
                   type="text"
                   size="large"
+                  allowClear
                   {...formik.getFieldProps('name')}
                 />
                 <ErrorMessage
@@ -88,6 +90,7 @@ function OGContact() {
                 <Input.TextArea
                   name="message"
                   rows={9}
+                  allowClear
                   {...formik.getFieldProps('message')}
                 />
                 <ErrorMessage
