@@ -41,10 +41,14 @@ function OGPartnerships() {
         <Partner
           img="https://cdn-images-1.medium.com/max/1200/1*hgDXhOwMcZLL6OhJuN7WdQ.jpeg"
           partner="Ashesi D:Lab"
-        /> 
+        />
         <Partner
           img="https://www.rogerson.org/wp-content/uploads/MIT-logo-with-spelling-office-red-gray-design6.png"
           partner="Massachusetts Institute of Technology"
+        />
+        <Partner
+          img="https://www.nexti2i.com/wp-content/uploads/2019/08/NEXTi2i_footerlogo_grey-300x170.png"
+          partner="The New Entrepreneurs Xchange for Transformation"
         />
       </Carousel>
     </div>
