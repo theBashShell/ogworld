@@ -1,9 +1,9 @@
-import React from 'react';
-import { Carousel } from 'antd';
-import northeastern from '../static/images/neu.png';
-import uofw from '../static/images/uow.png';
-import Reveal from 'react-reveal/Reveal';
-import config from 'react-reveal/globals';
+import React from "react";
+import { Carousel } from "antd";
+import northeastern from "../static/images/neu.png";
+import uofw from "../static/images/uow.png";
+import Reveal from "react-reveal/Reveal";
+import config from "react-reveal/globals";
 
 config({ ssrFadeout: true });
 
@@ -15,10 +15,10 @@ const settings = {
   autoplay: true,
   speed: 700,
   autoplaySpeed: 3000,
-  cssEase: 'linear',
+  cssEase: "linear",
   pauseOnHover: true,
   fade: true,
-  centerMode: true,
+  centerMode: true
 };
 
 const Partner = ({ img, partner }) => {
@@ -38,6 +38,10 @@ function OGPartnerships() {
       <Carousel {...settings}>
         <Partner img={northeastern} partner="Northeastern University" />
         <Partner img={uofw} partner="University of Washington" />
+        <Partner
+          img="https://cdn-images-1.medium.com/max/1200/1*hgDXhOwMcZLL6OhJuN7WdQ.jpeg"
+          partner="Ashesi D:Lab"
+        /> 
         <Partner
           img="https://www.rogerson.org/wp-content/uploads/MIT-logo-with-spelling-office-red-gray-design6.png"
           partner="Massachusetts Institute of Technology"
