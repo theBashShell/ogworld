@@ -4,3 +4,5 @@ node_modules
 public
 temp/*
 todo.txt
+.yarn
+.pnp*
