@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "../components/meta/Helmet";
 import Page from "../components/page/Page";
 import IndexTop from "../components/index/IndexTop";
+import Navbar from "../components/nav/Navbar";
 
 const index = () => {
   return (
@@ -9,6 +10,7 @@ const index = () => {
       <Helmet>
         <title>OG World | Opening Ghana to the World</title>
       </Helmet>
+      <Navbar />
       <Page>
         <IndexTop />
         <IndexTop />

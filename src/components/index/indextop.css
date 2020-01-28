@@ -1,0 +1,10 @@
+ 
+.t_content {
+  height: 100%;
+  width: 100%;
+  background: rgb(42, 42, 75);
+}
+
+@media(min-width: 750px) {
+
+}
