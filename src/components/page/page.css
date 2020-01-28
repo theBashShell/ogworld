@@ -1,0 +1,20 @@
+#app {
+  height: 100vh;
+  width: 100%;
+  min-height: 500px;
+  min-width: 310px;
+}
+
+
+.pg_swiper-container {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(156, 126, 70);
+}
+
+.p_swiper-pagination {
+  padding: 20px;
+  background-color: black;
+  height: 40px;
+  width: 40px;
+}
