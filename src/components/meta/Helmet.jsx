@@ -1,8 +1,8 @@
-import React from "react";
+import React  from "react";
 import ReactHelmet from "react-helmet";
-import 'normalize.css'
+import "normalize.css"; 
 
-const Helmet = ({ children }) => {
+const Helmet = ({ children }) => { 
   return (
     <ReactHelmet>
       <meta name="app_name" content="OG World" />

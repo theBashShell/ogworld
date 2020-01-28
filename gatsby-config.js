@@ -4,5 +4,5 @@ module.exports = {
   siteMetadata: {
     title: `OG World | Openning Ghana to the World`
   },
-  plugins: [`gatsby-plugin-react-helmet`]
+  plugins: [`gatsby-plugin-react-helmet`, `gatsby-plugin-offline`]
 };

@@ -3,11 +3,14 @@
   "author": "Bruno Edoh",
   "private": true,
   "scripts": {
-    "dev": "gatsby develop"
+    "dev": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
   },
   "dependencies": {
     "@atlaskit/button": "^13.3.5",
     "gatsby": "^2.19.8",
+    "gatsby-plugin-offline": "^3.0.32",
     "gatsby-plugin-react-helmet": "^3.1.21",
     "normalize.css": "^8.0.1",
     "react": "^16.12.0",
