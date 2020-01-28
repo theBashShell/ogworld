@@ -5,6 +5,7 @@ nav {
   background: black;
   height: 50px;
   z-index: 40;
+  min-width: 310px;
 }
 
 .nav-content {
@@ -15,11 +16,11 @@ nav {
   align-items: center;
 }
 
-.nav-content div {
+.nav-content div, .nav-content a {
   height: 100%;
 }
 
-.nav-centered {
+.nav-centered, .nav-content a {
   display: flex;
   justify-content: center;
   align-items: center;

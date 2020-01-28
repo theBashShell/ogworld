@@ -15,8 +15,8 @@ const Page = ({ children }) => {
   }, []);
   return (
     <div id="app" className="pg_swiper-container">
-      <div class="swiper-wrapper">{children}</div>
-      <div class="p_swiper-pagination"></div>
+      <div className="swiper-wrapper">{children}</div>
+      <div className="p_swiper-pagination"></div>
     </div>
   );
 };

@@ -10,7 +10,7 @@ const index = () => {
       <Helmet>
         <title>OG World | Opening Ghana to the World</title>
       </Helmet>
-      <Navbar />
+      <Navbar page="/#" />
       <Page>
         <IndexTop />
         <IndexTop />
