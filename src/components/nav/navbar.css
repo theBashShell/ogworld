@@ -6,3 +6,38 @@ nav {
   height: 50px;
   z-index: 40;
 }
+
+.nav-content {
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-content div {
+  height: 100%;
+}
+
+.nav-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-content div:first-child,
+.nav-content div:last-child {
+  width: 40%;
+}
+
+.nav-logo {
+  object-fit: contain;
+  height: 80%;
+}
+
+@media (min-width: 750px) {
+  .nav-content {
+    height: 100%;
+    padding: 0 60px;
+  }
+}
