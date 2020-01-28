@@ -1,0 +1,13 @@
+* {
+  transition: all 0.5s ease;
+}
+
+html {
+  height: 100vh;
+  background:wheat;
+}
+
+body {
+  height: 100%;
+  background: green;
+}

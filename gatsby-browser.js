@@ -1,1 +1,1 @@
-// import "./src/static/css/app.css";
+import "./static/css/app.css";
