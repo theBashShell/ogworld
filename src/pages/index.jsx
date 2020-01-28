@@ -1,6 +1,5 @@
 import React from "react";
-import Helmet from "../components/meta/Helmet";
-import {PrimaryButton} from 'office-ui-fabric-react'
+import Helmet from "../components/meta/Helmet";  
 
 const index = () => { 
   return (
@@ -8,7 +7,7 @@ const index = () => {
       <Helmet>
         <title>OG World | Opening Ghana to the World</title>
       </Helmet>
-      Hom
+      Hom 
     </div>
   );
 };
