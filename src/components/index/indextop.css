@@ -10,7 +10,7 @@
 
 .swiper-slide-h {
   /* height: 100%; */
-  background: yellowgreen;
+  background: rgb(147, 180, 80);
 }
 
 @media(min-width: 750px) {
