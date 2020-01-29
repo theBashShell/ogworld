@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "../components/meta/Helmet";
 import Page from "../components/page/Page";
 import IndexTop from "../components/index/IndexTop";
+import IndexContent from "../components/index/IndexContent";
 import Navbar from "../components/nav/Navbar";
 
 const index = () => {
@@ -13,8 +14,7 @@ const index = () => {
       <Navbar page="/#" />
       <Page>
         <IndexTop />
-        <IndexTop />
-        <IndexTop />
+        <IndexContent />
       </Page>
     </>
   );

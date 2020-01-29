@@ -3,11 +3,25 @@
 }
 
 html {
-  height: 100vh; 
+  height: 100vh;
   scroll-behavior: smooth;
 }
 
 body {
-  height: 100%; 
+  height: 100%;
 }
- 
+
+.full {
+  height: 100%;
+  width: 100%;
+}
+
+.credit {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+  position: relative;
+  z-index: -100;
+}

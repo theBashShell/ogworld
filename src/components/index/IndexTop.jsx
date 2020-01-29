@@ -11,9 +11,8 @@ const IndexTop = () => {
       keyboard: {
         enabled: true
       },
-      pagination: {
-        el: ".swiper-pagination-h",
-        clickable: true
+      autoplay: {
+        delay: 3000
       }
     });
   }, []);
@@ -28,12 +27,12 @@ const IndexTop = () => {
               alt="background image"
             />
           </div>
+          <div className="swiper-slide swiper-slide-h">
+            <img src={CONSTANTS.images.beach} alt="background image" />
+          </div>
           <div className="swiper-slide swiper-slide-h">two</div>
-          <div className="swiper-slide swiper-slide-h">three</div>
-          <div className="swiper-slide swiper-slide-h">final</div>
         </div>
       </div>
-      <div className="swiper-pagination-h"></div>
     </div>
   );
 };
