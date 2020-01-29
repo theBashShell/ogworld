@@ -4,7 +4,9 @@ import Page from "../components/page/Page";
 import IndexTop from "../components/index/IndexTop";
 import IndexContent from "../components/index/IndexContent";
 import Navbar from "../components/nav/Navbar";
-import IndexFooter from "../components/index/IndexFooter"
+import IndexFooter from "../components/index/IndexFooter";
+import OGPartners from "../components/og/OGPartners";
+import "swiper/css/swiper.min.css";
 
 const index = () => {
   return (
@@ -16,6 +18,7 @@ const index = () => {
       <Page>
         <IndexTop />
         <IndexContent />
+        <OGPartners />
         <IndexFooter />
       </Page>
     </>

@@ -1,16 +1,12 @@
-.t_content {
-  height: 100%;
-  width: 100%;
-  background: #6565ac;
-}
-
-.swiper-container-h {
-  background: #95cece
-}
-
 .swiper-slide-h {
-  /* height: 100%; */
-  background: rgb(147, 180, 80);
+  background: wheat;
+}
+
+.bg-img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 @media(min-width: 750px) {

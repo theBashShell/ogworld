@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Swiper from "swiper";
 import "./page.css";
-import "swiper/css/swiper.min.css";
 
 const Page = ({ children }) => {
   useEffect(() => {

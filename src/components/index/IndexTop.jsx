@@ -19,18 +19,22 @@ const IndexTop = () => {
 
   return (
     <div className="swiper-slide">
-      <div className=" swiper-container t_content swiper-container-h">
+      <div className=" swiper-container full swiper-container-h">
         <div className="swiper-wrapper">
-          <div className="swiper-slide swiper-slide-h">
+          <div className="swiper-slide full swiper-slide-h">
             <img
               src={CONSTANTS.images.independence_square}
               alt="background image"
+              class="bg-img"
             />
           </div>
           <div className="swiper-slide swiper-slide-h">
-            <img src={CONSTANTS.images.beach} alt="background image" />
-          </div>
-          <div className="swiper-slide swiper-slide-h">two</div>
+            <img
+              src={CONSTANTS.images.beach}
+              alt="background image"
+              class="bg-img"
+            />
+          </div> 
         </div>
       </div>
     </div>
