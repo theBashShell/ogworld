@@ -12,7 +12,9 @@ const Navbar = ({ page }) => {
             <img className="nav-logo" src="/images/ogworld_logo.svg" />
           </Link>
         </div>
-        <div>three</div>
+        <div>
+          <img src="https://api.iconify.design/bytesize:options.svg?color=%23ffff&width=30" />
+        </div>
       </div>
     </nav>
   );
