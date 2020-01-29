@@ -1,0 +1,14 @@
+.map {
+  width: 90%;
+  height: 200px;
+  border: 1px solid #cecece;
+  padding: 2px;
+  max-width: 900px; 
+}
+
+@media (min-width: 750px) {
+  .map {
+    height: 350px;
+    width: 75%;
+  }
+}

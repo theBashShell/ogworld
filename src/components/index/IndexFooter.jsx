@@ -1,6 +1,8 @@
-import React from 'react';
-import "./indexfooter.css"
-import Map from '../map/Map'
+import React from "react";
+import "./indexfooter.css";
+import Map from "../map/Map";
+import Tooltip from "@atlaskit/tooltip";
+import CONSTANTS from "../../util/constants";
 
 const IndexFooter = () => {
   return (
@@ -25,8 +27,22 @@ const IndexFooter = () => {
       <div className="copyright footer_item">
         <span>&copy; {new Date().getFullYear()} OG World Foundation</span>
       </div>
+      <div className="tip">
+        Designed with a pint of <img src={CONSTANTS.images.heart} alt="heart" />{" "}
+        by &nbsp;
+        <a
+          href={CONSTANTS.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="github"
+        >
+          <Tooltip content="Bruno Edoh">
+            <span>theBashShell</span>
+          </Tooltip>
+        </a>
+      </div>
     </footer>
   );
-}
+};
 
 export default IndexFooter;

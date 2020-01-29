@@ -1,10 +1,11 @@
 import React from "react";
 import CONSTANTS from '../../util/constants'
+import "./map.css"
 
 function Map() {
   return (
     <iframe
-      className=""
+      className="map"
       frameBorder="0"
       src={CONSTANTS.map}
       allowFullScreen

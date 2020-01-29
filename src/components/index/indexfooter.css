@@ -12,3 +12,11 @@ footer a {
   text-decoration: none;
   color: #7d1184;
 }
+
+.tip div {
+  display: inline-block;
+}
+
+.github::after {
+  content: url('https://api.iconify.design/icomoon-free:link.svg');
+}
