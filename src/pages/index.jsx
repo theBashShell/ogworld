@@ -4,6 +4,7 @@ import Page from "../components/page/Page";
 import IndexTop from "../components/index/IndexTop";
 import IndexContent from "../components/index/IndexContent";
 import Navbar from "../components/nav/Navbar";
+import IndexFooter from "../components/index/IndexFooter"
 
 const index = () => {
   return (
@@ -15,6 +16,7 @@ const index = () => {
       <Page>
         <IndexTop />
         <IndexContent />
+        <IndexFooter />
       </Page>
     </>
   );

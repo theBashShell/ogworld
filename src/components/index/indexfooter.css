@@ -1,0 +1,14 @@
+footer {
+  padding-top: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  background: #ececec;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #7d1184;
+}
