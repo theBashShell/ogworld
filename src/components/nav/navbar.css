@@ -6,6 +6,7 @@ nav {
   height: 50px;
   z-index: 40;
   min-width: 310px;
+  color: white;
 }
 
 .nav-content {
@@ -16,14 +17,26 @@ nav {
   align-items: center;
 }
 
-.nav-content div, .nav-content a {
+.nav-content div,
+.nav-content a {
   height: 100%;
 }
 
-.nav-centered, .nav-content a {
+.nav-centered,
+.nav-content a,
+.nav-content div:first-child,
+.nav-content div:last-child {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.nav-content div:first-child {
+  justify-content: flex-start;
+}
+
+.nav-content div:last-child {
+  justify-content: flex-end;
 }
 
 .nav-content div:first-child,
