@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Swiper from "swiper";
 import "./page.css";
+import "swiper/css/swiper.min.css"
 
 const Page = ({ children }) => {
   useEffect(() => {
@@ -9,7 +10,7 @@ const Page = ({ children }) => {
       direction: "vertical",
       keyboard: { enabled: true },
       pagination: {
-        el: ".p_swiper-pagination",
+        el: ".swiper-pagination",
         clickable: true
       }
     });
@@ -17,7 +18,7 @@ const Page = ({ children }) => {
   return (
     <div id="app" className="swiper-container pg_swiper-container">
       <div className="swiper-wrapper">{children}</div>
-      <div className="p_swiper-pagination"></div>
+      <div className="swiper-pagination"></div>
     </div>
   );
 };

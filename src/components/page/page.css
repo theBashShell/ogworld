@@ -11,12 +11,4 @@
   width: 100%; 
   overflow: hidden;
 }
-
-.p_swiper-pagination {
-  position: fixed;
-  padding: 20px;
-  background-color: black;
-  height: 40px;
-  width: 40px;
-  top: 20%;
-}
+ 

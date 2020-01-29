@@ -5,27 +5,27 @@ import CONSTANTS from "../../util/constants";
 
 const IndexTop = () => {
   useEffect(() => {
-    new Swiper(".gallery-container", {
+    new Swiper(".swiper-container-h", {
       direction: "horizontal",
       effect: "fade",
       keyboard: {
         enabled: true
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
       }
     });
   }, []);
 
   return (
-    <div className="swiper-slide"> 
-      <div className=" swiper-container t_content gallery-container">
+    <div className="swiper-slide">
+      <div className=" swiper-container t_content swiper-container-h">
         <div className="swiper-wrapper">
-          <div className="swiper-slide">one</div>
-          <div className="swiper-slide">adf</div>
-          <div className="swiper-slide">gdsg</div>
-          <div className="swiper-slide">sfdv</div>
-          <div className="swiper-slide">adfs</div>
-          <div className="swiper-slide">grer</div>
-          <div className="swiper-slide">32</div>
-          <div className="swiper-slide">oadfne</div>
+          <div className="swiper-slide swiper-slide-h">one</div>
+          <div className="swiper-slide swiper-slide-h">two</div>
+          <div className="swiper-slide swiper-slide-h">three</div>
+          <div className="swiper-slide swiper-slide-h">final</div>
         </div>
       </div>
     </div>

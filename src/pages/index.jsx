@@ -14,6 +14,7 @@ const index = () => {
       <Page>
         <IndexTop />
         <IndexTop />
+        <IndexTop />
       </Page>
     </>
   );
