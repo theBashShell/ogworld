@@ -3,8 +3,11 @@
     "close": "https://api.iconify.design/ion:close.svg?color=%23ffff&width=30",
     "menu": "https://api.iconify.design/jam:menu.svg?color=%23ffff&width=30",
     "heart": "https://api.iconify.design/emojione-monotone:red-heart.svg?color=red",
+    "craft": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1580340148/IMG-20190525-WA0048_kbfqou.jpg",
+    "craft_thumbnail": "https://res.cloudinary.com/dznnuvtnd/image/upload/t_media_lib_thumb/v1580340148/IMG-20190525-WA0048_kbfqou.jpg",
     "beach": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1580316672/IMG_20190519_143359_wl0mgj.jpg",
-    "independence_square": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1580308779/IMG-20200122-WA0007_jczrt7.jpg"
+    "independence_square": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1580308779/IMG-20200122-WA0007_jczrt7.jpg",
+    "independenc_square_thumbnail": "https://res.cloudinary.com/dznnuvtnd/image/upload/t_media_lib_thumb/v1580308779/IMG-20200122-WA0007_jczrt7.jpg"
   },
   "partners": [],
   "github": "https://github.com/theBashShell",
