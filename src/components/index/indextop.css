@@ -1,8 +1,11 @@
- 
 .t_content {
   height: 100%;
   width: 100%;
   background: #6565ac;
+}
+
+.gallery-container {
+  background: #5ca1a1
 }
 
 @media(min-width: 750px) {

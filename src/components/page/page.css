@@ -9,6 +9,7 @@
 .pg_swiper-container {
   height: 100%;
   width: 100%; 
+  overflow: hidden;
 }
 
 .p_swiper-pagination {

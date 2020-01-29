@@ -13,7 +13,7 @@ const index = () => {
       <Navbar page="/#" />
       <Page>
         <IndexTop />
-         
+        <IndexTop />
       </Page>
     </>
   );

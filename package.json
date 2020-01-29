@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@atlaskit/button": "^13.3.5",
+    "@atlaskit/icon": "^19.1.0",
     "gatsby": "^2.19.8",
     "gatsby-plugin-offline": "^3.0.32",
     "gatsby-plugin-react-helmet": "^3.1.21",

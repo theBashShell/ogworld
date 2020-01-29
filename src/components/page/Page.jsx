@@ -7,6 +7,7 @@ const Page = ({ children }) => {
     new Swiper(".pg_swiper-container", {
       mousewheel: true,
       direction: "vertical",
+      keyboard: { enabled: true },
       pagination: {
         el: ".p_swiper-pagination",
         clickable: true
@@ -14,7 +15,7 @@ const Page = ({ children }) => {
     });
   }, []);
   return (
-    <div id="app" className="pg_swiper-container">
+    <div id="app" className="swiper-container pg_swiper-container">
       <div className="swiper-wrapper">{children}</div>
       <div className="p_swiper-pagination"></div>
     </div>

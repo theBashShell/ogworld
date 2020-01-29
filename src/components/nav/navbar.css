@@ -58,6 +58,7 @@ nav {
   height: calc(100vh - 50px);
   background: #a56464;
   opacity: 1;
+  transition: all 0.8s ease;
 }
 
 @media (min-width: 750px) {
