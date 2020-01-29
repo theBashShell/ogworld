@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
+import "lazysizes";
 import "./indextop.css";
-import Swiper from "swiper";
+import Swiper from "swiper";import 'lazysizes';
 import CONSTANTS from "../../util/constants";
 
 const IndexTop = () => {
@@ -20,21 +21,21 @@ const IndexTop = () => {
   return (
     <div className="swiper-slide">
       <div className=" swiper-container full swiper-container-h">
-        <div className="swiper-wrapper">
+        <div className="swiper-wrapper full">
           <div className="swiper-slide full swiper-slide-h">
             <img
-              src={CONSTANTS.images.independence_square}
+              data-src={CONSTANTS.images.independence_square}
               alt="background image"
-              class="bg-img"
+              class="bg-img lazyload"
             />
           </div>
           <div className="swiper-slide swiper-slide-h">
             <img
-              src={CONSTANTS.images.beach}
+              data-src={CONSTANTS.images.beach}
               alt="background image"
-              class="bg-img"
+              class="bg-img lazyload"
             />
-          </div> 
+          </div>
         </div>
       </div>
     </div>
