@@ -49,9 +49,24 @@ nav {
   height: 80%;
 }
 
+.nav-overlay {
+  height: 0;
+  opacity: 0;
+}
+
+.overlay {
+  height: calc(100vh - 50px);
+  background: #a56464;
+  opacity: 1;
+}
+
 @media (min-width: 750px) {
   .nav-content {
     height: 100%;
     padding: 0 60px;
+  }
+
+  .overlay {
+    height: 30vh;
   }
 }

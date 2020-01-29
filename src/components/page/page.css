@@ -8,13 +8,14 @@
 
 .pg_swiper-container {
   height: 100%;
-  width: 100%;
-  background-color: rgb(156, 126, 70);
+  width: 100%; 
 }
 
 .p_swiper-pagination {
+  position: fixed;
   padding: 20px;
   background-color: black;
   height: 40px;
   width: 40px;
+  top: 20%;
 }

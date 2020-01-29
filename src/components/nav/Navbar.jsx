@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 import "./navbar.css";
+import CONSTANTS from "../../util/constants";
 
 const Navbar = ({ page }) => {
+  const [overlay, setOverlay] = useState(false);
+
+  const handleMenuClick = () => {
+    setOverlay(prev => !prev);
+  };
+
   return (
     <nav>
       <div className="nav-content">
@@ -13,9 +20,14 @@ const Navbar = ({ page }) => {
           </Link>
         </div>
         <div>
-          <img src="https://api.iconify.design/bytesize:options.svg?color=%23ffff&width=30" />
+          <img
+            src={overlay ? CONSTANTS.images.close : CONSTANTS.images.menu}
+            alt="menu button"
+            onClick={handleMenuClick}
+          />
         </div>
       </div>
+      <div className={`nav-overlay ${overlay ? "overlay" : ""}`}>nav</div>
     </nav>
   );
 };
