@@ -15,11 +15,10 @@ const index = () => {
         <title>OG World | Opening Ghana to the World</title>
       </Helmet>
       <Navbar page="/#" />
-      <Page>
-        <IndexTop />
-         
+        <IndexTop /> 
+        <IndexContent />
         <IndexFooter />
-      </Page>
+    
     </>
   );
 };

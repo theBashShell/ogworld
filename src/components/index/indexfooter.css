@@ -1,15 +1,20 @@
 footer {
-  /* padding-top: 50px; */
+  height: 100vh;
+  background: #ececec;
   display: flex;
   flex-flow: column nowrap;
-  background: #ececec;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh !important;
 }
 
-footer a {
+.foot {
+  position: relative;
+
+  height: calc(100%);
+}
+
+.foot a {
   text-decoration: none;
   color: #7d1184;
 }
@@ -19,5 +24,5 @@ footer a {
 }
 
 .github::after {
-  content: url('https://api.iconify.design/icomoon-free:link.svg');
+  content: url("https://api.iconify.design/icomoon-free:link.svg");
 }

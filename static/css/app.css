@@ -10,7 +10,6 @@ html {
 body {
   height: 100%;
 }
- 
 
 .credit {
   height: 0;
@@ -21,3 +20,4 @@ body {
   position: relative;
   z-index: -100;
 }
+ 

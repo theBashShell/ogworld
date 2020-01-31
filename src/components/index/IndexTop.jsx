@@ -7,10 +7,10 @@ import CONSTANTS from "../../util/constants";
 
 const IndexTop = () => {
   useEffect(() => {
-    new Swiper(".swiper-container-h", {
+    new Swiper(".top", {
       direction: "horizontal",
       effect: "fade",
-      loop: true,
+      loop: true, 
       keyboard: {
         enabled: true
       },
@@ -21,33 +21,31 @@ const IndexTop = () => {
   }, []);
 
   return (
-    <div className="swiper-slide top">
-      <div className=" swiper-container swiper-container-h">
-        <div className="swiper-wrapper top">
-          <div className="top-info">Opening Ghana to the World</div>
-          <div className="swiper-slide swiper-slide-h">
-            <img
-              data-src={CONSTANTS.images.independence_square}
-              alt="background image"
-              class="bg-img lazyload"
-              src={CONSTANTS.images.independenc_square_thumbnail}
-            />
-          </div>
-          <div className="swiper-slide swiper-slide-h">
-            <img
-              data-src={CONSTANTS.images.beach}
-              alt="background image"
-              class="bg-img lazyload"
-            />
-          </div>
-          <div className="swiper-slide swiper-slide-h">
-            <img
-              data-src={CONSTANTS.images.craft}
-              alt="background image"
-              class="bg-img lazyload"
-              src={CONSTANTS.images.craft_thumbnail}
-            />
-          </div>
+    <div className=" swiper-container top">
+      <div className="swiper-wrapper">
+        <div className="top-info">Opening Ghana to the World</div>
+        <div className="swiper-slide swiper-slide-h">
+          <img
+            data-src={CONSTANTS.images.independence_square}
+            alt="background image"
+            class="bg-img lazyload"
+            src={CONSTANTS.images.independenc_square_thumbnail}
+          />
+        </div>
+        <div className="swiper-slide swiper-slide-h">
+          <img
+            data-src={CONSTANTS.images.beach}
+            alt="background image"
+            class="bg-img lazyload"
+          />
+        </div>
+        <div className="swiper-slide swiper-slide-h">
+          <img
+            data-src={CONSTANTS.images.craft}
+            alt="background image"
+            class="bg-img lazyload"
+            src={CONSTANTS.images.craft_thumbnail}
+          />
         </div>
       </div>
     </div>

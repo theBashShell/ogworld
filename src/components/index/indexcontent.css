@@ -1,9 +1,8 @@
-.full {
-  /* background: hotpink */
-  /* height: 100%; */
+.n-content { 
+  height: 100vh;
+  background: lightpink;
 }
 
 .service {
   padding-top: 50px;
-  background: lightpink;
 }
