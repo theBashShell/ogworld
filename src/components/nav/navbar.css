@@ -56,7 +56,7 @@ nav {
 
 .overlay {
   height: calc(100vh - 50px);
-  background: #a56464;
+  background: #141414;
   opacity: 1;
   transition: all 0.8s ease;
 }

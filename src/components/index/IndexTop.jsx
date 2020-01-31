@@ -23,7 +23,7 @@ const IndexTop = () => {
     <div className="swiper-slide">
       <div className=" swiper-container full swiper-container-h">
         <div className="swiper-wrapper">
-          <div className="top-info">adfsssssssssssss</div>
+          <div className="top-info">Opening Ghana to the World</div>
           <div className="swiper-slide full swiper-slide-h">
             <img
               data-src={CONSTANTS.images.independence_square}
