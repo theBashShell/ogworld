@@ -2,6 +2,7 @@
   "images": {
     "close": "https://api.iconify.design/ion:close.svg?color=%23ffff&width=30",
     "menu": "https://api.iconify.design/jam:menu.svg?color=%23ffff&width=30",
+    "world": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1580480278/world_sspwva.png",
     "heart": "https://api.iconify.design/emojione-monotone:red-heart.svg?color=red",
     "craft": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1580340148/IMG-20190525-WA0048_kbfqou.jpg",
     "craft_thumbnail": "https://res.cloudinary.com/dznnuvtnd/image/upload/t_media_lib_thumb/v1580340148/IMG-20190525-WA0048_kbfqou.jpg",

@@ -28,11 +28,17 @@ const Navbar = ({ page }) => {
         </div>
       </div>
       <div className={`nav-overlay ${overlay ? "overlay" : ""}`}>
-        <div>one</div>
-        <div>one</div>
+        <div className="">
+          <div>one</div>
+          <div>one</div>
+          <a className="credit" href="http://www.freepik.com">
+            Designed by Evening_Tao / Freepik
+          </a>
+        </div>
       </div>
     </nav>
   );
 };
 
 export default Navbar;
+// <img src={CONSTANTS.images.world} alt='world' className='world' />
