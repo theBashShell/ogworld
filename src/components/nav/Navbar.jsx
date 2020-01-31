@@ -32,8 +32,7 @@ const Navbar = ({ page }) => {
           <img src={CONSTANTS.images.world} alt="world" className="world" />
         </div>
         <div className="overlay-content overlay-center">
-          <div>one</div>
-          <div>one</div>
+           
         </div>
       </div>
       <a className="credit" href="http://www.freepik.com">

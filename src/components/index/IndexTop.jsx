@@ -10,21 +10,22 @@ const IndexTop = () => {
     new Swiper(".swiper-container-h", {
       direction: "horizontal",
       effect: "fade",
+      loop: true,
       keyboard: {
         enabled: true
       },
       autoplay: {
-        delay: 3000
+        delay: 5000
       }
     });
   }, []);
 
   return (
-    <div className="swiper-slide">
-      <div className=" swiper-container full swiper-container-h">
-        <div className="swiper-wrapper">
+    <div className="swiper-slide top">
+      <div className=" swiper-container swiper-container-h">
+        <div className="swiper-wrapper top">
           <div className="top-info">Opening Ghana to the World</div>
-          <div className="swiper-slide full swiper-slide-h">
+          <div className="swiper-slide swiper-slide-h">
             <img
               data-src={CONSTANTS.images.independence_square}
               alt="background image"

@@ -6,7 +6,7 @@ import CONSTANTS from "../../util/constants";
 
 const IndexFooter = () => {
   return (
-    <footer className="swiper-slide full" data-hash="info">
+    <footer className="swiper-slide" data-hash="info">
       <Map />
       <address className="contact_info">
         <div className="post_box">P. O. BOX MP 2344, Mamprobi — Accra</div>

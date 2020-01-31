@@ -17,8 +17,7 @@ const index = () => {
       <Navbar page="/#" />
       <Page>
         <IndexTop />
-        <IndexContent />
-        <OGPartners />
+         
         <IndexFooter />
       </Page>
     </>
