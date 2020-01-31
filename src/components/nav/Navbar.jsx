@@ -27,7 +27,10 @@ const Navbar = ({ page }) => {
           />
         </div>
       </div>
-      <div className={`nav-overlay ${overlay ? "overlay" : ""}`}>nav</div>
+      <div className={`nav-overlay ${overlay ? "overlay" : ""}`}>
+        <div>one</div>
+        <div>one</div>
+      </div>
     </nav>
   );
 };

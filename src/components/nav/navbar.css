@@ -55,10 +55,14 @@ nav {
 }
 
 .overlay {
+  display: flex;
   height: calc(100vh - 50px);
   background: #141414;
   opacity: 1;
   transition: all 0.8s ease;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
 }
 
 @media (min-width: 750px) {
@@ -69,5 +73,6 @@ nav {
 
   .overlay {
     height: 30vh;
+    flex-flow: row wrap;
   }
 }
