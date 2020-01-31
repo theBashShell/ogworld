@@ -28,14 +28,23 @@ const Navbar = ({ page }) => {
         </div>
       </div>
       <div className={`nav-overlay ${overlay ? "overlay" : ""}`}>
-        <div className="">
+        <div className="overlay-watermark overlay-center">
+          <img src={CONSTANTS.images.world} alt="world" className="world" />
+        </div>
+        <div className="overlay-content overlay-center">
           <div>one</div>
           <div>one</div>
-          <a className="credit" href="http://www.freepik.com">
-            Designed by Evening_Tao / Freepik
-          </a>
         </div>
       </div>
+      <a className="credit" href="http://www.freepik.com">
+        Designed by Evening_Tao / Freepik
+      </a>
+      <a
+        className="credit"
+        href="https://www.freepik.com/free-photos-vectors/technology"
+      >
+        Technology vector created by freepik - www.freepik.com
+      </a>
     </nav>
   );
 };
