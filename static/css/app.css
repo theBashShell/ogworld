@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Caveat&display=swap");
 
 * {
   transition: all 0.5s ease;
@@ -7,10 +7,14 @@
 html {
   height: 100vh;
   scroll-behavior: smooth;
+  overflow: auto;
 }
 
 body {
   height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .credit {
@@ -21,6 +25,24 @@ body {
   display: none;
   position: relative;
   z-index: -100;
+}
+
+/* Scrollbar Styling */
+/*by: https://codepen.io/thetallweeks/pen/EaBpx*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ebebebc9;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #cbd68e;
 }
 
 .scroll {
