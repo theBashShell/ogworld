@@ -10,6 +10,7 @@ const IndexTop = () => {
     new Swiper(".top", {
       direction: "horizontal",
       effect: "fade",
+      loop: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true
@@ -29,6 +30,7 @@ const IndexTop = () => {
       <div className="swiper-wrapper">
         <div className="top-info">
           <div className="slogan">Opening Ghana to the World</div>
+          <img className="scroll" src={CONSTANTS.images.scroll} alt="scroll" />
         </div>
         <div className="swiper-slide">
           <img
