@@ -42,7 +42,7 @@ body {
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  background: #cbd68e;
+  background: #111111;
 }
 
 .scroll {
