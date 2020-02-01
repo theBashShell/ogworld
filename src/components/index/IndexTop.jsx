@@ -10,7 +10,11 @@ const IndexTop = () => {
     new Swiper(".top", {
       direction: "horizontal",
       effect: "fade",
-      loop: true, 
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      loop: true,
       keyboard: {
         enabled: true
       },
@@ -23,8 +27,10 @@ const IndexTop = () => {
   return (
     <div className=" swiper-container top">
       <div className="swiper-wrapper">
-        <div className="top-info">Opening Ghana to the World</div>
-        <div className="swiper-slide swiper-slide-h">
+        <div className="top-info">
+          <div className="slogan">Opening Ghana to the World</div>
+        </div>
+        <div className="swiper-slide">
           <img
             data-src={CONSTANTS.images.independence_square}
             alt="background image"
@@ -32,14 +38,14 @@ const IndexTop = () => {
             src={CONSTANTS.images.independenc_square_thumbnail}
           />
         </div>
-        <div className="swiper-slide swiper-slide-h">
+        <div className="swiper-slide">
           <img
             data-src={CONSTANTS.images.beach}
             alt="background image"
             class="bg-img lazyload"
           />
         </div>
-        <div className="swiper-slide swiper-slide-h">
+        <div className="swiper-slide">
           <img
             data-src={CONSTANTS.images.craft}
             alt="background image"
@@ -48,6 +54,7 @@ const IndexTop = () => {
           />
         </div>
       </div>
+      <div className="swiper-pagination"></div>
     </div>
   );
 };

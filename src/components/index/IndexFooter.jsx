@@ -10,7 +10,7 @@ const IndexFooter = () => {
     new Swiper(".footer", {});
   }, []);
   return (
-    <footer className="" data-hash="info">
+    <footer className="foot" data-hash="info">
       <div className="swiper-container footer">
         <div className="swiper-wrapper">
           <div className="swiper-slide foot">
