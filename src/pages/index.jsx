@@ -16,8 +16,7 @@ const index = () => {
       </Helmet>
       <Navbar page="/#" />
         <IndexTop /> 
-        <IndexContent />
-        <IndexFooter />
+        <IndexContent /> 
     
     </>
   );
