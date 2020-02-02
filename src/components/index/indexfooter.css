@@ -1,5 +1,5 @@
 footer {
-  height: 100vh;
+  min-height: 100vh;
   background: #ececec;
   display: flex;
   flex-flow: column nowrap;
@@ -18,6 +18,17 @@ footer {
   display: inline-block;
 }
 
+.copyright{
+  padding-top: 20px;
+}
+
 .github::after {
   content: url("https://api.iconify.design/icomoon-free:link.svg");
+}
+
+
+@media(min-width: 750px) {
+  .copyright{
+    padding-top: 40px;
+  }
 }

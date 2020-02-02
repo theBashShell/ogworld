@@ -27,11 +27,11 @@ const IndexFooter = () => {
             info@ogworldgh.com
           </a>
         </div>
-      </address>{" "}
+      </address>
       <div className="copyright footer_item">
         <span>&copy; {new Date().getFullYear()} OG World Foundation</span>
         <div className="tip">
-          Designed with a pint of{" "}
+          Designed with a pint of &nbsp;
           <img src={CONSTANTS.images.heart} alt="heart" /> by &nbsp;
           <a
             href={CONSTANTS.github}
