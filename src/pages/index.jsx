@@ -15,9 +15,9 @@ const index = () => {
         <title>OG World | Opening Ghana to the World</title>
       </Helmet>
       <Navbar page="/#" />
-        <IndexTop /> 
-        <IndexContent /> 
-    
+      <IndexTop />
+      <IndexContent />
+      <IndexFooter />
     </>
   );
 };

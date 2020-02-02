@@ -7,12 +7,7 @@ footer {
   align-items: center;
   text-align: center;
 }
-
-.foot {
-  position: relative;
-
-  height: calc(100%);
-}
+ 
 
 .foot a {
   text-decoration: none;
