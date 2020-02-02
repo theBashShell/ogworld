@@ -7,6 +7,8 @@ import Navbar from "../components/nav/Navbar";
 import IndexFooter from "../components/index/IndexFooter";
 import OGPartners from "../components/og/OGPartners";
 import "swiper/css/swiper.min.css";
+import OGProjects from "../components/og/OGProjects";
+import OGTeam from "../components/og/OGTeam";
 
 const index = () => {
   return (
@@ -17,6 +19,9 @@ const index = () => {
       <Navbar page="/#" />
       <IndexTop />
       <IndexContent />
+      <OGProjects />
+      <OGTeam />
+      <OGPartners />
       <IndexFooter />
     </>
   );

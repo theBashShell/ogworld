@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Caveat|Paytone+One|Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Caveat|Paytone+One|Ubuntu&display=swap");
 
 * {
   transition: all 0.5s ease;
@@ -25,6 +25,12 @@ body {
   display: none;
   position: relative;
   z-index: -100;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Scrollbar Styling */

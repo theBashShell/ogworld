@@ -1,13 +1,12 @@
 footer {
   min-height: 100vh;
-  background: #ececec;
+  background: linear-gradient(to bottom, #ece6e6, #dcd7e7);
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
- 
 
 .foot a {
   text-decoration: none;
@@ -18,7 +17,7 @@ footer {
   display: inline-block;
 }
 
-.copyright{
+.copyright {
   padding-top: 20px;
 }
 
@@ -26,9 +25,8 @@ footer {
   content: url("https://api.iconify.design/icomoon-free:link.svg");
 }
 
-
-@media(min-width: 750px) {
-  .copyright{
+@media (min-width: 750px) {
+  .copyright {
     padding-top: 40px;
   }
 }
