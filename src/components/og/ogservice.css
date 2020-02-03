@@ -1,6 +1,29 @@
+.s-container {
+  min-width: 300px;
+  max-width: 460px;
+  width: 90%;  
+  border-radius: 8px;
+}
+
+.s-container:first-child {
+  background: #fde2f7;
+}
+
+.s-container:nth-child(2) {
+  background: #ffedb0;
+}
+
+.s-container:nth-child(3) {
+  background: #a5fec0;
+}
+
+.s-container:last-child {
+  background: #a5a7fe;
+}
+
 .s-img-container {
   height: 250px;
-  width: 90%; 
+  width: 100%;
 }
 
 .s-img-container img {
@@ -9,16 +32,21 @@
   object-fit: contain;
   object-position: center;
   mix-blend-mode: multiply;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
 }
 
 .s-head {
-  font-family: 'Paytone One', sans-serif;
+  font-family: "Paytone One", sans-serif;
 }
 
-.s-text{
-  font-family: 'Ubuntu', sans-serif;
+.s-text {
+  font-family: "Ubuntu", sans-serif;
 }
 
-@media(min-width: 750px) {
-
+@media (min-width: 750px) {
+  .s-container {
+    height: 500px;
+    margin: 8px;
+  }
 }

@@ -3,7 +3,7 @@ import "./ogservice.css";
 
 const OGService = ({ pic, head, text }) => {
   return (
-    <div>
+    <div className='s-container'>
       <div className='s-img-container'>
         <img src={pic} alt={head} />
       </div>
