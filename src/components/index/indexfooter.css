@@ -6,29 +6,32 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
- 
 
 .foot a {
   text-decoration: none;
   color: #7d1184;
+  line-height: 1.4;
+  font-style: normal;
 }
 
 .tip div {
   display: inline-block;
+  line-height: 1.5;
 }
 
-.copyright{
+.copyright {
   padding-top: 20px;
+  line-height: 1.5;
 }
 
 .github::after {
   content: url("https://api.iconify.design/icomoon-free:link.svg");
 }
 
-
-@media(min-width: 750px) {
-  .copyright{
+@media (min-width: 750px) {
+  .copyright {
     padding-top: 40px;
   }
 }

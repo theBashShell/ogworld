@@ -31,7 +31,7 @@ const IndexFooter = () => {
       <div className="copyright footer_item">
         <span>&copy; {new Date().getFullYear()} OG World Foundation</span>
         <div className="tip">
-          Designed with a pint of &nbsp;
+          Designed with a pint of&nbsp;
           <img src={CONSTANTS.images.heart} alt="heart" /> by &nbsp;
           <a
             href={CONSTANTS.github}
