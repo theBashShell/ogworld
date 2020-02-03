@@ -28,7 +28,7 @@ const IndexFooter = () => {
           </a>
         </div>
       </address>
-      <div className="copyright footer_item">
+      <div className="copyright">
         <span>&copy; {new Date().getFullYear()} OG World Foundation</span>
         <div className="tip">
           Designed with a pint of&nbsp;

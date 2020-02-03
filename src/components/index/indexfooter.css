@@ -21,6 +21,10 @@ footer {
   line-height: 1.5;
 }
 
+.post_box {
+  padding-top: 20px;
+}
+
 .copyright {
   padding-top: 20px;
   line-height: 1.5;
