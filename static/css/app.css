@@ -17,6 +17,10 @@ body {
   overflow-x: hidden;
 }
 
+.sec-title {
+  width: 100%;
+}
+
 .credit {
   height: 0;
   width: 0;

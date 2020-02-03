@@ -1,8 +1,9 @@
 .s-container {
   min-width: 300px;
   max-width: 460px;
-  width: 90%;  
+  width: 90%;
   border-radius: 8px;
+  margin: 8px;
 }
 
 .s-container:first-child {
@@ -31,10 +32,11 @@
   width: 100%;
   object-fit: contain;
   object-position: center;
-  mix-blend-mode: multiply;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
 }
+
+
 
 .s-head {
   font-family: "Paytone One", sans-serif;
@@ -47,6 +49,5 @@
 @media (min-width: 750px) {
   .s-container {
     height: 500px;
-    margin: 8px;
   }
 }

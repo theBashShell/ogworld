@@ -6,6 +6,7 @@ import OGService from "./OGService";
 const OGServices = () => {
   return (
     <section className="services centered">
+      <div className="sec-title">services</div>
       <OGService
         pic={CONSTANTS.images.exchange_program}
         head="Exchange Program"
