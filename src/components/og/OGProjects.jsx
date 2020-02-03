@@ -4,7 +4,7 @@ import './ogprojects.css'
 const OGProjects = () => {
   return (
     <section className='proj'>
-      adfs
+      projects
     </section>
   );
 }

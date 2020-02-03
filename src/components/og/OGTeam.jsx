@@ -4,7 +4,7 @@ import './ogteam.css'
 const OGTeam = () => {
   return (
     <section className='team'>
-      
+      team
     </section>
   );
 }

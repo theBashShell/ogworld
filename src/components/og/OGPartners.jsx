@@ -5,7 +5,7 @@ const OGPartners = () => {
 
   return (
     <section className="ptn" data-hash="partnerships">
-      
+      partners
     </section>
   );
 };

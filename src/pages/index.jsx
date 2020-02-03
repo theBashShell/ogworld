@@ -9,6 +9,8 @@ import OGPartners from "../components/og/OGPartners";
 import "swiper/css/swiper.min.css";
 import OGProjects from "../components/og/OGProjects";
 import OGTeam from "../components/og/OGTeam";
+import OGContact from "../components/og/OGContact";
+import OGGallery from "../components/og/OGGallery";
 
 const index = () => {
   return (
@@ -22,6 +24,8 @@ const index = () => {
       <OGProjects />
       <OGTeam />
       <OGPartners />
+      <OGContact />
+      <OGGallery />
       <IndexFooter />
     </>
   );
