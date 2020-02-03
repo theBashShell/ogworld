@@ -11,6 +11,7 @@ import OGProjects from "../components/og/OGProjects";
 import OGTeam from "../components/og/OGTeam";
 import OGContact from "../components/og/OGContact";
 import OGGallery from "../components/og/OGGallery";
+import OGServices from "../components/og/OGServices";
 
 const index = () => {
   return (
@@ -21,6 +22,7 @@ const index = () => {
       <Navbar page="/#" />
       <IndexTop />
       <IndexContent />
+      <OGServices />
       <OGProjects />
       <OGTeam />
       <OGPartners />
