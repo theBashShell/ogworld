@@ -9,6 +9,7 @@ const OGServices = () => {
       <div className="sec-title">services</div>
       <OGService
         pic={CONSTANTS.images.exchange_program}
+        color="#ffb0b0"
         head="Exchange Program"
         text="OG World connects institutions willing to give
            opportunity to young Ghanaians to develop their 
@@ -18,6 +19,7 @@ const OGServices = () => {
       />
       <OGService
         pic={CONSTANTS.images.logistics}
+        color="#ffedb0"
         head="Logisitics & Accomodation"
         text="OG WORLD provides in-country logistics primarily 
           for its guests, partners and partner organizations 
@@ -27,6 +29,7 @@ const OGServices = () => {
       />
       <OGService
         pic={CONSTANTS.images.logistics}
+        color="#a5fec0"
         head="Visa & Ticket"
         text="OG World facilitates visas and tickets for people visiting 
           Ghana. Experience and explore Ghana while OG World 
@@ -34,6 +37,7 @@ const OGServices = () => {
       />
       <OGService
         pic={CONSTANTS.images.logistics}
+        color="#fde2f7"
         head="More..."
         text="Planning on visiting Ghana and have a memorable experience? 
         Speak to us."

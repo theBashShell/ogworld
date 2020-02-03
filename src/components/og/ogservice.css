@@ -6,20 +6,11 @@
   margin: 8px;
 }
 
-.s-container:first-child {
-  background: #fde2f7;
-}
-
-.s-container:nth-child(2) {
-  background: #ffedb0;
-}
-
-.s-container:nth-child(3) {
-  background: #a5fec0;
-}
-
-.s-container:last-child {
-  background: #a5a7fe;
+.s-container:hover,
+.s-container:active {
+  box-shadow: 0 16px 16px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
 }
 
 .s-img-container {
