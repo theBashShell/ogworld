@@ -14,10 +14,17 @@
   flex-flow: column wrap;
   width: 90%;
   margin: 0 20px;
+  margin-top: 10px;
+  background: #1d30316e;
+  border-radius: 10px;
 }
 
 .pj h3 {
   font-family: "Paytone One", sans-serif;
+}
+
+.pj p {
+  padding: 8px;
 }
 
 .pj-img {
