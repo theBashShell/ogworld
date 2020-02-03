@@ -6,7 +6,7 @@ import OGService from "./OGService";
 const OGServices = () => {
   return (
     <section className="services centered">
-      <div className="sec-title">services</div>
+      <div className="sec-title">Services</div>
       <OGService
         pic={CONSTANTS.images.exchange_program}
         color="#ffb0b0"
@@ -28,7 +28,7 @@ const OGServices = () => {
            well as community needs assessment for Project development."
       />
       <OGService
-        pic={CONSTANTS.images.logistics}
+        pic={CONSTANTS.images.visa}
         color="#a5fec0"
         head="Visa & Ticket"
         text="OG World facilitates visas and tickets for people visiting 
@@ -36,7 +36,7 @@ const OGServices = () => {
           does the heavy lifting."
       />
       <OGService
-        pic={CONSTANTS.images.logistics}
+        pic={CONSTANTS.images.more}
         color="#fde2f7"
         head="More..."
         text="Planning on visiting Ghana and have a memorable experience? 
