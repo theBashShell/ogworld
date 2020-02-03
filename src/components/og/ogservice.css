@@ -30,13 +30,16 @@
 .s-img-container img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
 }
 
-
+.s-head,
+.s-text {
+  padding: 8px;
+}
 
 .s-head {
   font-family: "Paytone One", sans-serif;
@@ -44,10 +47,15 @@
 
 .s-text {
   font-family: "Ubuntu", sans-serif;
+  padding-bottom: 20px;
 }
 
 @media (min-width: 750px) {
   .s-container {
     height: 500px;
+  }
+
+  .s-text {
+    padding-bottom: unset;
   }
 }
