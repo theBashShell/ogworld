@@ -1,12 +1,23 @@
 .services {
   min-height: 100vh;
-  /* background: linear-gradient(to right, #ff512f, #dd2476);
-  background: linear-gradient(to right, #e2e2e2, #cccccc); */
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  /* background: linear-gradient(to right, #e2e2e2, #cccccc); */
+  flex-flow: column nowrap;
+  padding-bottom: 50px;
+}
+
+.s-sec-title {
+  color: #f5f5dc;
+}
+
+.contained {
+  max-width: 1000px;
   flex-flow: column nowrap;
 }
 
-@media(min-width: 750px) {
-  .services{ 
+@media (min-width: 750px) {
+  .services,
+  .contained {
     flex-flow: row wrap;
   }
 }
