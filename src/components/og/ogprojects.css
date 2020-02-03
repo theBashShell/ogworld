@@ -1,5 +1,46 @@
 .proj {
   min-height: 100vh;
-  background: linear-gradient(to bottom, #ffc064, #da4453); 
+  background: linear-gradient(to bottom, #ffc064, #da4453);
   /* background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%); */
+  padding-bottom: 50px;
+  color: #f5f5f5;
+}
+
+.proj-title {
+  color: #313131;
+}
+
+.pj {
+  flex-flow: column wrap;
+  width: 90%;
+  margin: 0 20px;
+}
+
+.pj h3 {
+  font-family: "Paytone One", sans-serif;
+}
+
+.pj-img {
+  width: 100%;
+}
+
+.pj-img img {
+  object-fit: contain;
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+
+.pj-contained {
+  flex-flow: column wrap;
+}
+
+@media (min-width: 750px) {
+  .pj {
+    flex-flow: row wrap;
+    max-width: 350px;
+  }
+
+  .pj-contained {
+    flex-flow: row wrap;
+  }
 }

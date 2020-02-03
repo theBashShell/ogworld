@@ -1,7 +1,6 @@
 .services {
   min-height: 100vh;
   background: linear-gradient(to right, #ff512f, #dd2476);
-  /* background: linear-gradient(to right, #e2e2e2, #cccccc); */
   flex-flow: column nowrap;
   padding-bottom: 50px;
 }
