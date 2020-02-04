@@ -1,4 +1,21 @@
 .team {
   min-height: 100vh;
   background: linear-gradient(to top, #42275a, #734b6d);
+  padding: 10px;
+}
+
+.member{
+  width: 300px;
+}
+
+.mb {
+  max-width: 400px;
+}
+
+.member img {
+  filter: grayscale(1);
+  width: 280px;
+  height: 280px;
+  mix-blend-mode: color-burn;
+  border-radius: 100%;
 }

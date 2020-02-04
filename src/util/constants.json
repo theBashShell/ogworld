@@ -1,7 +1,10 @@
 {
   "images": {
     "close": "https://api.iconify.design/ion:close.svg?color=%23ffff&width=30",
+    "bruno": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1580773987/bruno-33b34e04e9823bd1dd8e579b3b12c9cb_ysthkb.jpg",
+    "vero": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1580773975/veronica-c1e5d39202ade6220d2174837cc244bc_ksa1nl.jpg",
     "menu": "https://api.iconify.design/jam:menu.svg?color=%23ffff&width=30",
+    "eddie": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1580774004/eddy-771e4fafe69b4d73b40c0a1114fc3933_ybz8oj.jpg",
     "elp": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1580598835/pablo-downloading_mbwh2w.png",
     "cep": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1580773211/marginalia-information-security_ew4z3v.png",
     "service_nav": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1580486754/service.ai_qnvmhw.svg",
