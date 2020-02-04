@@ -22,7 +22,7 @@ const OGTeam = () => {
       loop: true,
       keyboard: true,
       pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pg",
         clickable: true
       }
     });
@@ -59,7 +59,7 @@ const OGTeam = () => {
          is tinkering with new technology"
         />
       </div>
-      <div className="swiper-pagination" />
+      <div className="swiper-pg" />
     </section>
   );
 };
