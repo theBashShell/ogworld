@@ -2,6 +2,9 @@
   min-height: 100vh;
   background: linear-gradient(to top, #42275a, #734b6d);
   padding: 10px;
+  padding-bottom: 50px;
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
 }
 
 .team-title {
@@ -10,14 +13,12 @@
 }
 
 .member {
-  width: 300px !important;
+  width: 360px;
   flex-flow: column wrap;
   padding: 10px;
 }
 
 .whole-team {
-  /* max-width: 600px; */
-  /* background:blue; */ 
   flex-flow: row wrap;
 }
 

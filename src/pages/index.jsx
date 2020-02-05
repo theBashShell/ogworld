@@ -12,6 +12,7 @@ import OGTeam from "../components/og/OGTeam";
 import OGContact from "../components/og/OGContact";
 import OGGallery from "../components/og/OGGallery";
 import OGServices from "../components/og/OGServices";
+import OGComments from "../components/og/OGComments";
 
 const index = () => {
   return (
@@ -20,13 +21,14 @@ const index = () => {
         <title>OG World | Opening Ghana to the World</title>
       </Helmet>
       <Navbar page="/#" />
-      <IndexTop /> 
+      <IndexTop />
       <OGServices />
       <OGProjects />
       <OGTeam />
+      <OGComments />
       <OGPartners />
-      <OGContact />
       <OGGallery />
+      <OGContact />
       <IndexFooter />
     </>
   );

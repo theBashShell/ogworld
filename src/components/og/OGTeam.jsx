@@ -3,7 +3,7 @@ import "./ogteam.css";
 import CONSTANTS from "../../util/constants";
 
 const Member = ({ pic, head, desc }) => (
-  <div className="swiper-slide member centered">
+  <div className="member centered">
     <div>
       <img src={pic} alt="head" />
     </div>
