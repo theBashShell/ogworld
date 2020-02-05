@@ -17,8 +17,8 @@
 
 .whole-team {
   /* max-width: 600px; */
-  /* background:blue; */
-  overflow-x: auto;
+  /* background:blue; */ 
+  flex-flow: row wrap;
 }
 
 .mb {
