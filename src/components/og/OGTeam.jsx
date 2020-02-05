@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
-import "./ogteam.css";
-import Swiper from "swiper";
+import "./ogteam.css"; 
 import CONSTANTS from "../../util/constants";
 
 const Member = ({ pic, head, desc }) => (
-  <div className="swiper-slide member">
+  <div className="swiper-slide member centered">
     <div>
       <img src={pic} alt="head" />
     </div>
@@ -13,23 +12,11 @@ const Member = ({ pic, head, desc }) => (
   </div>
 );
 
-const OGTeam = () => {
-  useEffect(() => {
-    new Swiper(".swiper-team", {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      centeredSlides: true,
-      loop: true,
-      keyboard: true,
-      pagination: {
-        el: ".swiper-pg",
-        clickable: true
-      }
-    });
-  });
+const OGTeam = () => { 
   return (
-    <section className="team centered swiper-team">
-      <div class="swiper-wrapper mb">
+    <section className="team">
+      <div class="sec-title team-title">Team</div>
+      <div class="centered whole-team">
         <Member
           pic={CONSTANTS.images.eddie}
           head="Director"
