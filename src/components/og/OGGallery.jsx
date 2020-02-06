@@ -3,7 +3,7 @@ import "./oggallery.css"
 
 const OGGallery = () => {
   return (
-    <section className="gallery">
+    <section className="gallery centered">
       gallery
     </section>
   );
