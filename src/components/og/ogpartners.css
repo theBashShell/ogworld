@@ -5,9 +5,21 @@
 }
 
 .ptn-ctn {
-  background: white;
   width: 90%;
   max-width: 890px;
+  flex-flow: row wrap;
+}
+
+.ptn-img {
+  object-fit: contain;
+  width: 200px;
+  filter: grayscale(0.7);
+}
+
+.ptn-img:hover,
+.ptn-img:active,
+.ptn-img:focus {
+  filter: unset;
 }
 
 .ptn-title {
@@ -15,8 +27,8 @@
   top: 1%;
 }
 
-@media(min-width: 750px) {
+@media (min-width: 750px) {
   .ptn-ctn {
-
+    flex-flow: unset;
   }
 }
