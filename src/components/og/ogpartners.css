@@ -1,4 +1,22 @@
 .ptn {
-  min-height: 100vh;
+  min-height: 50vh;
   background: linear-gradient(to bottom, #ffe259, #ffa751);
+  position: relative;
+}
+
+.ptn-ctn {
+  background: white;
+  width: 90%;
+  max-width: 890px;
+}
+
+.ptn-title {
+  position: absolute;
+  top: 1%;
+}
+
+@media(min-width: 750px) {
+  .ptn-ctn {
+
+  }
 }

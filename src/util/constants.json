@@ -21,7 +21,25 @@
     "visa": "https://res.cloudinary.com/dznnuvtnd/image/upload/c_fill,g_auto,h_280,q_auto/v1580769819/photo-1532188142562-df556b861e6a_duiq5j.jpg",
     "more": "https://res.cloudinary.com/dznnuvtnd/image/upload/c_fill,g_auto,h_280,q_auto/v1580769969/photo-1510549117-02c619d11166_rnnzfu.jpg"
   },
-  "partners": [],
+  "partners": [
+    {
+      "partner": "Northeastern University",
+      "pic": "https://www.northeastern.edu/wp-content/uploads/global-logo.png"
+    },
+    {
+      "partner": "Ashesi D:Lab",
+      "pic": "https://cdn-images-1.medium.com/max/1200/1*hgDXhOwMcZLL6OhJuN7WdQ.jpeg"
+    },
+    {
+      "partner": "MIT",
+      "pic": "http://www.hultprize.org/wp-content/uploads/2017/04/MIT-Logo.png"
+    },
+    {
+      "partner": "University of Washington",
+      "pic": "https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/98/2014/09/07214443/Signature_Center_Purple_Hex-300x61.png"
+    },
+    { "partner": "", "pic": "" }
+  ],
   "github": "https://github.com/theBashShell",
   "map": "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJZxVZklub3w8RNORA1tiswUA&key=AIzaSyA-DmVnumR6-EPbKWpZE2odtLyZK-7DB_E"
 }
