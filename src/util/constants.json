@@ -41,5 +41,6 @@
     { "partner": "", "pic": "" }
   ],
   "github": "https://github.com/theBashShell",
-  "map": "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJZxVZklub3w8RNORA1tiswUA&key=AIzaSyA-DmVnumR6-EPbKWpZE2odtLyZK-7DB_E"
+  "map": "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJZxVZklub3w8RNORA1tiswUA&key=AIzaSyA-DmVnumR6-EPbKWpZE2odtLyZK-7DB_E",
+  "gallery": [{ "src": "", "thumbnail": "", "caption": "" }]
 }
