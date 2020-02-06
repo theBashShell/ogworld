@@ -2,18 +2,21 @@
   min-height: 50vh;
   background: linear-gradient(to bottom, #ffe259, #ffa751);
   position: relative;
+  padding-bottom: 50px;
 }
 
 .ptn-ctn {
   width: 90%;
   max-width: 890px;
+  padding-top: 150px;
   flex-flow: row wrap;
 }
-
+ 
 .ptn-img {
   object-fit: contain;
   width: 200px;
-  filter: grayscale(0.7);
+  padding: 10px;
+  filter: grayscale(0.8);
 }
 
 .ptn-img:hover,

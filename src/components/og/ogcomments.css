@@ -1,13 +1,13 @@
 .comments {
   position: relative;
-  min-height: 50vh;
+  padding: 70px 0px;
   background: linear-gradient(90deg,#89216b,#da4453);
   color:#f5f5f5;
 }
 
 .comment {
-  text-align: center;
-  /* padding: 2%; */
+  text-align: center; 
+  padding-top: 100px;
 }
 
 .pag {
@@ -24,5 +24,5 @@
 
 .comment-title {
   position: absolute;
-  top: 6%;
+  top: 4%;
 }
