@@ -27,13 +27,14 @@
       "pic": "https://www.northeastern.edu/wp-content/uploads/global-logo.png"
     },
     {
-      "partner": "Ashesi D:Lab",
-      "pic": "https://cdn-images-1.medium.com/max/1200/1*hgDXhOwMcZLL6OhJuN7WdQ.jpeg"
-    },
-    {
       "partner": "MIT",
       "pic": "http://www.hultprize.org/wp-content/uploads/2017/04/MIT-Logo.png"
     },
+    {
+      "partner": "Ashesi D:Lab",
+      "pic": "https://cdn-images-1.medium.com/max/1200/1*hgDXhOwMcZLL6OhJuN7WdQ.jpeg"
+    },
+
     {
       "partner": "University of Washington",
       "pic": "https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/98/2014/09/07214443/Signature_Center_Purple_Hex-300x61.png"
@@ -42,5 +43,55 @@
   ],
   "github": "https://github.com/theBashShell",
   "map": "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJZxVZklub3w8RNORA1tiswUA&key=AIzaSyA-DmVnumR6-EPbKWpZE2odtLyZK-7DB_E",
-  "gallery": [{ "src": "", "thumbnail": "", "caption": "" }]
+  "gallery": [
+    {
+      "src": "https://res.cloudinary.com/dznnuvtnd/image/upload/c_fill,g_auto,h_700,q_auto/v1581072273/IMG-20200122-WA0006_uq8idx.jpg",
+      "thumbnail": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1581072273/IMG-20200122-WA0006_uq8idx.jpg",
+      "caption": "Black Star Square, Accra",
+      "thumbnailWidth": 75,
+      "thumbnailHeight": 100
+    },
+    {
+      "src": "https://res.cloudinary.com/dznnuvtnd/image/upload/c_fill,g_auto,h_700,q_auto/v1581074756/IMG-20200111-WA0013_jggwmr.jpg",
+      "thumbnail": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1581074756/IMG-20200111-WA0013_jggwmr.jpg",
+      "caption": "",
+      "thumbnailWidth": 134,
+      "thumbnailHeight": 100
+    },
+    {
+      "src": "https://res.cloudinary.com/dznnuvtnd/image/upload/c_fill,g_auto,h_700,q_auto/v1581074989/IMG-20200111-WA0004_dpfnrz.jpg",
+      "thumbnail": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1581074989/IMG-20200111-WA0004_dpfnrz.jpg",
+      "caption": "",
+      "thumbnailWidth": 134,
+      "thumbnailHeight": 100
+    },
+    {
+      "src": "https://res.cloudinary.com/dznnuvtnd/image/upload/c_fill,g_auto,h_700,q_auto/v1581075277/IMG-20200111-WA0022_ebnrzu.jpg",
+      "thumbnail": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1581075277/IMG-20200111-WA0022_ebnrzu.jpg",
+      "caption": "",
+      "thumbnailWidth": 134,
+      "thumbnailHeight": 100
+    },
+    {
+      "src": "https://res.cloudinary.com/dznnuvtnd/image/upload/c_fill,g_auto,h_700,q_auto/v1581075691/IMG-20200111-WA0031_usrlox.jpg",
+      "thumbnail": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1581075691/IMG-20200111-WA0031_usrlox.jpg",
+      "caption": "Kakum National Park",
+      "thumbnailWidth": 75,
+      "thumbnailHeight": 100
+    },
+    {
+      "src": "https://res.cloudinary.com/dznnuvtnd/image/upload/c_fill,g_auto,h_700,q_auto/v1581076756/DSC_3735.NEF_y7nw44.jpg",
+      "thumbnail": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1581076756/DSC_3735.NEF_y7nw44.jpg",
+      "caption": "",
+      "thumbnailWidth": 149,
+      "thumbnailHeight": 100
+    },
+    {
+      "src": "https://res.cloudinary.com/dznnuvtnd/image/upload/c_fill,g_auto,h_700,q_auto/v1581076880/DSC_3485.NEF_dilb3a.jpg",
+      "thumbnail": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1581076880/DSC_3485.NEF_dilb3a.jpg",
+      "caption": "",
+      "thumbnailWidth": 149,
+      "thumbnailHeight": 100
+    }
+  ]
 }

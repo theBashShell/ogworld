@@ -1,4 +1,5 @@
 .contact {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background: linear-gradient(to bottom, #734ba7, #636c9c);
+  flex-flow: column wrap;
 }

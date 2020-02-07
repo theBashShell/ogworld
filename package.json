@@ -11,6 +11,7 @@
     "@atlaskit/button": "^13.3.5",
     "@atlaskit/icon": "^19.1.0",
     "@atlaskit/tooltip": "^15.2.1",
+    "formik": "^2.1.4",
     "gatsby": "^2.19.8",
     "gatsby-plugin-offline": "^3.0.32",
     "gatsby-plugin-react-helmet": "^3.1.21",
