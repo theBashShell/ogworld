@@ -1,12 +1,14 @@
 .contact {
   min-height: 60vh;
-  background: linear-gradient(to bottom, #734ba7, #636c9c);
+  min-width: 300px;
+  background: linear-gradient(to bottom, #374f5f 0%, #363a79 100%);
   flex-flow: column wrap;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
+  color: rgb(240, 240, 240);
 }
 
 .ct-form {
-  width: 95%;
+  width: 90%;
   max-width: 400px;
   margin: 0 auto;
   flex-flow: column nowrap;
