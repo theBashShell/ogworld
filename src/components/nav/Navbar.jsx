@@ -3,8 +3,12 @@ import { Link } from "gatsby";
 import "./navbar.css";
 import CONSTANTS from "../../util/constants";
 
-const NavLinks = ({ link, nav }) => {
-  return <Link to={link}>{nav}</Link>;
+const NavLinks = ({ link, nav, clk }) => {
+  return (
+    <Link to={link} onClick={clk}>
+      {nav}
+    </Link>
+  );
 };
 
 const Navbar = ({ page }) => {
@@ -35,13 +39,13 @@ const Navbar = ({ page }) => {
           <img src={CONSTANTS.images.world} alt="world" className="world" />
         </div>
         <div className="overlay-content overlay-center centered">
-          <NavLinks link="/#service" nav="Services" />
-          <NavLinks link="/#project" nav="Projects" />
-          <NavLinks link="/#team" nav="Team" />
-          <NavLinks link="/#comment" nav="Comments" />
-          <NavLinks link="/#partner" nav="Partnerships" />
-          <NavLinks link="/#gallery" nav="Gallery" />
-          <NavLinks link="/#contact" nav="Contact" />
+          <NavLinks clk={handleMenuClick} link="/#service" nav="Services" />
+          <NavLinks clk={handleMenuClick} link="/#project" nav="Projects" />
+          <NavLinks clk={handleMenuClick} link="/#team" nav="Team" />
+          <NavLinks clk={handleMenuClick} link="/#comment" nav="Comments" />
+          <NavLinks clk={handleMenuClick} link="/#partner" nav="Partnerships" />
+          <NavLinks clk={handleMenuClick} link="/#gallery" nav="Gallery" />
+          <NavLinks clk={handleMenuClick} link="/#contact" nav="Contact" />
         </div>
       </div>
       <a className="credit" href="http://www.freepik.com">

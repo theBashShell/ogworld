@@ -74,14 +74,16 @@ nav {
 
 nav a {
   text-decoration: none;
-  padding: 8px;
-  color: #ff75bb;
+  padding: 12px;
+  color: #97ff75;
 }
 
 nav a:hover,
 nav a:active,
 nav a:focus {
-  color: #c43535;
+  color: #db5656;
+  transform: scale(1.2);
+  text-decoration: line-through;
 }
 
 .world {
