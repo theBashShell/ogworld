@@ -1,6 +1,7 @@
 .gallery {
-  /* min-height: 20vh; */
-  position: relative;
+  /* min-height: 100vh; */
+  width: 100%;
+  min-width: 300px; 
   padding: 10px;
   padding-top: 50px !important;
   background: linear-gradient(to bottom, #ea9e81, #ffb464);
@@ -13,6 +14,7 @@
 
 @media(min-width: 750px){
   .gallery {
+    /* min-height: 60vh; */
     padding: 50px;
   }
 }

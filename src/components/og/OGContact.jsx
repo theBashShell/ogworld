@@ -2,8 +2,6 @@ import React from "react";
 import "./ogcontact.css";
 import { useFormik } from "formik";
 import Button from "@atlaskit/button";
-import TextArea from "@atlaskit/textarea";
-import TextField from "@atlaskit/textfield";
 
 const ContactForm = () => {
   const formik = useFormik({
@@ -17,47 +15,50 @@ const ContactForm = () => {
     }
   });
   return (
-    <form onSubmit={formik.handleSubmit} className="ct-form"> 
+    <form onSubmit={formik.handleSubmit} className="ct-form">
+      <div className="ctn-field">
         <label htmlFor="name">Name</label>
-        <TextField
+        <input
           name="name"
           className="ct-input"
           placeholder="Jane Doe"
           {...formik.getFieldProps("name")}
         />
-
+      </div>
+      <div className="ctn-field">
         <label htmlFor="email">Email</label>
-        <TextField
+        <input
           name="email"
           type="email"
           className="ct-input"
           placeholder="example@example.com"
           {...formik.getFieldProps("email")}
         />
-
+      </div>
+      <div className="ctn-field">
         <label htmlFor="message">Message</label>
-        <TextArea
+        <textarea
           name="message"
           value=""
           resize="vertical"
+          rows={8}
+          className="ct-input"
           placeholder="What's on your mind?"
           {...formik.getFieldProps("message")}
         />
-
-        <Button type="submit" appearance="primary">
-          Submit
-        </Button> 
+      </div>
+      <Button type="submit" appearance="primary">
+        Submit
+      </Button>
     </form>
   );
 };
 
 const OGContact = () => {
   return (
-    <section id='contact' className="contact centered">
-      <div class="sec-title ct-title">Contact Us</div>
-      
-        <ContactForm />
-    
+    <section id="contact" className="contact centered">
+      <div className="sec-title ct-title">Contact Us</div>
+      <ContactForm />
     </section>
   );
 };

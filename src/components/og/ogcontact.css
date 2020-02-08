@@ -2,24 +2,42 @@
   min-height: 60vh;
   background: linear-gradient(to bottom, #734ba7, #636c9c);
   flex-flow: column wrap;
+  padding-bottom: 60px;
 }
 
 .ct-form {
-  width: 90%;
+  width: 95%;
   max-width: 400px;
   margin: 0 auto;
-  flex-flow: column nowrap;
-  background:wheat;
+  flex-flow: column nowrap; 
 }
 
-.ct-form label, .ct-form div {
+.ct-form label,
+.ct-form div,
+.ctn-field {
+  display: block;
   margin-bottom: 15px;
 }
 
-.ct-title {
-
+.ctn-field {
+  width: 95%;
 }
 
-.ct-input { 
+.ct-form input {
+  width: 100%;
+}
+ 
+
+.ct-title {
+  padding: 50px 0;
+}
+
+.ct-input {
   padding: 10px 8px;
+  width: 100%;
+  background: #efefefc4;
+  border: none;
+}
+
+@media (min-width: 750px) {
 }

@@ -5,9 +5,10 @@ import Gallery from "react-grid-gallery";
 
 const OGGallery = () => {
   return (
-    <section id='gallery' className="gallery centeredd"> 
-      <Gallery id="og-gallery" images={CONSTANTS.gallery} />
-      {console.log(CONSTANTS.gallery)}
+    <section id="gallery" className="gallery centeredd">
+      <div>
+        <Gallery id="og-gallery" images={CONSTANTS.gallery} />{" "}
+      </div>
     </section>
   );
 };
