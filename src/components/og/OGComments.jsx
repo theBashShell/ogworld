@@ -32,7 +32,7 @@ const OGComments = () => {
   });
   return (
     <section id='comment' className="comments swiper-comment centered">
-      <div class="sec-title comment-title">What People Have Said</div>
+      <div className="sec-title comment-title">What People Have Said</div>
       <div className="swiper-wrapper">
         <Comment
           text="We truly couldn't have done this without OG World"
