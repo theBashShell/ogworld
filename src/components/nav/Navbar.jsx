@@ -11,7 +11,7 @@ const NavLinks = ({ link, nav, clk }) => {
   );
 };
 
-const Navbar = ({ page }) => {
+const Navbar = ( ) => {
   const [overlay, setOverlay] = useState(false);
 
   const handleMenuClick = () => {
@@ -22,7 +22,7 @@ const Navbar = ({ page }) => {
     <nav>
       <div className="nav-content">
         <div className="nav-centered">
-          <Link to={page}>
+          <Link to="/#top">
             <img className="nav-logo" src="/images/ogworld_logo.svg" />
           </Link>
         </div>

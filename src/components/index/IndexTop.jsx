@@ -26,7 +26,7 @@ const IndexTop = () => {
   }, []);
 
   return (
-    <div className=" swiper-container top">
+    <div id='top' className=" swiper-container top">
       <div className="swiper-wrapper">
         <div className="top-info">
           <div className="slogan">Opening Ghana to the World</div>

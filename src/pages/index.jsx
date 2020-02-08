@@ -20,7 +20,7 @@ const index = () => {
       <Helmet>
         <title>OG World | Opening Ghana to the World</title>
       </Helmet>
-      <Navbar page="/#" />
+      <Navbar />
       <IndexTop />
       <OGServices />
       <OGProjects />
