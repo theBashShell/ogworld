@@ -15,8 +15,8 @@ const Member = ({ pic, head, desc }) => (
 const OGTeam = () => {
   return (
     <section id="team" className="team">
-      <div class="sec-title team-title">Team</div>
-      <div class="centered whole-team">
+      <div className="sec-title team-title">Team</div>
+      <div className="centered whole-team">
         <Member
           pic={CONSTANTS.images.eddie}
           head="Director"

@@ -5,7 +5,7 @@ import Swiper from "swiper";
 const Comment = ({ text, user }) => (
   <div className="swiper-slide comment">
     <div>{text}</div>
-    <div>{user}</div>
+    <div className='said'>~ {user}</div>
   </div>
 );
 
