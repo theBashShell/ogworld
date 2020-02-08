@@ -14,7 +14,7 @@ const Member = ({ pic, head, desc }) => (
 
 const OGTeam = () => { 
   return (
-    <section className="team">
+    <section id='team' className="team">
       <div class="sec-title team-title">Team</div>
       <div class="centered whole-team">
         <Member

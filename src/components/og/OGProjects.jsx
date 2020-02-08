@@ -16,7 +16,7 @@ const Project = ({ pic, head, desc }) => {
 
 const OGProjects = () => {
   return (
-    <section className="proj">
+    <section id='project' className="proj">
       <div className="sec-title proj-title">Projects</div>
       <div className="centered pj-contained">
         <Project

@@ -8,6 +8,7 @@ nav {
   min-width: 310px;
   color: white;
   backdrop-filter: blur(18px);
+  font-family: "Lemonada", cursive;
 }
 
 .nav-content {
@@ -61,7 +62,7 @@ nav {
   background: #070707;
 }
 
-.overlay-center { 
+.overlay-center {
   flex-flow: column wrap;
 }
 
@@ -69,6 +70,18 @@ nav {
   position: absolute;
   height: inherit;
   width: inherit;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 8px;
+  color: #ff75bb;
+}
+
+nav a:hover,
+nav a:active,
+nav a:focus {
+  color: #c43535;
 }
 
 .world {

@@ -53,7 +53,7 @@ const ContactForm = () => {
 
 const OGContact = () => {
   return (
-    <section className="contact centered">
+    <section id='contact' className="contact centered">
       <div class="sec-title ct-title">Contact Us</div>
       
         <ContactForm />

@@ -8,7 +8,7 @@ const Partner = ({ partner, pic }) => (
 
 const OGPartners = () => {
   return (
-    <section className="ptn centered">
+    <section id='partner' className="ptn centered">
       <div className="sec-title ptn-title">Trusted By</div>
       <div className="ptn-ctn centered">
         {CONSTANTS.partners.map(info => (

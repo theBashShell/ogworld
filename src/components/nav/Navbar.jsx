@@ -3,6 +3,10 @@ import { Link } from "gatsby";
 import "./navbar.css";
 import CONSTANTS from "../../util/constants";
 
+const NavLinks = ({ link, nav }) => {
+  return <Link to={link}>{nav}</Link>;
+};
+
 const Navbar = ({ page }) => {
   const [overlay, setOverlay] = useState(false);
 
@@ -12,7 +16,7 @@ const Navbar = ({ page }) => {
 
   return (
     <nav>
-      <div className="nav-content"> 
+      <div className="nav-content">
         <div className="nav-centered">
           <Link to={page}>
             <img className="nav-logo" src="/images/ogworld_logo.svg" />
@@ -31,7 +35,13 @@ const Navbar = ({ page }) => {
           <img src={CONSTANTS.images.world} alt="world" className="world" />
         </div>
         <div className="overlay-content overlay-center centered">
-           lkj;kjlkkljl;j;
+          <NavLinks link="/#service" nav="Services" />
+          <NavLinks link="/#project" nav="Projects" />
+          <NavLinks link="/#team" nav="Team" />
+          <NavLinks link="/#comment" nav="Comments" />
+          <NavLinks link="/#partner" nav="Partnerships" />
+          <NavLinks link="/#gallery" nav="Gallery" />
+          <NavLinks link="/#contact" nav="Contact" />
         </div>
       </div>
       <a className="credit" href="http://www.freepik.com">
@@ -47,4 +57,4 @@ const Navbar = ({ page }) => {
   );
 };
 
-export default Navbar; 
+export default Navbar;

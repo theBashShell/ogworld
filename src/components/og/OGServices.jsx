@@ -5,7 +5,7 @@ import OGService from "./OGService";
 
 const OGServices = () => {
   return (
-    <section className="services centered">
+    <section id="services" className="services centered">
       <div className="sec-title s-sec-title">Services</div>
       <div className="centered contained">
         <OGService

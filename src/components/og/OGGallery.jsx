@@ -5,7 +5,7 @@ import Gallery from "react-grid-gallery";
 
 const OGGallery = () => {
   return (
-    <section className="gallery centeredd"> 
+    <section id='gallery' className="gallery centeredd"> 
       <Gallery id="og-gallery" images={CONSTANTS.gallery} />
       {console.log(CONSTANTS.gallery)}
     </section>

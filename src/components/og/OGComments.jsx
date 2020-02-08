@@ -31,7 +31,7 @@ const OGComments = () => {
     );
   });
   return (
-    <section className="comments swiper-comment centered">
+    <section id='comment' className="comments swiper-comment centered">
       <div class="sec-title comment-title">What People Have Said</div>
       <div className="swiper-wrapper">
         <Comment
