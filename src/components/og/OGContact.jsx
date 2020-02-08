@@ -40,7 +40,12 @@ const ContactForm = () => {
 
   const handleFormSubmit = async event => {
     event.preventDefault();
-    formik.submitForm().catch(err => console.error(err));
+    formik
+      .submitForm()
+      .then(() => {
+        formik.resetForm();
+      })
+      .catch(err => console.error(err));
   };
 
   return (
