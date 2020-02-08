@@ -13,14 +13,20 @@
     "logistics": "https://res.cloudinary.com/dznnuvtnd/image/upload/c_fill,g_auto,h_280,q_auto/v1580770047/photo-1495320520040-44186a20c601_wvrqko.jpg",
     "exchange_program": "https://res.cloudinary.com/dznnuvtnd/image/upload/c_fill,g_auto,h_280,q_auto,w_480/v1580765931/photo-1529156069898-49953e39b3ac_gbs6uw.jpg",
     "scroll": "https://api.iconify.design/dashicons:arrow-down-alt2.svg?color=%23ffff&height=30",
-    "craft": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1580340148/IMG-20190525-WA0048_kbfqou.jpg",
-    "craft_thumbnail": "https://res.cloudinary.com/dznnuvtnd/image/upload/t_media_lib_thumb/v1580340148/IMG-20190525-WA0048_kbfqou.jpg",
-    "beach": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1580316672/IMG_20190519_143359_wl0mgj.jpg",
-    "independence_square": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1580308779/IMG-20200122-WA0007_jczrt7.jpg",
-    "independenc_square_thumbnail": "https://res.cloudinary.com/dznnuvtnd/image/upload/t_media_lib_thumb/v1580308779/IMG-20200122-WA0007_jczrt7.jpg",
     "visa": "https://res.cloudinary.com/dznnuvtnd/image/upload/c_fill,g_auto,h_280,q_auto/v1580769819/photo-1532188142562-df556b861e6a_duiq5j.jpg",
     "more": "https://res.cloudinary.com/dznnuvtnd/image/upload/c_fill,g_auto,h_280,q_auto/v1580769969/photo-1510549117-02c619d11166_rnnzfu.jpg"
   },
+  "pageslide": [
+    {
+      "pic": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1580308779/IMG-20200122-WA0007_jczrt7.jpg",
+      "thumbnail": "https://res.cloudinary.com/dznnuvtnd/image/upload/t_media_lib_thumb/v1580308779/IMG-20200122-WA0007_jczrt7.jpg"
+    },
+    {
+      "pic": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1580340148/IMG-20190525-WA0048_kbfqou.jpg",
+      "thumbnail": "https://res.cloudinary.com/dznnuvtnd/image/upload/t_media_lib_thumb/v1580340148/IMG-20190525-WA0048_kbfqou.jpg"
+    },
+    { "pic": "", "thumbnail": "" }
+  ],
   "partners": [
     {
       "partner": "Northeastern University",
