@@ -1,7 +1,7 @@
 .proj {
-  min-height: 100vh;
+  min-height: 20vh;
   background: linear-gradient(to bottom, #ffc064, #da4453); 
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   color: #f5f5f5;
 }
 
