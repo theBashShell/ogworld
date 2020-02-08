@@ -54,13 +54,6 @@
   "map": "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJZxVZklub3w8RNORA1tiswUA&key=AIzaSyA-DmVnumR6-EPbKWpZE2odtLyZK-7DB_E",
   "gallery": [
     {
-      "src": "https://res.cloudinary.com/dznnuvtnd/image/upload/c_fill,g_auto,h_700,q_auto/v1581072273/IMG-20200122-WA0006_uq8idx.jpg",
-      "thumbnail": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1581072273/IMG-20200122-WA0006_uq8idx.jpg",
-      "caption": "Black Star Square, Accra",
-      "thumbnailWidth": 75,
-      "thumbnailHeight": 100
-    },
-    {
       "src": "https://res.cloudinary.com/dznnuvtnd/image/upload/c_fill,g_auto,h_700,q_auto/v1581074756/IMG-20200111-WA0013_jggwmr.jpg",
       "thumbnail": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1581074756/IMG-20200111-WA0013_jggwmr.jpg",
       "caption": "",
@@ -79,6 +72,13 @@
       "thumbnail": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1581075277/IMG-20200111-WA0022_ebnrzu.jpg",
       "caption": "",
       "thumbnailWidth": 134,
+      "thumbnailHeight": 100
+    },
+    {
+      "src": "https://res.cloudinary.com/dznnuvtnd/image/upload/c_fill,g_auto,h_700,q_auto/v1581072273/IMG-20200122-WA0006_uq8idx.jpg",
+      "thumbnail": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1581072273/IMG-20200122-WA0006_uq8idx.jpg",
+      "caption": "Black Star Square, Accra",
+      "thumbnailWidth": 75,
       "thumbnailHeight": 100
     },
     {
