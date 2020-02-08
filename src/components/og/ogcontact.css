@@ -1,5 +1,24 @@
 .contact {
-  min-height: 100vh;
+  min-height: 60vh;
   background: linear-gradient(to bottom, #734ba7, #636c9c);
   flex-flow: column wrap;
+}
+
+.ct-form {
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  flex-flow: column nowrap;
+}
+
+.ct-form label, .ct-form div {
+  margin-bottom: 15px;
+}
+
+.ct-title {
+
+}
+
+.ct-input { 
+  padding: 10px 8px;
 }
