@@ -1,8 +1,8 @@
 .team {
-  min-height: 100vh;
+  min-height: 40vh;
   background: linear-gradient(to top, #42275a, #734b6d);
   padding: 10px;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
   background-color: #21d4fd;
   background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
 }
@@ -16,6 +16,14 @@
   width: 360px;
   flex-flow: column wrap;
   padding: 10px;
+}
+
+.member h3 {
+  font-family: "Paytone One", sans-serif;
+}
+
+.member p {
+  font-family: "Montserrat", sans-serif;
 }
 
 .whole-team {
