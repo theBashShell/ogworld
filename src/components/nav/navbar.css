@@ -53,12 +53,15 @@ nav {
 
 .nav-overlay {
   position: relative;
-  height: 0;
+  height: calc(100vh - 50px);
+  transform: translateY(-150%);
   width: 100%;
+  z-index: -12;
+  transition:all 0.9s ease;
 }
 
-.nav-overlay.overlay {
-  height: calc(100vh - 50px);
+.nav-overlay.overlay { 
+  transform:translateY(0%);
   background: #070707;
 }
 
@@ -88,7 +91,7 @@ nav a:focus {
 
 .world {
   filter: contrast(0.1);
-  height: inherit;
+  height: 100%;
   transition: all 0.2s ease;
 }
 
@@ -104,8 +107,12 @@ nav a:focus {
     padding: 0 60px;
   }
 
-  .nav-overlay.overlay {
+  .nav-overlay{
     height: 30vh;
+  }
+
+  .nav-overlay.overlay {
+    /* height: 30vh; */
   }
 
   .overlay-center {
