@@ -12,7 +12,7 @@ const OGPartners = () => {
       <div className="sec-title ptn-title">Trusted By</div>
       <div className="ptn-ctn centered">
         {CONSTANTS.partners.map(info => (
-          <Partner {...info} />
+          <Partner {...info} key={info.partner} />
         ))}
       </div>
     </section>
