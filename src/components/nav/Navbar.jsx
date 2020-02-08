@@ -44,8 +44,8 @@ const Navbar = ( ) => {
           <NavLinks clk={handleMenuClick} link="/#team" nav="Team" />
           <NavLinks clk={handleMenuClick} link="/#comment" nav="Comments" />
           <NavLinks clk={handleMenuClick} link="/#partner" nav="Partnerships" />
-          <NavLinks clk={handleMenuClick} link="/#gallery" nav="Gallery" />
           <NavLinks clk={handleMenuClick} link="/#contact" nav="Contact" />
+          <NavLinks clk={handleMenuClick} link="/#gallery" nav="Gallery" />
         </div>
       </div>
       <a className="credit" href="http://www.freepik.com">

@@ -1,9 +1,18 @@
 .gallery {
-  min-height: 100vh;
+  /* min-height: 20vh; */
+  position: relative;
+  padding: 10px;
+  padding-top: 50px !important;
   background: linear-gradient(to bottom, #ea9e81, #ffb464);
 }
 
 
 #og-gallery {
 
+}
+
+@media(min-width: 750px){
+  .gallery {
+    padding: 50px;
+  }
 }

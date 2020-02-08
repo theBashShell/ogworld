@@ -25,8 +25,8 @@ const index = () => {
       <OGTeam />
       <OGComments />
       <OGPartners />
-      <OGGallery />
       <OGContact />
+      <OGGallery />
       <IndexFooter />
     </>
   );

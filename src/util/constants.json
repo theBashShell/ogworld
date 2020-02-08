@@ -25,7 +25,10 @@
       "pic": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1580340148/IMG-20190525-WA0048_kbfqou.jpg",
       "thumbnail": "https://res.cloudinary.com/dznnuvtnd/image/upload/t_media_lib_thumb/v1580340148/IMG-20190525-WA0048_kbfqou.jpg"
     },
-    { "pic": "", "thumbnail": "" }
+    {
+      "pic": "https://res.cloudinary.com/dznnuvtnd/image/upload/c_fill,g_auto,h_700,q_auto/v1581176320/DSC_0071_1_an031c.jpg",
+      "thumbnail": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1581176320/DSC_0071_1_an031c.jpg"
+    }
   ],
   "partners": [
     {
@@ -95,6 +98,13 @@
     {
       "src": "https://res.cloudinary.com/dznnuvtnd/image/upload/c_fill,g_auto,h_700,q_auto/v1581076880/DSC_3485.NEF_dilb3a.jpg",
       "thumbnail": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1581076880/DSC_3485.NEF_dilb3a.jpg",
+      "caption": "",
+      "thumbnailWidth": 149,
+      "thumbnailHeight": 100
+    },
+    {
+      "src": "https://res.cloudinary.com/dznnuvtnd/image/upload/c_fill,g_auto,h_700,q_auto/v1581175482/DSC_0047_hwojfs.jpg",
+      "thumbnail": "https://res.cloudinary.com/dznnuvtnd/image/upload/v1581175482/DSC_0047_hwojfs.jpg",
       "caption": "",
       "thumbnailWidth": 149,
       "thumbnailHeight": 100
