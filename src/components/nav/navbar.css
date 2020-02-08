@@ -61,10 +61,7 @@ nav {
   background: #070707;
 }
 
-.overlay-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.overlay-center { 
   flex-flow: column wrap;
 }
 
@@ -97,6 +94,6 @@ nav {
   }
 
   .overlay-center {
-    flex-flow: unset;
+    flex-flow: row wrap;
   }
 }

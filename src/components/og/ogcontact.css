@@ -9,6 +9,7 @@
   max-width: 400px;
   margin: 0 auto;
   flex-flow: column nowrap;
+  background:wheat;
 }
 
 .ct-form label, .ct-form div {

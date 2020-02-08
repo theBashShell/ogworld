@@ -12,8 +12,7 @@ const Navbar = ({ page }) => {
 
   return (
     <nav>
-      <div className="nav-content">
-        <div>one</div>
+      <div className="nav-content"> 
         <div className="nav-centered">
           <Link to={page}>
             <img className="nav-logo" src="/images/ogworld_logo.svg" />
@@ -28,11 +27,11 @@ const Navbar = ({ page }) => {
         </div>
       </div>
       <div className={`nav-overlay ${overlay ? "overlay" : ""}`}>
-        <div className="overlay-watermark overlay-center">
+        <div className="overlay-watermark overlay-center centered">
           <img src={CONSTANTS.images.world} alt="world" className="world" />
         </div>
-        <div className="overlay-content overlay-center">
-           
+        <div className="overlay-content overlay-center centered">
+           lkj;kjlkkljl;j;
         </div>
       </div>
       <a className="credit" href="http://www.freepik.com">
@@ -48,5 +47,4 @@ const Navbar = ({ page }) => {
   );
 };
 
-export default Navbar;
-// <img src={CONSTANTS.images.world} alt='world' className='world' />
+export default Navbar; 
