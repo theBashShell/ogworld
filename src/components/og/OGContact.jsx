@@ -1,26 +1,57 @@
 import React from "react";
 import "./ogcontact.css";
 import { useFormik } from "formik";
-import Button from "@atlaskit/button";
+
+const validate = values => {
+  const errors = {};
+
+  if (!values.name) {
+    errors.name = "required";
+  }
+
+  if (!values.message) {
+    errors.message = "required";
+  }
+
+  if (!values.email) {
+    errors.email = "required";
+  }
+  var re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+  if (!re.test(values.email)) {
+    errors.email = "invalid email";
+  }
+
+  return errors;
+};
 
 const ContactForm = () => {
   const formik = useFormik({
     initialValues: {
       name: "",
       email: "",
-      message: "",
-      onSubmit: async values => {
-        console.log(values);
-      }
+      message: ""
+    },
+    validate,
+    onSubmit: values => {
+      console.log(values);
     }
   });
+
+  const handleFormSubmit = async event => {
+    event.preventDefault();
+    formik.submitForm().catch(err => console.error(err));
+  };
+
   return (
-    <form onSubmit={formik.handleSubmit} className="ct-form">
+    <form className="ct-form" onSubmit={formik.handleSubmit}>
       <div className="ctn-field">
         <label htmlFor="name">Name</label>
         <input
           name="name"
-          className="ct-input"
+          className={`ct-input ${
+            formik.touched.name && formik.errors.name ? "ct-err" : ""
+          }`}
           placeholder="Jane Doe"
           {...formik.getFieldProps("name")}
         />
@@ -32,6 +63,9 @@ const ContactForm = () => {
           type="email"
           className="ct-input"
           placeholder="example@example.com"
+          className={`ct-input ${
+            formik.touched.email && formik.errors.email ? "ct-err" : ""
+          }`}
           {...formik.getFieldProps("email")}
         />
       </div>
@@ -44,12 +78,18 @@ const ContactForm = () => {
           rows={8}
           className="ct-input"
           placeholder="What's on your mind?"
+          className={`ct-input ${
+            formik.touched.message && formik.errors.message ? "ct-err" : ""
+          }`}
           {...formik.getFieldProps("message")}
         />
       </div>
-      <Button type="submit" appearance="primary">
-        Submit
-      </Button>
+      <input
+        className="ct-input"
+        type="submit"
+        value="Submit"
+        onClick={handleFormSubmit}
+      />
     </form>
   );
 };

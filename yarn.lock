@@ -62,16 +62,6 @@
     react-transition-group "^2.2.1"
     tslib "^1.9.3"
 
-"@atlaskit/textarea@^2.2.3":
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/@atlaskit/textarea/-/textarea-2.2.3.tgz#6607900c068f08abc8c7d326d5207548935028a0"
-  integrity sha512-TvN9jac6QAarM/mkVDdRTI6JIZi8m6LtK4n58KhFQaNFZLe2bs7IMSCAovbJb8botlT6o8K+ugkLZh4/0MBRjQ==
-  dependencies:
-    "@atlaskit/analytics-next" "^6.3.3"
-    "@atlaskit/theme" "^9.2.8"
-    "@atlaskit/type-helpers" "^4.2.1"
-    tslib "^1.9.3"
-
 "@atlaskit/textfield@^3.1.4":
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/@atlaskit/textfield/-/textfield-3.1.4.tgz#cec0b4843472937a917a261f5abfdad385715a8e"
@@ -105,7 +95,7 @@
     react-transition-group "^2.2.1"
     tslib "^1.9.3"
 
-"@atlaskit/type-helpers@^4.2.1", "@atlaskit/type-helpers@^4.2.2":
+"@atlaskit/type-helpers@^4.2.2":
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/@atlaskit/type-helpers/-/type-helpers-4.2.2.tgz#fb1524ad9745e879fb051cabf3012c3a95d05407"
   integrity sha512-dPeG5RTYRpYzdaIrpgXSvUUklTbv+ctulQAgrzPOTpMOfUNKcldty+BLMnY2wh4zOkjjr2MPhap7xJvyGvOxzQ==

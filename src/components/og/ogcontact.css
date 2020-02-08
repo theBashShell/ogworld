@@ -9,14 +9,21 @@
   width: 95%;
   max-width: 400px;
   margin: 0 auto;
-  flex-flow: column nowrap; 
+  flex-flow: column nowrap;
 }
 
-.ct-form label,
+.ct-form textarea {
+  max-width: 100%;
+}
+
 .ct-form div,
 .ctn-field {
-  display: block;
   margin-bottom: 15px;
+}
+
+.ct-form label {
+  display: block;
+  margin-bottom: 8px;
 }
 
 .ctn-field {
@@ -26,17 +33,20 @@
 .ct-form input {
   width: 100%;
 }
- 
 
 .ct-title {
   padding: 50px 0;
 }
 
 .ct-input {
-  padding: 10px 8px;
+  padding: 14px 8px;
   width: 100%;
   background: #efefefc4;
   border: none;
+}
+
+.ct-err {
+  border-right: 5px solid #dc143c;
 }
 
 @media (min-width: 750px) {
