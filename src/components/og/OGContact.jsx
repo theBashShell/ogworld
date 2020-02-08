@@ -90,7 +90,7 @@ const ContactForm = () => {
         />
       </div>
       <input
-        className="ct-input"
+        className="ct-input ct-sb"
         type="submit"
         value="Submit"
         onClick={handleFormSubmit}
