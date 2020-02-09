@@ -10,17 +10,16 @@ const CONFIG = {
   }
 };
 
-const sendMail = async ({ file, name, email }) => {
+const sendMail = async ({ name, email, message }) => {
   const transporter = nodemailer.createTransport({ ...CONFIG });
 
   let info = await transporter.sendMail({
-    from: `"Fund Request: ${name} 👻" <fundus.flask@gmail.com>`,
-    to: `${process.env.RQST_RECEIVER}`,
-    subject: "Fund Request ✔",
-    text: `New Request attached: from ---${name} -- ${email}`,
-    html: `<p>New Request attached: from ---${name} -- ${email}</p>`,
-    attachments: [{ filename: "Fund Request", path: file }],
-    cc: [email, `${process.env.RQST_USER}`]
+    from: `"${name} 👻" < ${email}>`,
+    to: `${process.env.OG_USER}`,
+    subject: "OG World Service Message ✔",
+    text: `${message}`,
+    html: `<p>${message}</p>`,
+    cc: [`${process.env.OG_ALT}`]
   });
   console.log(info);
 };
