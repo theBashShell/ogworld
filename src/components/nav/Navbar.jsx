@@ -23,7 +23,7 @@ const Navbar = ( ) => {
       <div className="nav-content">
         <div className="nav-centered">
           <Link to="/#top">
-            <img className="nav-logo" src="/images/ogworld_logo.svg" />
+            <img className="nav-logo" src="/images/ogworld_logo.svg" alt='logo' />
           </Link>
         </div>
         <div>
