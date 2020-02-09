@@ -41,7 +41,7 @@ const IndexTop = () => {
           <img className="scroll" src={CONSTANTS.images.scroll} alt="scroll" />
         </div>
         {CONSTANTS.pageslide.map(el => (
-          <SlidePic {...el} key={btoa(el.pic)} />
+          <SlidePic {...el} key={el.pic} />
         ))}
       </div>
       <div className="swiper-pagination"></div>
