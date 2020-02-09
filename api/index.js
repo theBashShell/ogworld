@@ -15,7 +15,7 @@ const CONFIG = {
   }
 };
 
-const emailUser = async ({ file, name, email }) => {
+const sendMail = async ({ file, name, email }) => {
   const transporter = nodemailer.createTransport({ ...CONFIG });
 
   let info = await transporter.sendMail({
