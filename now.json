@@ -1,0 +1,12 @@
+{
+  "name": "ogbackend",
+  "version": 2,
+  "env": { 
+    "OG_ENV": "@og_env",
+    "OG_HOST": "@og_host",
+    "OG_SECRET": "@og_secret",
+    "OG_USER": "@og_user",
+    "OG_SERVER": "@og_url", 
+    "OG_RECEIVER": "@rqst_receiver"
+  }
+}
