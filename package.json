@@ -25,5 +25,8 @@
     "react-helmet": "^5.2.1",
     "styled-components": "^5.0.0",
     "swiper": "^5.3.0"
+  },
+  "devDependencies": {
+    "now": "^17.0.3"
   }
 }

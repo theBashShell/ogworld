@@ -1,10 +1,5 @@
 const nodemailer = require("nodemailer");
 
-module.exports = (req, res) => {
-  const { name = "World" } = req.query;
-  res.send(`Hello ${name}!`);
-};
-
 const CONFIG = {
   host: process.env.OG_HOST,
   port: process.env.OG_PORT,
@@ -28,4 +23,9 @@ const sendMail = async ({ file, name, email }) => {
     cc: [email, `${process.env.RQST_USER}`]
   });
   console.log(info);
+};
+
+module.exports = (req, res) => {
+  const { name, email, message } = req.body;
+  res.send(`Hello`);
 };
