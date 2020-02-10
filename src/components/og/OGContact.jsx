@@ -34,8 +34,7 @@ const ContactForm = () => {
       message: ""
     },
     validate,
-    onSubmit: values => {
-      console.log(values);
+    onSubmit: values => { 
       axios
         .post(process.env.GATSBY_OG_URL, { values })
         .then(res => console.log("sent"));
