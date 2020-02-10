@@ -38,7 +38,7 @@ const ContactForm = () => {
       console.log(values);
       axios
         .post(process.env.GATSBY_OG_URL, { values })
-        .then(res => console.log(res));
+        .then(res => console.log("sent"));
     }
   });
 
