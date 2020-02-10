@@ -1,5 +1,6 @@
 import React from "react";
 import "./ogcontact.css";
+import axios from "axios";
 import { useFormik } from "formik";
 
 const validate = values => {
@@ -35,6 +36,9 @@ const ContactForm = () => {
     validate,
     onSubmit: values => {
       console.log(values);
+      axios
+        .post(process.env.GATSBY_OG_URL, { values })
+        .then(res => console.log(res));
     }
   });
 
@@ -43,7 +47,7 @@ const ContactForm = () => {
     formik
       .submitForm()
       .then(() => {
-        console.log("URL: \t", process.env.OG_URL);
+        console.log("URL: \t", process.env.GATSBY_OG_URL);
         formik.resetForm();
       })
       .catch(err => console.error(err));

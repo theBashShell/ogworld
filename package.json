@@ -8,10 +8,8 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
-    "@atlaskit/button": "^13.3.5",
-    "@atlaskit/icon": "^19.1.0",
-    "@atlaskit/textfield": "^3.1.4",
     "@atlaskit/tooltip": "^15.2.1",
+    "axios": "^0.19.2",
     "formik": "^2.1.4",
     "gatsby": "^2.19.8",
     "gatsby-plugin-offline": "^3.0.32",
