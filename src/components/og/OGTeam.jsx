@@ -2,12 +2,13 @@ import React from "react";
 import "./ogteam.css";
 import CONSTANTS from "../../util/constants";
 
-const Member = ({ pic, head, desc }) => (
+const Member = ({ pic, head, desc, name }) => (
   <div className="member centered">
     <div>
       <img src={pic} alt="head" />
     </div>
     <h3>{head}</h3>
+    <h4>{name}</h4>
     <p>{desc}</p>
   </div>
 );
@@ -20,6 +21,7 @@ const OGTeam = () => {
         <Member
           pic={CONSTANTS.images.eddie}
           head="Director"
+          name="Edward Mudashiru Tetteh"
           desc="Edward(Eddie) has over the past decade supported 
           individuals and groups willing to visit Ghana with the 
           aim of making the desired impact on the lives of others.
@@ -31,6 +33,7 @@ const OGTeam = () => {
         <Member
           pic={CONSTANTS.images.vero}
           head="Resource Manager"
+          name="Veronica Tettey"
           desc="Veronica has great passion for reaching out to the
            less privileged. She has 9 years of experience in resource
             management. Her high sense of integrity and commitment with 
@@ -39,6 +42,7 @@ const OGTeam = () => {
         <Member
           pic={CONSTANTS.images.bruno}
           head="Software & Media"
+          name="Bruno Edoh"
           desc="Bruno 
         is a software engineer currently working with OG World. He has a B.Sc. 
         in Computer Science from Ashesi University. He is interested in building
