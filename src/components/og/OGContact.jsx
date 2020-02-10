@@ -43,6 +43,7 @@ const ContactForm = () => {
     formik
       .submitForm()
       .then(() => {
+        console.log("URL: \t", process.env.OG_URL);
         formik.resetForm();
       })
       .catch(err => console.error(err));
