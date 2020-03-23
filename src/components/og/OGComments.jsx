@@ -5,7 +5,7 @@ import Swiper from "swiper";
 const Comment = ({ text, user }) => (
   <div className="swiper-slide comment">
     <div>{text}</div>
-    <div className='said'>~ {user}</div>
+    <div className="said">~ {user}</div>
   </div>
 );
 
@@ -31,7 +31,7 @@ const OGComments = () => {
     );
   });
   return (
-    <section id='comment' className="comments swiper-comment centered">
+    <section id="comment" className="comments swiper-comment centered">
       <div className="sec-title comment-title">What People Have Said</div>
       <div className="swiper-wrapper">
         <Comment
@@ -48,6 +48,10 @@ const OGComments = () => {
         incredible connections. It's been such a pleasure to work with OG World.
          Hope to see you again"
           user="U of W Faculty"
+        />
+        <Comment
+          text="Thanks for the time. We really appreciate it"
+          user="Youngstown State University Faculty"
         />
       </div>
       <div className=".pag"></div>
